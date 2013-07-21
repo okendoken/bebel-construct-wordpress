@@ -1,3 +1,5 @@
-$(function(){
-    $("#clients").tabCollapse();
-});
+!function ($){
+    $(function(){
+        $("#clients").tabCollapse();
+    });
+}(window.jQuery);
