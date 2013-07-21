@@ -1,0 +1,776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CircleLaw V1.4\n"
+"POT-Creation-Date: 2013-05-21 12:03+0200\n"
+"PO-Revision-Date: 2013-05-21 12:03+0200\n"
+"Last-Translator: Bebel Team <bebel_flashden@yahoo.de>\n"
+"Language-Team: Bebel <bebel_flashden@yahoo.de>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../author.php:22 ../search.php:18 ../archive.php:25 ../single.php:13
+#: ../tag.php:22 ../blog.php:27 ../category.php:22
+msgid "by"
+msgstr ""
+
+#: ../author.php:23 ../search.php:19 ../archive.php:26 ../single.php:14
+#: ../tag.php:23 ../blog.php:28 ../category.php:23
+msgid "in"
+msgstr ""
+
+#: ../author.php:24 ../search.php:20 ../archive.php:27 ../tag.php:24
+#: ../blog.php:29 ../category.php:24
+msgid "read more..."
+msgstr ""
+
+#: ../search.php:27
+msgid "no result found."
+msgstr ""
+
+#: ../search.php:28
+msgid "try another word?"
+msgstr ""
+
+#: ../search.php:31 ../search.php:32
+msgid "Search.."
+msgstr ""
+
+#: ../functions.php:10
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:727 ../single-gallery.php:31
+msgid "Pages"
+msgstr ""
+
+#: ../comments.php:5
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:18
+msgid "no comments"
+msgstr ""
+
+#: ../comments.php:18
+msgid "1 comment"
+msgstr ""
+
+#: ../comments.php:18
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: ../comments.php:54
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:54
+#, php-format
+msgid "Leave a Reply on %s"
+msgstr ""
+
+#: ../comments.php:64
+msgid "please"
+msgstr ""
+
+#: ../comments.php:64
+msgid "logged in first"
+msgstr ""
+
+#: ../comments.php:64
+msgid "to can add comment."
+msgstr ""
+
+#: ../comments.php:71
+msgid "Comment"
+msgstr ""
+
+#: ../ajax.php:93
+msgid "No Message"
+msgstr ""
+
+#: ../ajax.php:94 ../ajax.php:100
+msgid "Message From Site"
+msgstr ""
+
+#: ../ajax.php:103
+msgid "Name"
+msgstr ""
+
+#: ../ajax.php:104 ../includes/post_type.php:223
+msgid "E-mail"
+msgstr ""
+
+#: ../ajax.php:105
+msgid "Subject"
+msgstr ""
+
+#: ../ajax.php:106
+msgid "Nessage"
+msgstr ""
+
+#: ../single.php:40 ../single-portfolio.php:58
+msgid "Tags"
+msgstr ""
+
+#: ../contact.php:19
+msgid "Name:"
+msgstr ""
+
+#: ../contact.php:21
+msgid "E-Mail:"
+msgstr ""
+
+#: ../contact.php:23
+msgid "Subject:"
+msgstr ""
+
+#: ../contact.php:25
+msgid "Message:"
+msgstr ""
+
+#: ../contact.php:28
+msgid "send"
+msgstr ""
+
+#: ../contact.php:31
+msgid "Please wait"
+msgstr ""
+
+#: ../includes/post_type.php:10
+msgid "Homepage Items"
+msgstr ""
+
+#: ../includes/post_type.php:11
+msgid "All Items"
+msgstr ""
+
+#: ../includes/post_type.php:12 ../includes/post_type.php:13
+#: ../includes/post_type.php:16
+msgid "Add New Item"
+msgstr ""
+
+#: ../includes/post_type.php:14 ../includes/post_type.php:15
+msgid "Edit Item"
+msgstr ""
+
+#: ../includes/post_type.php:17 ../includes/post_type.php:18
+msgid "View Item"
+msgstr ""
+
+#: ../includes/post_type.php:19
+msgid "Search In Items"
+msgstr ""
+
+#: ../includes/post_type.php:20
+msgid "No Items Found"
+msgstr ""
+
+#: ../includes/post_type.php:21
+msgid "No Items Found In Trash"
+msgstr ""
+
+#: ../includes/post_type.php:51
+msgid "Item Info"
+msgstr ""
+
+#: ../includes/post_type.php:70
+msgid "Item Order"
+msgstr ""
+
+#: ../includes/post_type.php:76
+msgid "Item Description"
+msgstr ""
+
+#: ../includes/post_type.php:82
+msgid "Item URL"
+msgstr ""
+
+#: ../includes/post_type.php:151 ../includes/panel/options_array.php:218
+msgid "Team"
+msgstr ""
+
+#: ../includes/post_type.php:152
+msgid "All Persons"
+msgstr ""
+
+#: ../includes/post_type.php:153 ../includes/post_type.php:154
+#: ../includes/post_type.php:157
+msgid "Add New Person"
+msgstr ""
+
+#: ../includes/post_type.php:155 ../includes/post_type.php:156
+msgid "Edit Person"
+msgstr ""
+
+#: ../includes/post_type.php:158 ../includes/post_type.php:159
+msgid "View Person"
+msgstr ""
+
+#: ../includes/post_type.php:160
+msgid "Search In Team"
+msgstr ""
+
+#: ../includes/post_type.php:161
+msgid "No Persons Found"
+msgstr ""
+
+#: ../includes/post_type.php:162
+msgid "No Persons Found In Trash"
+msgstr ""
+
+#: ../includes/post_type.php:192
+msgid "Person Info"
+msgstr ""
+
+#: ../includes/post_type.php:211 ../includes/post_type.php:352
+msgid "Order"
+msgstr ""
+
+#: ../includes/post_type.php:217 ../includes/post_type.php:358
+msgid "Description:"
+msgstr ""
+
+#: ../includes/post_type.php:292 ../includes/panel/options_array.php:250
+msgid "Clients"
+msgstr ""
+
+#: ../includes/post_type.php:293
+msgid "All Clients"
+msgstr ""
+
+#: ../includes/post_type.php:294 ../includes/post_type.php:295
+#: ../includes/post_type.php:298
+msgid "Add New Client"
+msgstr ""
+
+#: ../includes/post_type.php:296 ../includes/post_type.php:297
+msgid "Edit Client"
+msgstr ""
+
+#: ../includes/post_type.php:299 ../includes/post_type.php:300
+msgid "View Client"
+msgstr ""
+
+#: ../includes/post_type.php:301
+msgid "Search In Clients"
+msgstr ""
+
+#: ../includes/post_type.php:302
+msgid "No Clients Found"
+msgstr ""
+
+#: ../includes/post_type.php:303
+msgid "No Clients Found In Trash"
+msgstr ""
+
+#: ../includes/post_type.php:333
+msgid "Client Info"
+msgstr ""
+
+#: ../includes/post_type.php:364
+msgid "URL"
+msgstr ""
+
+#: ../includes/post_type.php:434 ../includes/panel/options_array.php:185
+msgid "Gallery"
+msgstr ""
+
+#: ../includes/post_type.php:435 ../includes/post_type.php:690
+msgid "View All"
+msgstr ""
+
+#: ../includes/post_type.php:436 ../includes/post_type.php:437
+#: ../includes/post_type.php:440
+msgid "Add New Gallery"
+msgstr ""
+
+#: ../includes/post_type.php:438 ../includes/post_type.php:439
+msgid "Edit Gallery"
+msgstr ""
+
+#: ../includes/post_type.php:441 ../includes/post_type.php:442
+msgid "View Gallery"
+msgstr ""
+
+#: ../includes/post_type.php:443
+msgid "Search In Galleries"
+msgstr ""
+
+#: ../includes/post_type.php:444
+msgid "No Galleries Found"
+msgstr ""
+
+#: ../includes/post_type.php:445
+msgid "No Galleries Found In Trash"
+msgstr ""
+
+#: ../includes/post_type.php:476
+msgid "Gallery Content"
+msgstr ""
+
+#: ../includes/post_type.php:502
+msgid "Gallery Order"
+msgstr ""
+
+#: ../includes/post_type.php:508
+msgid "Gallery Description"
+msgstr ""
+
+#: ../includes/post_type.php:514
+msgid "Gallery Layout"
+msgstr ""
+
+#: ../includes/post_type.php:518
+msgid "Random"
+msgstr ""
+
+#: ../includes/post_type.php:523
+msgid "Square"
+msgstr ""
+
+#: ../includes/post_type.php:529
+msgid "Gallery Images"
+msgstr ""
+
+#: ../includes/post_type.php:596 ../includes/post_type.php:817
+msgid "Add New Image"
+msgstr ""
+
+#: ../includes/post_type.php:605 ../includes/post_type.php:826
+msgid "Delete"
+msgstr ""
+
+#: ../includes/post_type.php:689 ../includes/panel/options_array.php:146
+msgid "Areas of Work"
+msgstr ""
+
+#: ../includes/post_type.php:691 ../includes/post_type.php:692
+#: ../includes/post_type.php:695
+msgid "Add New Area"
+msgstr ""
+
+#: ../includes/post_type.php:693 ../includes/post_type.php:694
+msgid "Edit Area"
+msgstr ""
+
+#: ../includes/post_type.php:696 ../includes/post_type.php:697
+msgid "View Area"
+msgstr ""
+
+#: ../includes/post_type.php:698
+msgid "Search In Areas"
+msgstr ""
+
+#: ../includes/post_type.php:699
+msgid "No Areas Found"
+msgstr ""
+
+#: ../includes/post_type.php:700
+msgid "No Areas Found In Trash"
+msgstr ""
+
+#: ../includes/post_type.php:733
+msgid "Area Gallery"
+msgstr ""
+
+#: ../includes/post_type.php:750
+msgid "Area Order"
+msgstr ""
+
+#: ../includes/widget.php:8
+msgid "Sidebar"
+msgstr ""
+
+#: ../includes/widget.php:31
+msgid "Last images from flickr account"
+msgstr ""
+
+#: ../includes/widget.php:35
+msgid "Flickr Widget"
+msgstr ""
+
+#: ../includes/widget.php:75
+msgid "Flickr"
+msgstr ""
+
+#: ../includes/widget.php:79 ../includes/widget.php:235
+#: ../includes/widget.php:309 ../includes/widget.php:392
+msgid "Title:"
+msgstr ""
+
+#: ../includes/widget.php:84
+msgid "Flickr User:"
+msgstr ""
+
+#: ../includes/widget.php:89
+msgid "Number Images:"
+msgstr ""
+
+#: ../includes/widget.php:109
+msgid "Twitter Widget show"
+msgstr ""
+
+#: ../includes/widget.php:113
+msgid "Twitter Widget"
+msgstr ""
+
+#: ../includes/widget.php:231 ../includes/panel/options_array.php:404
+msgid "Latest Tweets"
+msgstr ""
+
+#: ../includes/widget.php:240
+msgid "User Account:"
+msgstr ""
+
+#: ../includes/widget.php:245
+msgid "Number twitts:"
+msgstr ""
+
+#: ../includes/widget.php:266
+msgid "FaceBook Like Box Show"
+msgstr ""
+
+#: ../includes/widget.php:270
+msgid "Facebook Widget"
+msgstr ""
+
+#: ../includes/widget.php:305
+msgid "Find us on Facebook"
+msgstr ""
+
+#: ../includes/widget.php:314
+msgid "Facebook Page:"
+msgstr ""
+
+#: ../includes/widget.php:335
+msgid "Google+ Follow Box Show"
+msgstr ""
+
+#: ../includes/widget.php:339
+msgid "Google+ Widget"
+msgstr ""
+
+#: ../includes/widget.php:388
+msgid "Follow us on Google+"
+msgstr ""
+
+#: ../includes/widget.php:397
+msgid "Google+ Account:"
+msgstr ""
+
+#: ../includes/panel/option_func.php:52
+msgid "No Changes To Be Saved !"
+msgstr ""
+
+#: ../includes/panel/option_func.php:76 ../includes/panel/option_func.php:87
+msgid "Option updated"
+msgstr ""
+
+#: ../includes/panel/option_func.php:81 ../includes/panel/option_func.php:92
+msgid "Nothing Happened"
+msgstr ""
+
+#: ../includes/panel/option_ui.php:38 ../includes/panel/option_ui.php:412
+msgid "Save"
+msgstr ""
+
+#: ../includes/panel/options_array.php:4
+msgid "General Setting"
+msgstr ""
+
+#: ../includes/panel/options_array.php:11
+msgid "Responsive On/Off"
+msgstr ""
+
+#: ../includes/panel/options_array.php:19
+msgid "Responsive Theme"
+msgstr ""
+
+#: ../includes/panel/options_array.php:27
+msgid "Sliding background for menu On/Off"
+msgstr ""
+
+#: ../includes/panel/options_array.php:35
+msgid "Use sliding background"
+msgstr ""
+
+#: ../includes/panel/options_array.php:43
+msgid "Search icon in navigation On/Off"
+msgstr ""
+
+#: ../includes/panel/options_array.php:51
+msgid "Activate search icon in navigation"
+msgstr ""
+
+#: ../includes/panel/options_array.php:59
+#: ../includes/panel/options_array.php:66
+msgid "Site Logo"
+msgstr ""
+
+#: ../includes/panel/options_array.php:73
+#: ../includes/panel/options_array.php:80
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../includes/panel/options_array.php:87
+#: ../includes/panel/options_array.php:95
+msgid "Google Analytics"
+msgstr ""
+
+#: ../includes/panel/options_array.php:104
+#: ../includes/panel/options_array.php:110
+msgid "Homepage"
+msgstr ""
+
+#: ../includes/panel/options_array.php:118
+msgid "Number of displayed items"
+msgstr ""
+
+#: ../includes/panel/options_array.php:129
+msgid "Homepage items animate speed"
+msgstr ""
+
+#: ../includes/panel/options_array.php:140
+msgid "Custom Posts"
+msgstr ""
+
+#: ../includes/panel/options_array.php:154
+#: ../includes/panel/options_array.php:295
+msgid "Activate AddThis buttons"
+msgstr ""
+
+#: ../includes/panel/options_array.php:162
+msgid "Areas of Work Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:169
+msgid "Areas of Work Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:175
+msgid "Areas of Work items per page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:195
+msgid "Gallery Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:202
+msgid "Gallery Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:208
+msgid "Gallery items per page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:227
+msgid "Team Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:234
+msgid "Team Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:240
+msgid "Team items per page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:259
+msgid "Clients Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:266
+msgid "Clients Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:272
+msgid "Clients items per page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:283
+#: ../includes/panel/options_array.php:288
+msgid "Blog"
+msgstr ""
+
+#: ../includes/panel/options_array.php:303
+msgid "Blog Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:310
+msgid "Blog Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:317
+msgid "Date Format"
+msgstr ""
+
+#: ../includes/panel/options_array.php:324
+#: ../includes/panel/options_array.php:329
+msgid "Error 404 Page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:337
+msgid "Page Title"
+msgstr ""
+
+#: ../includes/panel/options_array.php:344
+msgid "Error Message"
+msgstr ""
+
+#: ../includes/panel/options_array.php:350
+#: ../includes/panel/options_array.php:355
+msgid "Contact Page"
+msgstr ""
+
+#: ../includes/panel/options_array.php:363
+msgid "Title Description"
+msgstr ""
+
+#: ../includes/panel/options_array.php:370
+msgid "Google Map Location"
+msgstr ""
+
+#: ../includes/panel/options_array.php:378
+msgid "Contact E-mail"
+msgstr ""
+
+#: ../includes/panel/options_array.php:385
+msgid "Contact Details"
+msgstr ""
+
+#: ../includes/panel/options_array.php:392
+msgid "Message after send"
+msgstr ""
+
+#: ../includes/panel/options_array.php:399
+#: ../includes/panel/options_array.php:428
+msgid "Social Network"
+msgstr ""
+
+#: ../includes/panel/options_array.php:412
+msgid "Twitter Username"
+msgstr ""
+
+#: ../includes/panel/options_array.php:418
+msgid "Number of Latest Tweets"
+msgstr ""
+
+#: ../includes/panel/options_array.php:436
+msgid "Full url for Twitter account"
+msgstr ""
+
+#: ../includes/panel/options_array.php:443
+msgid "Full url for Facebook account"
+msgstr ""
+
+#: ../includes/panel/options_array.php:450
+msgid "Full url for Linkedin account"
+msgstr ""
+
+#: ../includes/panel/options_array.php:457
+msgid "Full url for Google account"
+msgstr ""
+
+#: ../includes/panel/options_array.php:465
+msgid "Styling Options"
+msgstr ""
+
+#: ../includes/panel/options_array.php:470
+msgid "Main Options"
+msgstr ""
+
+#: ../includes/panel/options_array.php:477
+msgid "Background Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:487
+msgid "Background Slider"
+msgstr ""
+
+#: ../includes/panel/options_array.php:492
+msgid "Text Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:500
+msgid "Link Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:508
+msgid "Link on mouseover"
+msgstr ""
+
+#: ../includes/panel/options_array.php:516
+msgid "Second Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:524
+msgid "Link Second Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:532
+msgid "Link on mouseover Second Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:540
+msgid "Content Background Color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:548
+msgid "Navigation"
+msgstr ""
+
+#: ../includes/panel/options_array.php:555
+msgid "Link color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:563
+msgid "Link on mouseover color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:571
+msgid "link background color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:579
+msgid "Subnavigation link color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:587
+msgid "Subnavigation link on mouseover color"
+msgstr ""
+
+#: ../includes/panel/options_array.php:595
+msgid "Subnavigation border top color"
+msgstr ""
+
+#: ../js/contact.js.php:46
+msgid "Please write your name"
+msgstr ""
+
+#: ../js/contact.js.php:53
+msgid "Please write your e-mail address"
+msgstr ""
+
+#: ../js/contact.js.php:59
+msgid "Please write a correct e-mail address"
+msgstr ""
+
+#: ../js/contact.js.php:66
+msgid "Please write message subject"
+msgstr ""
+
+#: ../js/contact.js.php:73
+msgid "Please write your message"
+msgstr ""

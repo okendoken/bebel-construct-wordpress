@@ -1,0 +1,16 @@
+.pos-fo { display: inline-block; width: 195px; font-size: 17px; }
+.pos-fo2 { width: 50%; height: 40px; margin-left: 20px; }
+.pos-fo2-msg { width: 50%; height: 120px; margin-left: 20px; }
+.pos-fo3 { clear:both; height:20px; }
+.pos-fo4 { display: inline-block; font-size: 17px; width: 191px; margin-top: 15px; }
+.pos-fo5 { display: inline-block; margin-top: 15px; margin-right: 15px; }
+.pos-fo6 { display: inline-block; font-size: 17px; width: 192px; margin-top: 15px; }
+.pos-fo7 { display: inline-block; width: 173px; font-size: 17px; }
+.pos-fo8 { width: 50%; height: 40px; margin-left: 20px; }
+.pos-fo9 { display: inline-block; width: 190px; font-size: 17px; }
+.pos-fo1 { clear:both; height:10px; }
+.pos-fo10 { display: inline-block; width: 195px; font-size: 17px; }
+.pos-fo11 { width: 50%; height: 40px; margin-left: 20px; }
+.widperc { width:100%; }
+.margto { margin-top:16px; }
+.widg-fo { border:none; overflow:hidden; width:100%; height:258px; }
