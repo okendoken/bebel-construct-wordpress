@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo CircleLaw_option('custom-favicon'); ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo CircleLaw_option('custom-favicon'); ?>" />
-    <?php
-        if ( is_singular() && get_option( 'thread_comments' ) )
-            wp_enqueue_script( 'comment-reply' );
-
-        wp_head();
-    ?>
+    <?php wp_head(); ?>
 </head>
 <body <?php if (isset($class)){ body_class($class); } ?>>
 
