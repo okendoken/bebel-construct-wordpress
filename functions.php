@@ -1,4 +1,12 @@
 <?php
+
+function theme_activation_function(){
+    //that one works well
+    echo 'yeah. I am called! DIE!!!!';
+
+}
+
+add_action('after_switch_theme', 'theme_activation_function');
 if ( ! isset( $content_width ) ) $content_width = 1000;
 // Support post theme setup
 add_action( 'after_setup_theme', 'CircleLaw_setup' );
@@ -64,7 +72,7 @@ array
         (
             "0" => ""
         ),
-    "main-color" => "#999999",
+    "main-color" => "#3d3d3d",
     "url-color" => "#414141",
     "urlh-color" => "#000000",
     "second-color" => "#ffbb03",
