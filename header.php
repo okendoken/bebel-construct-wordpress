@@ -13,16 +13,7 @@
 <div class="wrapper container">
   <!--Start Header-->
   <header>
-      <div class="logo home">
-          <div class="shadow"></div>
-          <a class="logo-content" href="<?php echo home_url(); ?>">
-              <!-- todo LOGO image -->
-              <span class="square"></span>
-              <span class="name">Construct</span>
-              <span class="slogan">We Build Things</span>
-          </a>
-<!--          <a href="--><?php //echo home_url(); ?><!--"><img src="--><?php //echo CircleLaw_option('site-logo'); ?><!--" alt="--><?php //bloginfo('name'); ?><!--" /></a>-->
-      </div><!--End Logo-->
+      <?php get_logo_template(); ?>
   </header><!--End Header-->
   <!--Start Main Content-->
   <div class="content">
