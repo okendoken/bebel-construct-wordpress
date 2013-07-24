@@ -1,5 +1,7 @@
 <?php
 
+require_once get_stylesheet_directory().'/includes/construct-menu-walker.class.php';
+
 function theme_activation_function(){
     //that one works well
     echo 'yeah. I am called! DIE!!!!';
@@ -594,7 +596,7 @@ function get_logo_template($bottom = false){
     $with_offset = is_singular() || is_home();?>
     <div class="logo <?php echo $bottom ? 'bottom' : ''; echo $with_offset ? ' offset' : ''; ?>">
         <div class="shadow"></div>
-        <a class="logo-content" href="">
+        <a class="logo-content" href="<?php echo home_url(); ?>">
             <span class="square"></span>
             <span class="name">Construct</span>
             <span class="slogan">We Build Things</span>
