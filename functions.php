@@ -4,21 +4,14 @@ if ( ! isset( $content_width ) ){
     $content_width = 988;
 }
 // Support post theme setup
-add_action( 'after_setup_theme', 'CircleLaw_setup' );
-function CircleLaw_setup() {
+add_action( 'after_setup_theme', 'construct_setup' );
+function construct_setup() {
 	add_theme_support('automatic-feed-links');
     add_theme_support( 'post-thumbnails' );
-	load_theme_textdomain( 'CircleLaw', get_template_directory() . '/lang' );
+	load_theme_textdomain( 'construct', get_template_directory() . '/lang' );
 	register_nav_menus( array(
-      'header-menu' => __( 'Header Menu', 'CircleLaw' )
+      'header-menu' => __( 'Header Menu', 'construct' )
 	) );
-}
-// Language
-load_theme_textdomain( 'CircleLaw', get_template_directory_uri().'/lang' );
-$locale = get_locale();
-$locale_file = get_template_directory_uri()."/lang/$locale.php";
-if ( is_readable($locale_file) ){
-    require_once($locale_file);
 }
 
 // Load Data
@@ -127,7 +120,7 @@ function CircleLaw_option ($optinid){
 // Get Opyions
 
 // Load theme scripts
-function CircleLaw_scripts_method() {
+function construct_scripts_method() {
 	wp_enqueue_script(
 		'bootstrap-transition',
 		get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-transition.js',
@@ -161,7 +154,7 @@ function CircleLaw_scripts_method() {
 		);
 	}
 }
-add_action('wp_enqueue_scripts', 'CircleLaw_scripts_method');
+add_action('wp_enqueue_scripts', 'construct_scripts_method');
 // Load theme scripts
 
 
