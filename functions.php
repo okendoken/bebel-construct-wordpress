@@ -200,7 +200,7 @@ function img_resize ($img_target,$img_width,$img_height){
 
 // Files Include
 require_once( get_template_directory() .'/includes/panel/option_func.php');
-require_once( get_template_directory() .'/includes/widget.php');
+require_once( get_template_directory() .'/includes/widgets.php');
 require_once( get_template_directory() .'/includes/shortcodes.php');
 require_once( get_template_directory() .'/includes/templates.php');
 require_once( get_template_directory() .'/includes/resize.class.php');
