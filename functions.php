@@ -111,14 +111,6 @@ function fl_add_shortcode_tinymce_plugin($plugin_array) {
 add_action( 'init', 'fl_shortcode_button' );
 // Start Shorcodes
 
-// Get Options
-function CircleLaw_option ($optinid){
-	$get_options = get_option('construct-options');
-	$get_option = $get_options['construct-options'];
-	return $get_option[$optinid];
-}
-// Get Opyions
-
 // Load theme scripts
 function construct_scripts_method() {
 	wp_enqueue_script(
@@ -173,36 +165,9 @@ function register_styles(){
 add_action('init', 'register_styles');
 // Register Theme Styles
 
-// Resize Image
-function img_resize ($img_target,$img_width,$img_height){
-	// Get Image Name
-	$img_name = pathinfo($img_target);
-	$img_ext = pathinfo($img_target, PATHINFO_EXTENSION);
-	$img_name = $img_name['filename'];
-	$img_name = $img_name."-".$img_width."x".$img_height.'.'.$img_ext;
-	// New Image Url
-	$uploaddir = wp_upload_dir();
-	$newimageurl = $uploaddir['url'].'/'.$img_name;
-	$newimagedir = $uploaddir['path'].'/'.$img_name;
-	// Original Image Dir
-	$img_target = str_replace($uploaddir['baseurl'], $uploaddir['basedir'], $img_target);
-	// Save Thumb Image
-	if (file_exists($newimagedir)) {
-		echo $newimageurl;
-	}else{
-		$resize_img = new resize($img_target);
-		$resize_img -> resizeImage($img_width, $img_height, 'crop');
-		$resize_img -> saveImage($newimagedir, 100);
-		echo $newimageurl;
-	}
-}
-// Resize Image
-
 // Files Include
-require_once( get_template_directory() .'/includes/panel/option_func.php');
 require_once( get_template_directory() .'/includes/widgets.php');
 require_once( get_template_directory() .'/includes/shortcodes.php');
 require_once( get_template_directory() .'/includes/templates.php');
-require_once( get_template_directory() .'/includes/resize.class.php');
 require_once get_stylesheet_directory().'/includes/construct-menu-walker.class.php';
 // Files Include

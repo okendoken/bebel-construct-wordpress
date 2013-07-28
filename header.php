@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo CircleLaw_option('custom-favicon'); ?>" />
-    <link rel="icon" type="image/x-icon" href="<?php echo CircleLaw_option('custom-favicon'); ?>" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/projects/wordpress/clean/wp-content/themes/Construct/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="http://localhost/projects/wordpress/clean/wp-content/themes/Construct/favicon.ico" />
     <?php wp_head(); ?>
 </head>
 <body <?php if (isset($class)){ body_class($class); } ?>>
