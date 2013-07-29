@@ -1,5 +1,48 @@
 <?php
 
+// load autoloader
+include_once get_stylesheet_directory().'/bebel/core/class/BebelAutoloader.class.php';
+$autoLoader = BebelAutoloader::getInstance();
+$autoLoader->register();
+
+$basicSettings = BebelUtils::parseStyleCss();
+
+$settings = new BebelSettings();
+$settings->setBaseInfo($basicSettings['base_theme_info']);
+
+$wordpress = new BebelWordpress();
+$postTypeGenerator = new BebelPostTypeGenerator($settings->getPrefix());
+
+$activeBundles = array(
+    // installation bundle
+    //'bebelOneClickInstallationBundle', todo include later
+
+    // our awesome global bundles
+    'bebelThemeBundle', // contains all the theme specific things
+    //'bebelMailchimpBundle'
+);
+
+$bundle = new BebelBundle($settings, $wordpress, $postTypeGenerator);
+
+// now load bundles.
+$bundle->registerMultiple($activeBundles);
+
+// extend the autoloader, so we also have access to the classes inside the bundles.
+$autoLoader->extend($bundle->loadAutoload());
+
+// continue loading bundles
+$bundle->loadSettings()->loadWordpress();
+
+BebelSingleton::addClasses(array(
+    'BebelBundle' => $bundle
+));
+
+// register all settings into the database, if not yet in it
+$settings->loadAll()->init();
+
+
+$wordpress->run();
+
 if ( ! isset( $content_width ) ){
     $content_width = 988;
 }
