@@ -37,25 +37,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         'default_background' => '%IMAGES_PATH%/example/background.jpg',
         'logo_header' => '',
         
-        // mainpage image
-        'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
-        'mainpage_text_logo' => '+people',
-        'mainpage_text_logo_load' => 'off',
-        'mainpage_text_introduction_title' => 'We Are The Social Firm',
-        'mainpage_text_introduction' => 'For more than a decade we are in the business of marketing and communication. See for yourself how we are able to help you make the most out of your business.',
-        
-        // blog page
-        'blog_overview_page' => '',
-        'blog_overview_page_text' => '',
-        
-        
-        // contact page
-        'contact_overview_page' => '',
-        'contact_email' => '',
-        'contact_address' => '',
-        'contact_address_html' => '',
-        'contact_text' => '',
-        
         /// mail settings
         'mailer_type' => 'mail',
         'mailer_smtp_host' => '',
@@ -69,25 +50,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         
         // google
         'googlefont' => '',
-        'google_analytics_name' => '',
-        
-        // update notifications
-        'update_notifications' => 'off',
-        
-        // social media
-        'twitter_username' => 'TheBebel',
-        'facebook_url' => '',
-        'feedburner_url' => '',
-        
-        
-        // color chooser
-        'color_logo' => '#7e725b',
-        'color_logo_hover' => '#7e7299',
         'color_text' => '#666666',
-        'color_more' => '#333333',
-        'color_submit' => '#333333',
-        'color_scrollbar' => '#7e725b',
-        'color_scrollbar_hover' => '#a39376',
         
     );
 
@@ -99,17 +62,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     
     $w = array(
         'theme_support' => array(
-            'menus',
             'post-thumbnails',
             'automatic-feed-links'
          ),
         'nav_menus' => array(
-            'top_menu' => 'Main Menu',
+            'header-menu' => __( 'Header Menu', BebelSingleton::getInstance('BebelSettings')->getPrefix() ),
         ),
         'actions' => array(),
         'filters' => array(
-            'widget_text' => 'do_shortcode',
-            'get_search_form' => array('bebelThemeUtils', 'getSearchForm'),
+            'widget_text' => 'do_shortcode'
         ),
         'enqueue_scripts' => array(
             'comment-reply' => array(

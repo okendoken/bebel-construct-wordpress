@@ -24,6 +24,12 @@ $activeBundles = array(
 
 $bundle = new BebelBundle($settings, $wordpress, $postTypeGenerator);
 
+BebelSingleton::addClasses(array(
+    'BebelSettings' => $settings,
+    'BebelWordPress' => $wordPress,
+    'BebelBundle' => $bundle
+));
+
 // now load bundles.
 $bundle->registerMultiple($activeBundles);
 
@@ -33,20 +39,10 @@ $autoLoader->extend($bundle->loadAutoload());
 // continue loading bundles
 $bundle->loadSettings()->loadWordpress();
 
-BebelSingleton::addClasses(array(
-    'BebelBundle' => $bundle
-));
-
 // register all settings into the database, if not yet in it
 $settings->loadAll()->init();
 
-
 $wordpress->run();
-
-BebelSingleton::addClasses(array(
-    'BebelSettings' => $settings,
-    'BebelWordPress' => $wordPress
-));
 
 $bundle->loadPostTypes();
 $bundle->loadWidgets();
@@ -75,8 +71,6 @@ if ( ! isset( $content_width ) ){
 // Support post theme setup
 add_action( 'after_setup_theme', 'construct_setup' );
 function construct_setup() {
-	add_theme_support('automatic-feed-links');
-    add_theme_support( 'post-thumbnails' );
 	load_theme_textdomain( 'construct', get_template_directory() . '/lang' );
 	register_nav_menus( array(
       'header-menu' => __( 'Header Menu', 'construct' )
