@@ -43,6 +43,21 @@ $settings->loadAll()->init();
 
 $wordpress->run();
 
+BebelSingleton::addClasses(array(
+    'BebelSettings' => $settings,
+    'BebelWordPress' => $wordPress
+));
+
+$bundle->loadPostTypes();
+$bundle->loadWidgets();
+$bundle->runHooks();
+
+if(is_admin())
+{
+    $admin = new BebelAdmin($settings, $bundle);
+    add_action('admin_menu', array($admin, 'initAdmin'));
+}
+
 if ( ! isset( $content_width ) ){
     $content_width = 988;
 }
@@ -212,5 +227,6 @@ add_action('init', 'register_styles');
 require_once( get_template_directory() .'/includes/widgets.php');
 require_once( get_template_directory() .'/includes/shortcodes.php');
 require_once( get_template_directory() .'/includes/templates.php');
-require_once get_stylesheet_directory().'/includes/construct-menu-walker.class.php';
+require_once( get_template_directory().'/includes/construct-menu-walker.class.php');
+require_once( get_template_directory().'/bebel/core/vendor/mobble/mobble.php');
 // Files Include

@@ -1,0 +1,205 @@
+
+
+
+#bebel_admin_panel_tabs {
+  margin: 0px;
+}
+
+.bebel_admin_panel_tabs_nav {
+}
+
+.bebel_admin_panel_tabs_nav_underline {
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: -9px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.bebel_admin_panel_tabs_nav li {
+  float: left;
+}
+
+.bebel_admin_meta_panel {
+
+}
+
+.bebel_admin_meta_panel h3 {
+	font-size:12px;
+	font-weight:bold;
+	line-height:1;
+	margin:0;
+	padding:7px 9px;
+}
+
+.bebel_admin_meta_panel .inside {
+  padding: 15px 10px;
+}
+
+.widget_title {
+  float: left;
+  width: 140px;
+}
+.widget_title h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.widget_title_top {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.widget_widget {
+  float: left;
+}
+
+.sidebars_table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 350px;
+}
+.sidebars_table td,
+.sidebars_table th {
+  border: 1px solid #eee;
+  padding: .6em 10px;
+  text-align: left;
+}
+
+.sidebars_table th
+{
+  background: #f3f3f3;
+}
+
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; font-size: 11px; }
+
+
+.bebel_admin_meta_panel_tabs_nav_container {
+  position: relative;
+  padding-bottom: 50px;
+}
+.bebel_admin_meta_panel_tabs_nav {
+  position: absolute;
+  margin-left: 23px;
+  left: 0px;
+  top: -12px;
+  right: 67px;
+  height: 38px;
+  background: url(../images/bebelui/meta_panel_middle.png);
+}
+
+.bebel_admin_meta_panel_tabs_nav li {
+  float: left;
+  padding-right: 30px;
+  line-height: 38px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.bebel_admin_meta_panel_tabs_nav li a {
+  color: #666;
+  text-shadow: 1px 1px 1px #fff;
+  text-decoration: none;
+}
+.bebel_admin_meta_panel_tabs_nav li a:hover {
+  color: #333;
+  text-shadow: 1px 1px 1px #fff;
+  text-decoration: none;
+}
+
+#bebel_admin_meta_panel_tabs {
+  padding: 0px;
+}
+
+.import-data {
+  width: 600px;
+}
+
+
+.bebel_admin_panel_submenu_container {
+  border-style: solid solid none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-width: 1px 1px 0;
+  border-color: #E3E3E3;
+  text-decoration: none;
+}
+
+.bebel_admin_panel_submenu_container a.menu-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  line-height: 20px;
+  width: 133px;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  background:  #efefef;
+  color: #000;
+  padding-left: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+.bebel_admin_panel_submenu_container .submenu {
+  width: 100%;
+  margin: 0px;
+}
+
+.bebel_admin_panel_submenu_container .submenu li {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bebel_admin_panel_submenu_container .submenu li a {
+  color: #21759B;
+  width: 128px;
+  display: block;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.bebel_admin_panel_submenu_container .submenu li a:hover, .bebel_admin_panel_submenu_container_active {
+  background:  #f5f5f5;
+}
+
+.bebel_admin_panel_submenu_container .submenu li a .description {
+  font-size: 11px;
+}
+
+.bebel_admin_panel_main_container {
+  background:  #f1f1f1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #e3e3e3;
+  padding: 22px 0;
+}
+
+.bebel_admin_panel_main_container .widget {
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+}
+
+
+.bebel_admin_panel_main_container h4 {
+  padding-right: 10px;
+}
+
+.ui-slider-handle {
+  background: #e3e3e3 !important;
+  border: 1px solid #888 !important;
+}
+
+.ui-slider-range {
+  background: #21759B !important;
+}
+
+

@@ -213,16 +213,11 @@ class BebelUtils
 
         wp_enqueue_script('media-upload');
         wp_enqueue_script('thickbox');
-        //wp_deregister_script('jquery-ui-core');
-        //wp_enqueue_script('jquery-ui-core', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.core.min.js', array('jquery'));
+
         wp_enqueue_script('jquery-ui-widget', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.widget.min.js', array('jquery', 'jquery-ui-core'));
         wp_enqueue_script('jquery-ui-mouse', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.mouse.min.js', array('jquery', 'jquery-ui-core'));
         wp_enqueue_script('jquery-ui-slider', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.slider.min.js', array('jquery', 'jquery-ui-mouse'));
-        //wp_deregister_script('jquery-ui-draggable');
-        //wp_deregister_script('jquery-ui-resizable');
-        //wp_deregister_script('jquery-ui-dialog');
-        //wp_enqueue_script('jquery-ui-draggable', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.draggable.min.js', array('jquery', 'jquery-ui-mouse'));
-        //wp_enqueue_script('jquery-ui-resizable', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.resizable.min.js', array('jquery', 'jquery-ui-draggable'));
+
         wp_enqueue_script('jquery-ui-dialog', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/jquery-ui/jquery.ui.dialog.min.js', array('jquery', 'jquery-ui-draggable'));
 
         // color picker
@@ -234,6 +229,33 @@ class BebelUtils
         wp_enqueue_style('960', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/css/960_24_col.css', array());
         wp_enqueue_style('bebel-admin', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/css/admin.css', array('960'));
         wp_enqueue_style('colorpicker', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/css/colorpicker.css', array());
+
+    }
+
+    /**
+     * converts an hex code to rgb (needed for colorpicker)
+     *
+     * @see http://www.anyexample.com/programming/php/php_convert_rgb_from_to_html_hex_color.xml
+     * @param string $color
+     * @return array
+     */
+    public static function hex2rgb($color)
+    {
+        if ($color[0] == '#')
+            $color = substr($color, 1);
+
+        if (strlen($color) == 6)
+            list($r, $g, $b) = array($color[0].$color[1],
+                $color[2].$color[3],
+                $color[4].$color[5]);
+        elseif (strlen($color) == 3)
+            list($r, $g, $b) = array($color[0].$color[0], $color[1].$color[1], $color[2].$color[2]);
+        else
+            return false;
+
+        $r = hexdec($r); $g = hexdec($g); $b = hexdec($b);
+
+        return array($r, $g, $b);
 
     }
 

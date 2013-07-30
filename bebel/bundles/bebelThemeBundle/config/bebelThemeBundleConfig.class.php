@@ -618,25 +618,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     $post_modules['widgets'] = array_merge_recursive($post_modules['widgets'], $slider_images);
 
     $pages = array(
-        /*
-        'bebelSidebars' =>
-          array(
-              'title' => 'Sidebar Generator',
-              'page_title' => 'Generate your sidebars here!',
-              'parent' => 'bebelAdminTop',
-              'permission' => 'edit_theme_options',
-              'class' => $this->bundleDir
-
-          ),
-        
-        'import' =>
-          array(
-              'title' => 'Im- / Export Settings',
-              'page_title' => 'Import or export the settings you set up!',
-              'parent' => 'bebelAdminTop',
-              'permission' => 'edit_theme_options',
-              'class' => $this->bundleDir
-          ), */
         'bebelHelp' =>
           array(
               'title' => 'Help & Support',
@@ -697,9 +678,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
   {
       if(!is_admin())
       {
-            $override_layout_files = new bebelThemeBundleLayoutFiles();
-            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_css_files'));
-            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_js_files'));
+          //todo what this shit is for?
+//            $override_layout_files = new bebelThemeBundleLayoutFiles();
+//            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_css_files'));
+//            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_js_files'));
       }
       include dirname(__FILE__).'/../misc/google_font_list.php';
   }

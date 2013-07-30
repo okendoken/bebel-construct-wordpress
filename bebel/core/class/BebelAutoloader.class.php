@@ -101,7 +101,7 @@ class BebelAutoloader
 
         // admin
         'bebeladmin' => 'core/class/BebelAdmin.class.php',
-        'bebeladmingeneratorbase' => 'core/class/BebelAdmingeneratorBase.class.php',
+        'bebeladmingeneratorbase' => 'core/class/BebelAdminGeneratorBase.class.php',
         'bebeladminpanel' => 'core/class/BebelAdminPanel.class.php',
         'bebeladminconfig' => 'core/class/BebelAdminConfig.class.php',
         'bebeladminmetapanel' => 'core/class/BebelAdminMetaPanel.class.php',
