@@ -58,6 +58,17 @@ if(is_admin())
     add_action('admin_menu', array($admin, 'initAdmin'));
 }
 
+function bebel_custom_excerpt_length( $length ) {
+    return 13;
+}
+
+add_filter( 'excerpt_length', 'bebel_custom_excerpt_length', 999 );
+
+function bebel_new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'bebel_new_excerpt_more');
+
 if ( ! isset( $content_width ) ){
     $content_width = 988;
 }

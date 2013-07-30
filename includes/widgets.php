@@ -61,10 +61,7 @@ class NewsWidget extends WP_Widget {
             <ul>
                 <?php while ( $q->have_posts() ) : $q->the_post(); ?>
                     <div class="post">
-                        <p>
-                            <?php echo substr(strip_tags(apply_filters('the_content', get_the_content())), 0, 73); //just few lines of content?>
-                            ...
-                        </p>
+                        <?php the_excerpt()?>
                         <a href="<?php the_permalink() ?>"  title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>" class="more-link">more...</a>
                     </div>
                 <?php endwhile; ?>
