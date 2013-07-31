@@ -19,7 +19,8 @@ class BebelWordPress
     $nav_menus = array(),
     $admin_panel = array(),
     $image_sizes = array(),
-    $utils;
+    $utils,
+    $defaultEnvironment = 'frontend';
 
 
   public function __construct()
@@ -69,73 +70,72 @@ class BebelWordPress
     }
 
   }
-  
-  
+
+
   public function addScriptsToWordpress()
   {
-      $environment = BebelUtils::getEnvironment();
-      
+      $currentEnvironment = BebelUtils::getEnvironment();
+      $defaultOptions = array(
+          'environment' => $this->defaultEnvironment,
+          'footer' => true,
+          'version' => false,
+          'dependency' => array(),
+          'path' => false,
+          'when' => '__return_true'
+      );
+
       foreach($this->enqueue_scripts as $script => $source)
       {
-         /**
-         * deregister script for frontend. we need our version.
-         */
-        if($script == 'jquery' && $environment == 'frontend')
-        {
-          wp_deregister_script('jquery');
-        }
-          
-        if($source)
-        {
-
-          if($source['environment'] == $environment)
-          {
-            if(!isset($source['path']) && (!isset($source['dependency']) || $source['dependency'] == null))
-            {
-              wp_enqueue_script($script);
-            }else {
-              if(isset($source['dependency']) && $source['dependency'] != null) {
-                wp_enqueue_script($script, BebelUtils::replaceSettingTokens($source['path']), array($source['dependency']));
-              }else {
-                wp_enqueue_script($script, BebelUtils::replaceSettingTokens($source['path']));
-              }
-            }
+          if (is_int($script)){ //imagine array('script1', 'script2' => array('path'=>'some/path')). 'script1' should be they key too, right?
+              $script = $source;
+              $source = array();
           }
-        }else {
-          wp_enqueue_script($script);
-        }
+          $options = array_merge($defaultOptions, $source); //we don't need to set 'frontend' everytime
 
-          
-    }# end foreach
+          if($options['environment'] == $currentEnvironment && $options['when']())
+          {
+              wp_enqueue_script(
+                  $script,
+                  BebelUtils::replaceSettingTokens($options['path']),
+                  $options['dependency'],
+                  $options['version'],
+                  $options['footer']
+              );
+          }
+
+
+      }# end foreach
 
   }
-  
-  
+
+
   public function addStylesToWordpress()
   {
-      $environment = BebelUtils::getEnvironment();
+      $currentEnvironment = BebelUtils::getEnvironment();
+      $defaultOptions = array(
+          'environment' => $this->defaultEnvironment,
+          'path' => false,
+          'when' => '__return_true'
+      );
+
       foreach($this->enqueue_styles as $style => $source)
-        {
-          if($source)
+      {
+          if (is_int($style)){ //imagine array('style1', 'style2' => array('path'=>'some/path')). 'style1' should be they key too, right?
+              $style = $source;
+              $source = array();
+          }
+          $options = array_merge($defaultOptions, $source); //we don't need to set 'frontend' everytime
+
+          if($options['environment'] == $currentEnvironment && $options['when']())
           {
-            if($source['environment'] == $environment)
-            {
-              // skip nocache file if prod mode is on
-              
-              
-              if(isset($source['dependency']) && $source['dependency'] != null) {
-                wp_enqueue_style($style, BebelUtils::replaceToken($source['path'], 'BCP_BUNDLE_PATH'), array($source['dependency']));
-              }else {
-                wp_enqueue_style($style, BebelUtils::replaceToken($source['path'], 'BCP_BUNDLE_PATH'));
-              }
-
-
-            }
-          }else {
-            wp_enqueue_style($style);
+              wp_enqueue_style(
+                  $style,
+                  BebelUtils::replaceSettingTokens($options['path'])
+              );
           }
 
-        }
+
+      }# end foreach
   }
 
   /**
@@ -143,9 +143,6 @@ class BebelWordPress
    */
   public function run()
   {
-    // get environment and production mode
-    $environment = BebelUtils::getEnvironment();
-    $production_mode = BebelUtils::getProductionMode();
 
     if(!empty($this->actions)) {
       foreach($this->actions as $action => $value)
@@ -171,7 +168,7 @@ class BebelWordPress
 
     if(!empty($this->nav_menus))
     {
-        
+
       register_nav_menus($this->nav_menus);
     }
 
@@ -179,7 +176,7 @@ class BebelWordPress
     {
       foreach($this->image_sizes as $name => $size)
       {
-        add_image_size($name, $size[0], $size[1], $size[2]); 
+        add_image_size($name, $size[0], $size[1], $size[2]);
       }
     }
 
@@ -197,7 +194,7 @@ class BebelWordPress
 
   public function initAdmin()
   {
-    
+
   }
 
 

@@ -49,13 +49,17 @@ class BebelUtils
 
     }
 
-    public static function setEnvironment($env)
-    {
-        self::$environment = $env;
-    }
+//    public static function setEnvironment($env)
+//    {
+//        self::$environment = $env;
+//    }
 
     public static function getEnvironment()
     {
+        if(!isset(self::$environment))
+        {
+            self::$environment = is_admin() ? 'backend': 'frontend';
+        }
         return self::$environment;
     }
 

@@ -14,9 +14,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
   {
     $a = array(
         'bebelthemebundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleAdminConfig.class.php',
-        'bebelthemebundlelayoutfiles' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleLayoutFiles.class.php',
-        'bebelthemeutils' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeUtils.class.php',
-        'bebelthememailing' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeMailing.class.php',
         
         
     );
@@ -60,9 +57,42 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'widget_text' => 'do_shortcode'
         ),
         'enqueue_scripts' => array(
-            'comment-reply' => array(
-                'environment' => 'frontend'
+            'bootstrap-transition' => array(
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-transition.js',
+                'dependency' => array('jquery')
             ),
+            'bootstrap-dropdown' => array(
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-dropdown.js',
+                'dependency' => array('jquery')
+            ),
+            'bootstrap-collapse' => array(
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-collapse.js',
+                'dependency' => array('jquery')
+            ),
+            'app' => array(
+                'path' => get_template_directory_uri() . '/js/app.js',
+                'dependency' => array('jquery')
+            ),
+            //page specific scripts
+            'bootstrap-carousel' => array(
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-carousel.js',
+                'dependency' => array('jquery'),
+                'when' => create_function('', 'return is_home() || is_singular();')
+            ),
+            'home' => array(
+                'path' => get_template_directory_uri() . '/js/home.js',
+                'dependency' => array('jquery'),
+                'when' => create_function('', 'return is_home() || is_singular();')
+            ),
+            'comment-reply'
+        ),
+        'enqueue_styles' => array(
+            'main-stylesheet' => array(
+                'path' => get_template_directory_uri() .	'/style.css'
+            ),
+            'application' => array(
+                'path' => get_template_directory_uri() .	'/css/style.css'
+            )
         ),
         'image_sizes' => array(
             'post-single-wide'   => array(685, 280, true),
@@ -166,18 +196,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     );
 
     return $bs;
-  }
-  
-  public function runHook()
-  {
-      if(!is_admin())
-      {
-          //todo what this shit is for?
-//            $override_layout_files = new bebelThemeBundleLayoutFiles();
-//            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_css_files'));
-//            add_action('wp_enqueue_scripts', array($override_layout_files, 'override_js_files'));
-      }
-      include dirname(__FILE__).'/../misc/google_font_list.php';
   }
 
 }
