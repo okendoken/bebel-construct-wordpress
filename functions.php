@@ -26,7 +26,7 @@ $bundle = new BebelBundle($settings, $wordpress, $postTypeGenerator);
 
 BebelSingleton::addClasses(array(
     'BebelSettings' => $settings,
-    'BebelWordPress' => $wordPress,
+    'BebelWordPress' => $wordpress,
     'BebelBundle' => $bundle
 ));
 
