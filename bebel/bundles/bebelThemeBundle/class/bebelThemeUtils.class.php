@@ -2,7 +2,6 @@
 
 class bebelThemeUtils
 {
-    private static $menuWalker;
 
     public static function getPageFooterTemplate($mobile = false){ ?>
         <footer class="page-footer <?php echo $mobile ? 'visible-phone' : 'hidden-phone'; ?>">
@@ -22,11 +21,4 @@ class bebelThemeUtils
             </a>
         </div><!--end .logo-->
     <?php }
-
-    public static function getMenuWalker(){
-        if (!isset(bebelThemeUtils::$menuWalker)){
-            bebelThemeUtils::$menuWalker = new ConstructMenuWalker();
-        }
-        return bebelThemeUtils::$menuWalker;
-    }
 }
