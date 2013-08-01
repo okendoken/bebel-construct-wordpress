@@ -46,7 +46,7 @@ if($api_key == '')
         }else{
         ?>
 
-        <select name="bSettings[<?php echo $key ?>]">
+        <select name="<?php echo $this->settings->getPrefix() ?>-settings[<?php echo $key ?>]">
             <?php echo $lists; ?>
         </select>
 

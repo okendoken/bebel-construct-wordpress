@@ -93,10 +93,10 @@ class BebelAdminPanel extends BebelAdminGeneratorBase {
 
   public function save($post)
   {
-    if(!isset($post[$this->settings->getPrefix().'settings'])) {
-      throw new BebelException(sprintf('You tried to save something but gave me no array to save! Default is %s', $this->settings->getPrefix().'settings'));
+    if(!isset($post[$this->settings->getPrefix().'-settings'])) {
+      throw new BebelException(sprintf('You tried to save something but gave me no array to save! Default is %s', $this->settings->getPrefix().'-settings'));
     }
-    foreach($post[$this->settings->getPrefix().'settings'] as $key => $value) {
+    foreach($post[$this->settings->getPrefix().'-settings'] as $key => $value) {
       $settings_whitelist = $this->settings->getAllRegistered(); 
       if(isset($settings_whitelist[$key])) {
         $this->settings->update($key, $value);
