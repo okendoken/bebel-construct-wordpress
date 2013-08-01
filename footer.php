@@ -2,8 +2,8 @@
       <hr class="visible-phone"/>
       <?php
           get_sidebar();
-          get_page_footer_template(true);
-          get_logo_template(true);
+          bebelThemeUtils::getPageFooterTemplate(true);
+          bebelThemeUtils::getLogoTemplate(true);
       ?>
 
     </div><!-- end .container -->

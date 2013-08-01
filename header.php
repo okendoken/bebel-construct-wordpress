@@ -13,7 +13,7 @@
 <div class="wrapper container">
   <!--Start Header-->
   <header>
-      <?php get_logo_template(); ?>
+      <?php bebelThemeUtils::getLogoTemplate(); ?>
   </header><!--End Header-->
   <!--Start Main Content-->
   <div class="content">

@@ -7,7 +7,7 @@
         get_template_part( 'includes/templates/_carousel', get_post_format() );
         get_template_part( 'includes/templates/_article', get_post_format() );
 
-        get_page_footer_template();
+        bebelThemeUtils::getPageFooterTemplate();
     }
 }
 ?>

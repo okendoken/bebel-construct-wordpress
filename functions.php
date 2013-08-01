@@ -1,7 +1,7 @@
 <?php
 
 // load autoloader
-include_once get_stylesheet_directory().'/bebel/core/class/BebelAutoloader.class.php';
+require_once get_stylesheet_directory().'/bebel/core/class/BebelAutoloader.class.php';
 $autoLoader = BebelAutoloader::getInstance();
 $autoLoader->register();
 
@@ -74,7 +74,5 @@ function construct_setup() {
 }
 
 // Files Include
-require_once( get_template_directory() .'/includes/templates.php');
-require_once( get_template_directory().'/includes/construct-menu-walker.class.php');
 require_once( get_template_directory().'/bebel/core/vendor/mobble/mobble.php');
 // Files Include
