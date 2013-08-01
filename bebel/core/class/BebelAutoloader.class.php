@@ -93,10 +93,7 @@ class BebelAutoloader
         'bebelwordpress'  => 'core/class/BebelWordPress.class.php',
         'bebelutils'  => 'core/class/BebelUtils.class.php',
         'bebelsingleton' => 'core/class/BebelSingleton.class.php',
-        'bebelqueryholder' => 'core/class/BebelQueryHolder.class.php',
-        'bebeltemplateloader' => 'core/class/BebelTemplateloader.class.php',
         'bebelposttypegenerator' => 'core/class/BebelPostTypeGenerator.class.php',
-        'bebeltablesinstall' => 'core/class/BebelTablesInstall.class.php',
         'bebelwidgetbase' => 'core/class/BebelWidgetBase.class.php',
 
         // admin

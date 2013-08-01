@@ -210,6 +210,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
     public function getSidebars()
     {
+
         return array(array(
             'name' => __( 'Sidebar', BebelSingleton::getInstance('BebelSettings')->getPrefix() ),
             'id' => 'sidebar-1',

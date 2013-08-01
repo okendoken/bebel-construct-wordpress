@@ -519,7 +519,7 @@ class BebelUtils
      *
      * @return string  $password
      */
-    function mnemonicCode($lenght = 3, $digits = 0, $upperlowercase = true)
+    public static function mnemonicCode($lenght = 3, $digits = 0, $upperlowercase = true)
     {
 
         if($upperlowercase)

@@ -229,7 +229,7 @@
 		</ul>
 		
 		<p>Why that? Because of possible updates in the future. We do not give support for custom modified files. </p>
-		<p>However, all template files (header-*.php, footer.php, comments.php and the files in the templates/ folder) and images can of course be modified. The restrictions are only valid for the bebelCp2 folder, and the functions.php</p>
+		<p>However, all template files (header-*.php, footer.php, comments.php and the files in the templates/ folder) and images can of course be modified. The restrictions are only valid for the bebel folder, and the functions.php</p>
 		
 		<h4 id="your-css"><strong>1) Custom CSS</strong> - <a href="#toc">top</a></h4>
 		
