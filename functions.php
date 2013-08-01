@@ -43,7 +43,7 @@ $settings->loadAll()->init();
 $wordpress->run();
 
 $bundle->loadPostTypes();
-$bundle->loadWidgets();
+add_action( 'widgets_init', array($bundle, 'loadWidgets'));
 $bundle->runHooks();
 
 if(is_admin())

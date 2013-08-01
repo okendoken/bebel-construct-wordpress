@@ -13,8 +13,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
   public function getAutoload()
   {
     $a = array(
-        'bebelthemebundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleAdminConfig.class.php',
-        
+        'newswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsWidget.class.php',
+        'newsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsletterWidget.class.php',
         
     );
 
@@ -197,5 +197,13 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
     return $bs;
   }
+
+    public function getWidgets()
+    {
+        return array(
+            'NewsWidget',
+            'NewsletterWidget',
+        );
+    }
 
 }
