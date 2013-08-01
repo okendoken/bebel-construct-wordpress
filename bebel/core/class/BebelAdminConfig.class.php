@@ -3,11 +3,13 @@
 
 abstract class BebelAdminConfig {
   protected
-    $settings;
-  
-  public function __construct()
+    $settings,
+    $bundleDir;
+
+  public function __construct($bundleDir)
   {
       $this->settings = BebelSingleton::getInstance('BebelSettings');
+      $this->bundleDir = $bundleDir;
   }
 
 

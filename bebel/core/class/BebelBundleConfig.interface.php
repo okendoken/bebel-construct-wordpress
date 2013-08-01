@@ -13,5 +13,6 @@ interface BebelBundleConfigInterface
   public function getTableInstallData();
   public function getBundleSettings();
   public function getWidgets();
+  public function getSidebars();
   public function runHook();
 }

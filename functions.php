@@ -44,6 +44,7 @@ $wordpress->run();
 
 $bundle->loadPostTypes();
 add_action( 'widgets_init', array($bundle, 'loadWidgets'));
+$bundle->loadSidebars();
 $bundle->runHooks();
 
 if(is_admin())
@@ -73,8 +74,6 @@ function construct_setup() {
 }
 
 // Files Include
-require_once( get_template_directory() .'/includes/widgets.php');
-require_once( get_template_directory() .'/includes/shortcodes.php');
 require_once( get_template_directory() .'/includes/templates.php');
 require_once( get_template_directory().'/includes/construct-menu-walker.class.php');
 require_once( get_template_directory().'/bebel/core/vendor/mobble/mobble.php');

@@ -181,4 +181,18 @@ class BebelBundle
     }
   }
 
+    public function loadSidebars()
+    {
+        $sidebars = array();
+        foreach($this->bundles as $bundle)
+        {
+            $sidebars = array_merge_recursive($sidebars, $bundle->getSidebars());
+        }
+        foreach($sidebars as $sidebar )
+        {
+            register_sidebar($sidebar);
+        }
+        return $this;
+    }
+
 }

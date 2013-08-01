@@ -15,6 +15,7 @@ abstract class BebelBundleConfig implements BebelBundleConfigInterface
   public function getTableInstallData() { return array(); }
   public function getBundleSettings() { return array(); }
   public function getWidgets() { return array(); }
+  public function getSidebars() {return array(); }
   public function runHook() {}
 
   public function getBundleDir()

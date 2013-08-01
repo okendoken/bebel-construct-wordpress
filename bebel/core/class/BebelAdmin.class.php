@@ -68,7 +68,7 @@ class BebelAdmin
         $page_title = !isset($page['page_title']) ? $page['title'] : $page['page_title'];
 
         $class = $page['class'].'AdminConfig';
-        $this->admin_class[$key] = new $class();
+        $this->admin_class[$key] = new $class($page['class']);
         $method_name = 'get'.ucfirst($key);
 
         add_submenu_page($page['parent'], $page_title, $page['title'], $page['permission'], $key, array($this->admin_class[$key],$method_name));
