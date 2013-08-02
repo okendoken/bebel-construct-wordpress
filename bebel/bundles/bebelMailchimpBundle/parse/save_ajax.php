@@ -20,7 +20,7 @@ $api = new BebelMailchimp();
 if($api->check() == 'valid')
 {
     
-    $mc_list = $bSettings->get('mailchimp_default_list');
+    $mc_list = BebelSingleton::getInstance('BebelSettings')->get('mailchimp_default_list');
     
     $mc_result = $api->listSubscribe($mc_list, $valid_data['email']);
 
