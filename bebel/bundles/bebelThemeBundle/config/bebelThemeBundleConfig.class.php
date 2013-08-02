@@ -203,8 +203,11 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     public function getWidgets()
     {
         return array(
-            'NewsWidget',
-            'NewsletterWidget',
+            array(
+                'widget-class' => 'NewsWidget',
+                'name' => 'news',
+                'autoload' => true
+            )
         );
     }
 

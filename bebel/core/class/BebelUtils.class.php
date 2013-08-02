@@ -809,20 +809,6 @@ class BebelUtils
         return basename($_SERVER['PHP_SELF']);
     }
 
-    public static function deactivateWidgets($widgets)
-    {
-        if(is_array($widgets))
-        {
-            foreach($widgets as $widget)
-            {
-                unregister_widget($widget);
-            }
-        }else {
-            unregister_widget($widgets);
-        }
-
-    }
-
     public static function parseStyleCss()
     {
         $basic_settings = array();

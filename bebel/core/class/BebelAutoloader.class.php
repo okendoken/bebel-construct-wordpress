@@ -95,6 +95,7 @@ class BebelAutoloader
         'bebelsingleton' => 'core/class/BebelSingleton.class.php',
         'bebelposttypegenerator' => 'core/class/BebelPostTypeGenerator.class.php',
         'bebelwidgetbase' => 'core/class/BebelWidgetBase.class.php',
+        'bebelwidgetautoinstaller' => 'core/class/BebelWidgetAutoInstaller.class.php',
 
         // admin
         'bebeladmin' => 'core/class/BebelAdmin.class.php',

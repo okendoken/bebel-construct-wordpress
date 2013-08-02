@@ -155,11 +155,14 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
   
   public function getWidgets()
   {
-    $w = array(
-        'bebelWidgetMailchimpNewsletter',
-    );
 
-    return $w;
+      return array(
+          array(
+              'widget-class' => 'bebelWidgetMailchimpNewsletter',
+              'name' => 'BebelWidgetMailchimpNewsletter',
+              'autoload' => false
+          )
+      );
   }
 
 }
