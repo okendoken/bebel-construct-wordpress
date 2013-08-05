@@ -32,7 +32,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
 
 
-            'default_background' => '%IMAGES_PATH%/example/background.jpg',
+            'default_background' => '%IMAGES_PATH%/background.jpg',
             'logo_header' => '',
 
             'color_text' => '#666666',
