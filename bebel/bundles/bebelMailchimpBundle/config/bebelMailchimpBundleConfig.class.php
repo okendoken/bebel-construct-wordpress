@@ -16,9 +16,8 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
         'bebelmailchimpbundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelMailchimpBundleAdminConfig.class.php',
         'bebelmailchimputils' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelMailchimpUtils.class.php',
         'bebelmailchimp' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelMailchimp.class.php',
-        
+
         // widget
-        'bebelwidgetmailchimpnewsletter' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/class/bebelWidgetMailchimpNewsletter.class.php',
         'newsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsletterWidget.class.php',
         
         
@@ -49,13 +48,6 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
     {
 
         $w = array(
-            'enqueue_scripts' => array(
-                'newsletter' => array(
-                    'path' => get_template_directory_uri().BebelUtils::getBundlePath().'/'.$this->bundleDir.'/widgets/assets/newsletter.js',
-                    'dependency' => array('jquery'),
-                    'when' => create_function('', 'return true;') //todo check newsletter widget active
-                )
-            )
         );
 
         return $w;
@@ -167,11 +159,6 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
   {
 
       return array(
-          array(
-              'widget-class' => 'bebelWidgetMailchimpNewsletter',
-              'name' => 'BebelWidgetMailchimpNewsletter',
-              'autoload' => false
-          ),
           array(
               'widget-class' => 'NewsletterWidget',
               'name' => 'newsletter',

@@ -1,6 +1,7 @@
 <?php
 
 class NewsletterWidget extends WP_Widget {
+    private $bundleDir = 'bebelMailchimpBundle';
 
     function __construct() {
         $widget_ops = array('classname' => 'widget_newsletter', 'description' => __( "Newsletter subscription form") );
@@ -29,7 +30,7 @@ class NewsletterWidget extends WP_Widget {
 
         $title = apply_filters('widget_title', empty($instance['title']) ? __('Newsletter') : $instance['title'], $instance, $this->id_base);
         $description = apply_filters('widget_description', empty($instance['description']) ? __('Get Notifications') : $instance['description'], $instance, $this->id_base);
-        $url = get_stylesheet_directory_uri().BebelUtils::getBundlePath().'/bebelMailchimpBundle/parse/save_ajax.php';?>
+        $url = site_url()."/wp-admin/admin-ajax.php";?>
 
         <?php echo $before_widget; ?>
         <?php if ( $title ) echo $before_title . $title . $after_title; ?>
@@ -45,13 +46,21 @@ class NewsletterWidget extends WP_Widget {
         <?php
         $cache[$args['widget_id']] = ob_get_flush();
         wp_cache_set('widget_newsletter', $cache, 'widget');
+
+        //widget specific js
+        wp_enqueue_script(
+            'newsletter',
+            get_template_directory_uri().BebelUtils::getBundlePath().'/'.$this->bundleDir.'/widgets/assets/newsletter.js',
+            array('jquery'),
+            false,
+            true
+        );
     }
 
     function update( $new_instance, $old_instance ) {
         $instance = $old_instance;
         $instance['title'] = strip_tags($new_instance['title']);
         $instance['description'] = strip_tags($new_instance['description']);
-        $instance['list'] = strip_tags($new_instance['list']);
         $this->flush_widget_cache();
 
         $alloptions = wp_cache_get( 'alloptions', 'options' );
@@ -77,8 +86,6 @@ class NewsletterWidget extends WP_Widget {
         <?php
         $settings = BebelSingleton::getInstance('BebelSettings');
         $api_key = $settings->get('mailchimp_apikey');
-        $show_lists = false;
-        $list = isset( $instance['list'] ) ? esc_attr( $instance['list'] ) : '';
 
         if($api_key == '') {
             echo '<span style="color: #ff0000"><b>Error:</b> You have to insert a valid api key!</span>';
@@ -86,20 +93,10 @@ class NewsletterWidget extends WP_Widget {
             $mcapi = new BebelMailchimp($api_key);
             if($mcapi->check() == "invalid") {
                 echo '<span style="color: #ff0000"><b>Error:</b> You have to insert a valid api key!</span>';
-            }else {
-                $lists = $mcapi->getLists();
-                $lists = BebelMailchimpUtils::createListforList($lists, $list);
-                $show_lists = true;
+            } else {
+                echo '<p class="help">Displays a newsletter signup form that directly sends the email addresses to mailchimp.</p>';
             }
         }
-        if($show_lists):
-            ?>
-            <label for="<?php echo $this->get_field_id('mailchimp_list') ?>"><?php echo __('Mailchimp List', $settings->getPrefix()) ?></label>
-            <select id="<?php echo $this->get_field_id('mailchimp_list') ?>" name="<?php echo $this->get_field_name('mailchimp_list') ?>">
-                <?php echo $lists; ?>
-            </select>
-            <p class="help">Displays a newsletter signup form that directly sends the email addresses to mailchimp.</p>
-        <?php endif;
     }
 }
 // End Newsletter widget

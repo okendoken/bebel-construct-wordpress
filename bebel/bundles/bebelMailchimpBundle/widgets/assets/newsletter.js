@@ -6,7 +6,11 @@ jQuery(function($){
         $.ajax({
             type: "POST",
             url: $this.attr('action'),
-            data: {email: $this.find('.email').val()}
+            data: {
+                action: 'bebel_do_ajax',
+                fn: 'mailchimp_subscribe',
+                email: $this.find('.email').val()
+            }
         }).done(function( msg ) {
                 alert(msg);
             });
