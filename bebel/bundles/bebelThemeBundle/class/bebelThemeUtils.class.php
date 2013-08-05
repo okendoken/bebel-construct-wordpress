@@ -21,4 +21,11 @@ class bebelThemeUtils
             </a>
         </div><!--end .logo-->
     <?php }
+
+    public static function activeNavClass($classes){
+        if( in_array('current-menu-item', $classes) ){
+            $classes[] = 'active ';
+        }
+        return $classes;
+    }
 }

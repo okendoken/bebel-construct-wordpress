@@ -55,7 +55,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             ),
             'actions' => array(),
             'filters' => array(
-                'widget_text' => 'do_shortcode'
+                'widget_text' => 'do_shortcode',
+                'nav_menu_css_class' => array('bebelThemeUtils', 'activeNavClass')
             ),
             'enqueue_scripts' => array(
                 'bootstrap-transition' => array(
