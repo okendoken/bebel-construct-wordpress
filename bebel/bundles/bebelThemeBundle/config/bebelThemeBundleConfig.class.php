@@ -16,7 +16,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'bebelthemebundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleAdminConfig.class.php',
             'bebelthemeutils' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeUtils.class.php',
             'newswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsWidget.class.php',
-            'newsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsletterWidget.class.php',
             'constructmenuwalker' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/ConstructMenuWalker.class.php'
         );
 

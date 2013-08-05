@@ -28,16 +28,17 @@ class NewsletterWidget extends WP_Widget {
         extract($args);
 
         $title = apply_filters('widget_title', empty($instance['title']) ? __('Newsletter') : $instance['title'], $instance, $this->id_base);
-        $description = apply_filters('widget_description', empty($instance['description']) ? __('Get Notifications') : $instance['description'], $instance, $this->id_base);?>
+        $description = apply_filters('widget_description', empty($instance['description']) ? __('Get Notifications') : $instance['description'], $instance, $this->id_base);
+        $url = get_stylesheet_directory_uri().BebelUtils::getBundlePath().'/bebelMailchimpBundle/parse/save_ajax.php';?>
 
         <?php echo $before_widget; ?>
         <?php if ( $title ) echo $before_title . $title . $after_title; ?>
         <div class="description"><?php echo $description; ?></div>
-        <form class="form-inline newsletter-form" action="#">
+        <form id="mailchimp-newsletter-form" class="form-inline newsletter-form" action="<?php echo $url; ?>">
             <label>
-                <input type="email" class="input-condensed" placeholder="E-Mail"/>
+                <input type="email" class="input-condensed email" name="email"  placeholder="<?php echo __('E-Mail', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?>" required />
             </label>
-            <button type="submit" class="btn btn-danger btn-small">Submit <i class="icon-chevron-right"></i></button>
+            <button type="submit" class="btn btn-danger btn-small"><?php echo __('Submit', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?> <i class="icon-chevron-right"></i></button>
         </form>
         <?php echo $after_widget; ?>
 

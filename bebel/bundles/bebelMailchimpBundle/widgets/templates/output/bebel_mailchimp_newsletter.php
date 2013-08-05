@@ -1,5 +1,9 @@
+<?php
+$title = apply_filters('widget_title', empty($values['title']) ? __('Newsletter') : $values['title'], $values, $this->id_base);
+$description = apply_filters('widget_description', empty($values['description']) ? __('Get Notifications') : $values['description'], $values, $this->id_base);
+?>
 
-    <h2><?php echo $values['title']; ?></h2>
+<?php if ( $title ) echo $before_title . $title . $after_title; ?>
     
     
     <div class="bebel_mailchimp_newsletter_response">
@@ -23,7 +27,7 @@
     <script type="text/javascript">
     jQuery(function($){
                 
-        $("#mailchimp_signup_newsletter_<?php echo $values['randid'] ?> .bebel_mailchimp_newsletter_submit").click(function() {
+        $("#mailchimp_signup_newsletter_<?php echo $values['randid'] ?>").find(".bebel_mailchimp_newsletter_submit").click(function() {
             
             $.ajax({
                 type: "POST",

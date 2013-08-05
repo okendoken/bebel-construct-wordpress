@@ -19,6 +19,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
         
         // widget
         'bebelwidgetmailchimpnewsletter' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/class/bebelWidgetMailchimpNewsletter.class.php',
+        'newsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsletterWidget.class.php',
         
         
         // mailchimp api
@@ -44,14 +45,21 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
     return $s;
   }
 
-  public function getWordpress()
-  {
+    public function getWordpress()
+    {
 
-    $w = array(
-    );
+        $w = array(
+            'enqueue_scripts' => array(
+                'newsletter' => array(
+                    'path' => get_template_directory_uri().BebelUtils::getBundlePath().'/'.$this->bundleDir.'/widgets/assets/newsletter.js',
+                    'dependency' => array('jquery'),
+                    'when' => create_function('', 'return true;') //todo check newsletter widget active
+                )
+            )
+        );
 
-    return $w;
-  }
+        return $w;
+    }
 
   // admin stuff
   public function getAdmin()
@@ -150,6 +158,8 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
     return $bs;
   }
 
+
+
   
   
   
@@ -161,6 +171,11 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
               'widget-class' => 'bebelWidgetMailchimpNewsletter',
               'name' => 'BebelWidgetMailchimpNewsletter',
               'autoload' => false
+          ),
+          array(
+              'widget-class' => 'NewsletterWidget',
+              'name' => 'newsletter',
+              'autoload' => true
           )
       );
   }
