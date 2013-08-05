@@ -3,7 +3,9 @@
       <?php
           get_sidebar();
           bebelThemeUtils::getPageFooterTemplate(true);
-          bebelThemeUtils::getLogoTemplate(true);
+          if (!is_home()){
+              bebelThemeUtils::getLogoTemplate(true);
+          }
       ?>
 
     </div><!-- end .container -->
