@@ -17,7 +17,8 @@ $activeBundles = array(
     //'bebelOneClickInstallationBundle', todo include later
 
     'bebelThemeBundle',
-    'bebelMailchimpBundle'
+    'bebelMailchimpBundle',
+    'bebelSliderBundle',
 );
 
 $bundle = new BebelBundle($settings, $wordpress, $postTypeGenerator);
