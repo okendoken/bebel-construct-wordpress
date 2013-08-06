@@ -173,7 +173,8 @@ class BebelBundle
                 $autoInstallWidgets[] = $widget;
             }
         }
-        (new BebelWidgetAutoInstaller('sidebar-1', $autoInstallWidgets))->installWidgets();
+        $bebelWidgetAutoInstaller = new BebelWidgetAutoInstaller('sidebar-1', $autoInstallWidgets);
+        $bebelWidgetAutoInstaller->installWidgets();
         return $this;
     }
 

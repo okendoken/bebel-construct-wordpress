@@ -646,9 +646,8 @@ class BebelUtils
      */
     public static function getTaxonomyFullName($tax)
     {
-        $settings = BebelSingleton::getInstance('BebelSettings');
 
-        return $settings->getPrefix().'_'.$tax."-category";
+        return $tax."-category";
     }
 
     /**

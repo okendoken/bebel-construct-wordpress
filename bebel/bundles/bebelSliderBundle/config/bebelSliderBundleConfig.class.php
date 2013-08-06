@@ -74,8 +74,8 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
     
     
 
-    $tax_name = BebelUtils::getTaxonomyFullName('slider');
-    
+    $tax_name = BebelUtils::getTaxonomyFullName('slide');
+
     $args = array('taxonomy' => $tax_name);
     $slider_sets_obj = get_categories( $args );
     
@@ -84,8 +84,6 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
     {
         $slider_sets[$slider_set->term_id] = $slider_set->name;
     }
-    
-    $post_categories = BebelUtils::getCategorySelect();
     
     
     $modules = array(
@@ -115,14 +113,14 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
                     'submenu' => 'mainpage_slider',
                     'options' => array()
                 ),
-                'bebel_slider_set' => array(
-                    'title' => 'Slider Set',
-                    'description' => 'Select a custom made slider set to use specific images to link to your posts. You will have to create slides and put them in a set.',
+                'bebel_slide_set' => array(
+                    'title' => 'Slide Set',
+                    'description' => 'Select a custom made slide set to use specific images to link to your posts. You will have to create slides and put them in a set.',
                     'help' => '',
                     'template' => 'select_custom',
                     'permission' => 'edit_theme_options',
                     'submenu' => 'mainpage_slider',
-                    'options' => array('options' => $slider_sets, 'first' => 'Slider Set')
+                    'options' => array('options' => $slider_sets, 'first' => 'Slide Set')
                 ),
                 'bebel_slider_auto_rotate' => array(
                     'title' => 'Auto Rotation',
@@ -142,7 +140,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
                     'submenu' => 'bebel_slider',
                     'options' => array('min' => '2', 'max' => '10')
                 ),
-                'bebel_slider_display_time' => array(
+                'bebel_slide_display_time' => array(
                     'title' => 'Display Time',
                     'description' => 'How many seconds should a slide be displayed before the next one comes',
                     'help' => '',
@@ -198,7 +196,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
     $pt = array(
 
         'slider' => array(
-            'type_name' => 'slider',
+            'type_name' => 'slide',
             'name' => 'Slides',
             'singular_name' => 'Slide',
             'public' => true,
@@ -211,8 +209,8 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
             'type_rewrite' => array('slug' => 'slide', 'with_front' => false),
             'use_taxonomy' => true, // required by our framework
             'taxonomy_hierarchical' => true,
-            'taxonomy_name' => 'Slider Sets',
-            'taxonomy_name_singular' => 'Slider Set',
+            'taxonomy_name' => 'Slide Sets',
+            'taxonomy_name_singular' => 'Slide Set',
             'taxonomy_rewrite' => true,
             'menu_icon' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/assets/images/post_type_icon.png',
         ),
