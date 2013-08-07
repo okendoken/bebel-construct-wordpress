@@ -48,7 +48,11 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         $w = array(
             'theme_support' => array(
                 'post-thumbnails',
-                'automatic-feed-links'
+                'automatic-feed-links',
+                'custom-background' => array(
+                    'default-color' => 'ffffff',
+                    'default-image' => get_template_directory_uri() . '/images/background.jpg',
+                )
             ),
             'nav_menus' => array(
                 'header-menu' => __( 'Header Menu', BebelSingleton::getInstance('BebelSettings')->getPrefix() ),

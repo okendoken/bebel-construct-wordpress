@@ -160,9 +160,13 @@ class BebelWordPress
 
     if(!empty($this->theme_support))
     {
-      foreach($this->theme_support as $support)
+      foreach($this->theme_support as $support => $options)
       {
-        add_theme_support($support);
+          if (is_int($support)){
+              $support = $options;
+              $options = array();
+          }
+          add_theme_support($support, $options);
       }
     }
 
