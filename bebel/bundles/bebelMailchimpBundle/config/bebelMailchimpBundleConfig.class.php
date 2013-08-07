@@ -35,10 +35,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
   {
     $s = array(
         'mailchimp_apikey' => '',
-        'mailchimp_default_list' => '',
-        'mailchimp_show_form_below_posts' => 'on',
-        'mailchimp_show_form_below_pages' => 'on',
-        'mailchimp_show_form_on_mainpage' => 'on'
+        'mailchimp_default_list' => ''
     );
 
     return $s;
@@ -84,34 +81,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
                     'permission' => 'edit_theme_options',
                     'submenu' => 'general',
                     'options' => array()
-                ),
-                'mailchimp_show_form_below_posts' => array(
-                    'title' => 'Show Mailchimp Form below Posts',
-                    'description' => 'Select wether to show the newsletter sign up form below Posts',
-                    'help' => '',
-                    'template' => 'select_true_false',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'general',
-                    'options' => array()
-                ),
-                'mailchimp_show_form_below_pages' => array(
-                    'title' => 'Show Mailchimp Form below Pages',
-                    'description' => 'Select wether to show the newsletter sign up form below Pages (team, contact and portfolio pages excluded)',
-                    'help' => '',
-                    'template' => 'select_true_false',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'general',
-                    'options' => array()
-                ),
-                'mailchimp_show_form_on_mainpage' => array(
-                    'title' => 'Show Mailchimp Form on Main Page',
-                    'description' => 'Select wether to show the newsletter sign up form on the main page or not',
-                    'help' => '',
-                    'template' => 'select_true_false',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'general',
-                    'options' => array()
-                ),
+                )
             ),
             'bundle' => $this->bundleDir
           ),
@@ -162,7 +132,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
           array(
               'widget-class' => 'NewsletterWidget',
               'name' => 'newsletter',
-              'autoload' => true
+              'autoload' => false
           )
       );
   }
