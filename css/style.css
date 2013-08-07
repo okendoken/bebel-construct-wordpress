@@ -10703,7 +10703,7 @@ html, body {
 
 /* line 5, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 body {
-  background: url(../images/background.jpg) no-repeat;
+  background: url(../images/example/background.jpg) no-repeat;
   background-size: cover;
   background-position: bottom right;
 }

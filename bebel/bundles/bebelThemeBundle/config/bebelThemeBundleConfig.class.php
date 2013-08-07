@@ -32,8 +32,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
 
 
-            'default_background' => '%IMAGES_PATH%/background.jpg',
+            'default_background' => '%IMAGES_PATH%/example/background.jpg',
             'logo_header' => '',
+
+            'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
 
             'color_text' => '#666666',
 
@@ -51,7 +53,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 'automatic-feed-links',
                 'custom-background' => array(
                     'default-color' => 'ffffff',
-                    'default-image' => get_template_directory_uri() . '/images/background.jpg',
+                    'default-image' => get_template_directory_uri() . '/images/example/background.jpg',
                 )
             ),
             'nav_menus' => array(
@@ -172,7 +174,16 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'permission' => 'edit_theme_options',
                         'submenu' => 'styling',
                         'options' => array()
-                    )
+                    ),
+                    'mainpage_image' => array(
+                        'title' => 'Default Image Mainpage',
+                        'description' => 'Set the image on the main page.',
+                        'help' => '',
+                        'template' => 'upload',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'general',
+                        'options' => array('button_text' => 'Upload Image')
+                    ),
                 ),
                 'bundle' => 'core'
             )

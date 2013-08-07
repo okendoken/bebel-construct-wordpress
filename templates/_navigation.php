@@ -8,7 +8,7 @@ $activeProgress = isset($postSlider) && $postSlider->hasImages()
     && !$postSlider->hasSingleImage() && $settings->get('bebel_slider_auto_rotate') == 'on';
 ?>
 
-<nav class="navigation navigation-page navigation-top">
+<nav class="navigation <?php echo is_home() ? 'navigation-home' : 'navigation-page';?> navigation-top">
     <div id="home-carousel-progress" class="progress progress-danger hidden-phone">
         <div class="bar<?php echo $activeProgress ? ' animation' : '';?>" style="width: <?php echo $activeProgress ? '0' : '100%';?>"></div>
     </div>
