@@ -30,12 +30,9 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
         
         // bebel touch slider
         'bebel_slider_enable' => 'off',
-        'bebel_slider_set' => '',
+        'bebel_slide_set' => '',
         'bebel_slider_auto_rotate' => 'on',
-        'bebel_slider_count' => '4',
-        'bebel_slider_display_time' => '10',
-        'bebel_slider_transition_time' => '1000',
-        'main_background_slider_time' => '400',
+        'bebel_slide_display_time' => '10'
         
     );
 
@@ -101,9 +98,6 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
             ),
             'widgets' => array(
                 
-                // bebel touch slider
-                
-                
                 'bebel_slider_enable' => array(
                     'title' => 'Enable Mainpage Slider',
                     'description' => 'If its turned off, the default mainpage image will be used instead (can be found in "Basic"->"generals" settings.',
@@ -131,15 +125,6 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
                     'submenu' => 'bebel_slider',
                     'options' => array()
                 ),
-                'bebel_slide_count' => array(
-                    'title' => 'Slider Items',
-                    'description' => 'How many items do you want to display in the mainpage content slider? (We recommend not to display more than 4 slides)',
-                    'help' => '',
-                    'template' => 'slider',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'bebel_slider',
-                    'options' => array('min' => '2', 'max' => '10')
-                ),
                 'bebel_slide_display_time' => array(
                     'title' => 'Display Time',
                     'description' => 'How many seconds should a slide be displayed before the next one comes',
@@ -148,16 +133,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
                     'permission' => 'edit_theme_options',
                     'submenu' => 'bebel_slider',
                     'options' => array('min' => '3', 'max' => '25')
-                ),
-                'bebel_slider_transition_time' => array(
-                    'title' => 'Transition Time',
-                    'description' => 'How fast should the slider move? In milliseconds (1000 ms = 1second)',
-                    'help' => '',
-                    'template' => 'slider',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'bebel_slider',
-                    'options' => array('min' => '200', 'max' => '5000')
-                ),
+                )
                     
             ),
             'bundle' => 'core'

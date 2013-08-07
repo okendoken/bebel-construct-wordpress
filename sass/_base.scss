@@ -313,7 +313,6 @@
     border: none;
     padding: 0;
     @include box-shadow(none);
-    @include remove-clearfix();
   }
 
   .nav-item-description, .nav-item-title{
@@ -418,7 +417,7 @@
       @include box-shadow(none);
     }
 
-    .bar{
+    .bar.animation{
       @include animation(0, 5s, move-progress-bar, infinite, linear);
     }
   }
