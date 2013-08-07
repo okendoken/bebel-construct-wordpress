@@ -10,8 +10,7 @@ class bebelThemeUtils
         </footer><!-- end footer -->
     <?php }
 
-    public static function getLogoTemplate($bottom = false){
-        $with_offset = is_singular() || is_home();?>
+    public static function getLogoTemplate($bottom = false, $with_offset = true){?>
         <div class="logo <?php echo $bottom ? 'bottom' : ''; echo $with_offset ? ' offset' : ''; ?>">
             <div class="shadow"></div>
             <a class="logo-content" href="<?php echo home_url(); ?>">

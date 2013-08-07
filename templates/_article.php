@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
     <h1 class="article-title">
         <?php the_title() ?>
         <small class="author">/ by <?php echo ucfirst(get_the_author()); ?></small>

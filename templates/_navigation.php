@@ -1,5 +1,5 @@
 <?php
-$postSlider = false;
+$postSlider = NULL;
 if (BebelSingleton::hasInstance('postSlider')){
     $postSlider = BebelSingleton::getInstance('postSlider');
 }
