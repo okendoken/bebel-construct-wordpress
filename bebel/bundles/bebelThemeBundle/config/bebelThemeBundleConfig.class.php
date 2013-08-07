@@ -278,26 +278,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     $t = array(
 
         'post' => array(
-            'sidebar_left' => 'Image Left',
-            'sidebar_right' => 'Image Right',
-            'full_small' => 'Full Width (small image)',
-            'full' => 'Full Width (no image)'
+            'with_image' => 'With Image',
+            'no_image' => 'No Image'
         ),
         'page' => array(
-            'sidebar_left' => 'Image Left',
-            'sidebar_right' => 'Image Right',
-            'full' => 'Full Width (no image)'
+            'with_image' => 'With Image',
+            'no_image' => 'No Image'
         ),
-        'mainpage' => array('main_left' => 'Image on left side', 'main_right' => 'Image on right side'),
-        'team' => array(
-            'sidebar_left' => 'Image Left',
-            'sidebar_right' => 'Image Right',
-        ),
-        'contact' => array(
-            'sidebar_left' => 'Sidebar Left',
-            'sidebar_right' => 'Sidebar Right',
-        ),
-        'default' => array('post' => 'sidebar_right', 'page' => 'sidebar_right', 'sidebar' => 'mainpage-sidebar')
+        'mainpage' => array('no_bottom_posts' => 'No Bottom Posts', 'with_bottom_posts' => 'With Bottom Posts'),
+        'default' => array('post' => 'with_image', 'page' => 'with_image')
 
     );
 
