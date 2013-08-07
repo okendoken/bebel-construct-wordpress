@@ -52,15 +52,14 @@ class bebelPostSlider extends bebelSliderBase
         }else 
         {
             // slider is on. lets get it!
-            $slider_set = $this->settings->get('bebel_slider_set');
+            $slider_set = $this->settings->get('bebel_slide_set');
             
             $query = array(
-                'post_type' => $this->settings->getPrefix() . '_slider',
-                'posts_per_page' => $this->settings->get('bebel_slider_count'),
+                'post_type' => $this->settings->getPrefix() . '_slide',
                 'tax_query' => array(
                     array(
-                        'taxonomy' => BebelUtils::getTaxonomyFullName('slider'),
-                        'field' => 'term_id',
+                        'taxonomy' => BebelUtils::getTaxonomyFullName('slide'),
+                        'field' => 'id',
                         'terms' => $slider_set,
                     )
                 )
