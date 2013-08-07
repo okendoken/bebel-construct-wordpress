@@ -3,7 +3,7 @@
       <?php
           get_sidebar();
           bebelThemeUtils::getPageFooterTemplate(true);
-          if (!is_home()){
+          if (!is_home()){ //todo move this to custom post features??
               bebelThemeUtils::getLogoTemplate(true);
           }
       ?>

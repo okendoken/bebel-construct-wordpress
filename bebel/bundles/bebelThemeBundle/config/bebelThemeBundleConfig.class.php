@@ -101,12 +101,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 )
             ),
             'image_sizes' => array(
-                'post-single-wide'   => array(685, 280, true),
-                'vertical-big' => array(371, 738, true),
-                'blog-thumb' => array(124, 124, true),
-                'full-small' => array(850, 298, true),
-                'full-big' => array(850, 483, true),
-                'full-tablet' => array(768, 480, true)
+                'horizontal-medium' => array(800, 400, true),
+                'horizontal-large' => array(800, 640, true),
             )
         );
 
@@ -278,15 +274,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     $t = array(
 
         'post' => array(
-            'with_image' => 'With Image',
-            'no_image' => 'No Image'
+            'with-image' => 'With Image',
+            'no-image' => 'No Image'
         ),
         'page' => array(
-            'with_image' => 'With Image',
-            'no_image' => 'No Image'
+            'with-image' => 'With Image',
+            'no-image' => 'No Image'
         ),
-        'mainpage' => array('no_bottom_posts' => 'No Bottom Posts', 'with_bottom_posts' => 'With Bottom Posts'),
-        'default' => array('post' => 'with_image', 'page' => 'with_image')
+        'mainpage' => array('no-bottom-posts' => 'No Bottom Posts', 'with-bottom-posts' => 'With Bottom Posts'),
+        'default' => array('post' => 'with-image', 'page' => 'with-image')
 
     );
 
