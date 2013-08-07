@@ -23,8 +23,8 @@ class BebelPostTypeGenerator
   public function registerPostType()
   {
       
-    if(!post_type_exists($this->options['type_name'])) {
-      register_post_type($this->options['type_name'],
+    if(!post_type_exists($this->theme_prefix.'_'.$this->options['type_name'])) {
+      register_post_type($this->theme_prefix.'_'.$this->options['type_name'],
         array(
           'labels' => array(
             'name' => _x($this->options['name'],$this->theme_prefix),
@@ -55,18 +55,18 @@ class BebelPostTypeGenerator
 
   public function registerTaxonomy() {
       
-    if(isset($this->options['use_taxonomy']) && $this->options['use_taxonomy'] === true && !taxonomy_exists($this->options['type_name']."-category"))
+    if(isset($this->options['use_taxonomy']) && $this->options['use_taxonomy'] === true && !taxonomy_exists($this->theme_prefix.'_'.$this->options['type_name']."-category"))
     {
     
-      register_taxonomy($this->options['type_name']."-category",
-        array($this->options['type_name']),
+      register_taxonomy($this->theme_prefix.'_'.$this->options['type_name']."-category",
+        array($this->theme_prefix.'_'.$this->options['type_name']),
         array(
           "hierarchical" => $this->options['taxonomy_hierarchical'],
           "label" => $this->options['taxonomy_name'],
           'show_ui' => true, 
           "singular_label" => $this->options['taxonomy_name_singular'],
-          "rewrite" => array('slug' => $this->options['type_name']."-category"),
-          'query_var' => $this->options['type_name']."-category_tax"
+          "rewrite" => array('slug' => $this->theme_prefix.'_'.$this->options['type_name']."-category"),
+          'query_var' => $this->theme_prefix.'_'.$this->options['type_name']."-category_tax"
           )
       );
       

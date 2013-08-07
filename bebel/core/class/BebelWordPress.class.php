@@ -163,8 +163,7 @@ class BebelWordPress
       foreach($this->theme_support as $support => $options)
       {
           if (is_int($support)){
-              $support = $options;
-              $options = array();
+              add_theme_support($options);
           }
           add_theme_support($support, $options);
       }

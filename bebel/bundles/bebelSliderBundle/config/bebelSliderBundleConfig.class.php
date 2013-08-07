@@ -131,7 +131,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
                     'submenu' => 'bebel_slider',
                     'options' => array()
                 ),
-                'bebel_slider_count' => array(
+                'bebel_slide_count' => array(
                     'title' => 'Slider Items',
                     'description' => 'How many items do you want to display in the mainpage content slider? (We recommend not to display more than 4 slides)',
                     'help' => '',
