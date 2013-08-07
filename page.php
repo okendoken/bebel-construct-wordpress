@@ -1,15 +1,23 @@
 <?php get_header(); ?>
+<?php
+$page_layout = BebelUtils::getCustomMeta('page_layout', false, get_the_ID());
 
-<?php if (have_posts()) {
-    while (have_posts()) {
-        the_post();
-        get_template_part( 'templates/_navigation', get_post_format() );
-        get_template_part( 'templates/_carousel', get_post_format() );
-        get_template_part( 'templates/_article', get_post_format() );
-
-        bebelThemeUtils::getPageFooterTemplate();
-    }
+if(!$page_layout) {
+    $page_layout = "with-image";
 }
+
+$slug = $page_layout;
+
+// custom css for this page
+$css = BebelUtils::getCustomMeta('css', false, get_the_ID());
+
 ?>
+<?php if($css): ?>
+    <style>
+        <?php echo $css; ?>
+    </style>
+<?php endif; ?>
+
+<?php get_template_part( 'templates/single-'.$slug, get_post_format() );?>
 
 <?php get_footer(); ?>

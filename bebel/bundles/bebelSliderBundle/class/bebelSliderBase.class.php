@@ -22,6 +22,12 @@ class bebelSliderBase
         $this->image_size = $size;
     }
     
-    
+    public function hasImages(){
+        return !empty($this->images);
+    }
+
+    public function hasSingleImage(){
+        return count($this->images) == 1;
+    }
     
 }

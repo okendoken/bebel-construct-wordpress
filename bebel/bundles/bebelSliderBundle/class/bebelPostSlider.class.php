@@ -94,32 +94,34 @@ class bebelPostSlider extends bebelSliderBase
     
     public function prepareHtml()
     {
-        if(!empty($this->images))
+        if($this->hasImages())
         {
-            $i = 0;
-            $interval = $this->settings->get('bebel_slider_display_time') * 1000;
-            $html = "<div id='home-carousel' class='page-carousel carousel slide' data-interval='{$interval}'>\n"
-                   ."    <div class=\"carousel-inner\">\n";
-            $active = ' active';
-            foreach($this->images as $image)
-            {
-                $i++;
-                
-                $html .= "      <div class='item{$active}'>\n";
-                $html .= '        <img src="'.$image.'" alt="'.__(sprintf('Slider Image %d', $i), $this->settings->getPrefix())."\">\n";
-                $html .= "      </div>\n";
-                $active = '';
+            $html = '';
+            if ($this->hasSingleImage()){
+                $html .= '        <img src="'.$this->images[0].'" alt="'.__('Post Image ', $this->settings->getPrefix())."\">\n";
+            } else {
+                $i = 0;
+                $html .= "    <div class=\"carousel-inner\">\n";
+                $active = ' active';
+                foreach($this->images as $image)
+                {
+                    $i++;
+
+                    $html .= "      <div class='item{$active}'>\n";
+                    $html .= '        <img src="'.$image.'" alt="'.__(sprintf('Slider Image %d', $i), $this->settings->getPrefix())."\">\n";
+                    $html .= "      </div>\n";
+                    $active = '';
+                }
+                $html .= "    </div>\n";
             }
-            $html .= "    </div>\n"
-                    ."</div>\n";
             
             $this->html = $html;
         }else {
             if($this->post_id)
                 {
-                    $this->warning = __('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the full width layout, which does not require any image..', $this->settings->getPrefix());
+                    $this->warning = '<div style="padding: 100px">'.__('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the No Image layout, which does not require any image.', $this->settings->getPrefix()).'</div>';
                 }else {
-                    $this->warning = __('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', $this->settings->getPrefix());
+                    $this->warning = '<div style="padding: 100px">'.__('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', $this->settings->getPrefix()).'</div>';
                 }
         }
     }
@@ -127,13 +129,6 @@ class bebelPostSlider extends bebelSliderBase
     
     public function getImagesByPostId()
     {
-        // first get the post image
-        if(has_post_thumbnail($this->post_id))
-        {
-            // get url
-            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), $this->image_size);
-            $this->images[] = $image_url[0];
-        }
         $j = 0;
         $slider_set = BebelUtils::getCustomMeta('slide_set', false, $this->post_id);
 
@@ -167,6 +162,14 @@ class bebelPostSlider extends bebelSliderBase
             }
         }
         wp_reset_postdata();
+
+        //if no slides and post image present
+        if(has_post_thumbnail($this->post_id) && !$this->hasImages())
+        {
+            // get url
+            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), $this->image_size);
+            $this->images[] = $image_url[0];
+        }
         $this->prepareHtml();
     }
     

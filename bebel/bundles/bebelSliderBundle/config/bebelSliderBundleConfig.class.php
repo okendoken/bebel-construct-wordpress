@@ -33,7 +33,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
         'bebel_slider_set' => '',
         'bebel_slider_auto_rotate' => 'on',
         'bebel_slider_count' => '4',
-        'bebel_slider_display_time' => '4',
+        'bebel_slider_display_time' => '10',
         'bebel_slider_transition_time' => '1000',
         'main_background_slider_time' => '400',
         

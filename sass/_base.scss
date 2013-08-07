@@ -96,6 +96,7 @@
   margin-bottom: 0;
 }
 
+.home-carousel,
 .home-carousel .item{
   height: 640px;
 }
@@ -508,7 +509,7 @@
 /*           Page            */
 /*****************************/
 
-.page{
+.article{
   padding: 20px 40px;
 }
 
@@ -561,6 +562,7 @@
   }
 }
 
+.page-carousel,
 .page-carousel .item{
   height: 400px;
 }
