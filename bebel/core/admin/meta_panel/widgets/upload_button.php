@@ -14,4 +14,4 @@
     });
   </script>
 </div>
-<br class="clear" />
+<div class="clear" > </div>

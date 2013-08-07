@@ -166,21 +166,7 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
     );
 
     
-    $post_modules = array(
-        'add_scope' => array('slider'),
-        'widgets' => array(
-            'post_link' => array(
-                'menu_item' => 'layout',
-                'title' => 'Link To URL',
-                'description' => 'If you want to link to a post, enter the posts URL in here. You can also link to pages or other urls in this fields.',
-                'help' => '',
-                'template' => 'input',
-                'permission' => 'edit_post',
-                'scope' => array('slider'),
-                'options' => array()
-            ),            
-         )
-    );
+    $post_modules = array();
 
     
                     

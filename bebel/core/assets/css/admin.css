@@ -79,36 +79,36 @@
 
 .bebel_admin_meta_panel_tabs_nav_container {
   position: relative;
-  padding-bottom: 50px;
 }
 .bebel_admin_meta_panel_tabs_nav {
-  position: absolute;
-  margin-left: 23px;
-  left: 0px;
-  top: -12px;
-  right: 67px;
   height: 38px;
-  background: url(../images/bebelui/meta_panel_middle.png);
 }
 
 .bebel_admin_meta_panel_tabs_nav li {
   float: left;
-  padding-right: 30px;
-  line-height: 38px;
+  line-height: 30px;
   font-size: 13px;
-  font-weight: bold;
-  font-family: Arial;
 }
 
 .bebel_admin_meta_panel_tabs_nav li a {
+  padding: 0 15px;
+    display: block;
   color: #666;
-  text-shadow: 1px 1px 1px #fff;
   text-decoration: none;
+    border-bottom: 1px solid #bbb;
 }
+
+.bebel_admin_meta_panel_tabs_nav li a.nav-tab-active {
+    border-bottom: none;
+    margin-bottom: 1px;
+}
+
+.bebel_admin_meta_panel_tabs_nav li + li a{
+    border-left: 1px solid #bbb;
+}
+
 .bebel_admin_meta_panel_tabs_nav li a:hover {
   color: #333;
-  text-shadow: 1px 1px 1px #fff;
-  text-decoration: none;
 }
 
 #bebel_admin_meta_panel_tabs {

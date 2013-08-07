@@ -51,6 +51,7 @@ $bundle->runHooks();
 if(is_admin())
 {
     $admin = new BebelAdmin($settings, $bundle);
+    $adminPostMeta = new BebelAdminPostMetaPanel($settings, $bundle);
     add_action('admin_menu', array($admin, 'initAdmin'));
 }
 

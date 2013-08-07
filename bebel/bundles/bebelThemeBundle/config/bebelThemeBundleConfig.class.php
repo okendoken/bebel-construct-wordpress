@@ -116,6 +116,14 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     // admin stuff
     public function getAdmin()
     {
+    // get templates
+    $templates = $this->getTemplates();
+    $templates_main = $templates;
+    $templates_misc = $templates;
+    unset($templates_main['base']['full']);
+    unset($templates_misc['base']['full']);
+
+
         $modules = array(
             'general' => array(
                 'title' => 'Basic',
@@ -173,7 +181,83 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 'bundle' => 'core'
             )
         );
-        $post_modules['widgets'] = array();
+
+        $tax_name = BebelUtils::getTaxonomyFullName('slide');
+
+        $args = array('taxonomy' => $tax_name);
+        $slider_sets_obj = get_categories( $args );
+
+        $slider_sets = array();
+        foreach($slider_sets_obj as $slider_set)
+        {
+            $slider_sets[$slider_set->term_id] = $slider_set->name;
+        }
+
+
+        $post_modules = array(
+            'meta_panel_type' => 'tab',
+            'add_scope' => array('post', 'page', 'global'),
+            'menu_items' => array(
+                'layout' => array(
+                    'title' => 'Layout',
+                    'scope' => array('global'),
+                    'bundle' => 'core'
+                ),
+                'post_slider' => array(
+                    'title' => 'Post Slider',
+                    'scope' => array('post', 'page'),
+                    'bundle' => 'core',
+                ),
+                'misc' => array(
+                    'title' => 'Misc',
+                    'scope' => array('global'),
+                    'bundle' => 'core',
+                )
+            ),
+            'widgets' => array(
+                'post_layout' => array(
+                    'menu_item' => 'layout',
+                    'title' => 'Post Layout',
+                    'description' => 'Choose a Layout for this Post',
+                    'help' => '',
+                    'template' => 'select_template',
+                    'permission' => 'edit_post',
+                    'scope' => array('post'),
+                    'options' => array('options' => $templates['post'], 'default' => $templates['default']['post'])
+                ),
+                'page_layout' => array(
+                    'menu_item' => 'layout',
+                    'title' => 'Page Layout',
+                    'description' => 'Choose a Layout for this Page',
+                    'help' => '',
+                    'template' => 'select_template',
+                    'permission' => 'edit_post',
+                    'scope' => array('page'),
+                    'options' => array('options' => $templates['page'], 'default' => $templates['default']['page'])
+                ),
+                'css' => array(
+                    'menu_item' => 'misc',
+                    'title' => 'CSS',
+                    'description' => 'Create some custom CSS',
+                    'help' => '',
+                    'template' => 'textarea',
+                    'permission' => 'edit_post',
+                    'scope' => array('global'),
+                    'options' => array()
+                ),
+                'slide_set' => array(
+                    'menu_item' => 'post_slider',
+                    'title' => 'Post Slide Set',
+                    'description' => 'Select slide set to be displayed in the slider',
+                    'help' => '',
+                    'template' => 'select_template',
+                    'permission' => 'edit_post',
+                    'scope' => array('post', 'page'),
+                    'options' => array('options' => $slider_sets)
+                )
+            )
+        );
+
 
         $pages = array(
             'bebelHelp' =>
@@ -191,7 +275,31 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
     public function getTemplates()
     {
-        $t = array();
+    $t = array(
+
+        'post' => array(
+            'sidebar_left' => 'Image Left',
+            'sidebar_right' => 'Image Right',
+            'full_small' => 'Full Width (small image)',
+            'full' => 'Full Width (no image)'
+        ),
+        'page' => array(
+            'sidebar_left' => 'Image Left',
+            'sidebar_right' => 'Image Right',
+            'full' => 'Full Width (no image)'
+        ),
+        'mainpage' => array('main_left' => 'Image on left side', 'main_right' => 'Image on right side'),
+        'team' => array(
+            'sidebar_left' => 'Image Left',
+            'sidebar_right' => 'Image Right',
+        ),
+        'contact' => array(
+            'sidebar_left' => 'Sidebar Left',
+            'sidebar_right' => 'Sidebar Right',
+        ),
+        'default' => array('post' => 'sidebar_right', 'page' => 'sidebar_right', 'sidebar' => 'mainpage-sidebar')
+
+    );
 
         return $t;
     }

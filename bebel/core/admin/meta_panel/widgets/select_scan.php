@@ -74,5 +74,5 @@ if($this->getOption($key) == '' && $widget['defaultSettingName'] != '')
 </div>
 
 
-<br class="clear" />
+<div class="clear" > </div>
 

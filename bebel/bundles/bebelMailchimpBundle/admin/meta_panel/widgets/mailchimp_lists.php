@@ -41,7 +41,7 @@ if($show_lists):
 </div>
 
 
-<br class="clear" />
+<div class="clear" ></div>
 
 
 
