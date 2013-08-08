@@ -5,7 +5,7 @@ class bebelThemeUtils
 
     public static function getPageFooterTemplate($mobile = false){ ?>
         <footer class="page-footer <?php echo $mobile ? 'visible-phone' : 'hidden-phone'; ?>">
-            This site was handcrafted by Bebel
+            <?php echo BebelSingleton::getInstance('BebelSettings')->get("footer_text"); ?>
             <a href="#" class="to-top-link">top <i class="icon-caret-up"></i></a>
         </footer><!-- end footer -->
     <?php }

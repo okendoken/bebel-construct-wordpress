@@ -36,6 +36,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'logo_header' => '',
 
             'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
+            'footer_text' => 'This site was handcrafted by <a href="#">Bebel</a>',
 
             'color_text' => '#3d3d3d',
             'color_second' => '#f24108'
@@ -154,6 +155,23 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'submenu' => 'general',
                         'options' => array('button_text' => 'Upload Background Image')
                     ),
+                    'mainpage_image' => array(
+                        'title' => 'Default Image Mainpage',
+                        'description' => 'Set the image on the main page.',
+                        'help' => '',
+                        'template' => 'upload',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'general',
+                        'options' => array('button_text' => 'Upload Image')
+                    ),
+                    'footer_text' => array(
+                        'title' => 'Footer Text',
+                        'description' => 'Copyright text in footer. Put copyright or whatever here.',
+                        'template' => 'textarea',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'general',
+                        'options' => array()
+                    ),
 
                     'css' => array(
                         'title' => 'Custom CSS',
@@ -179,16 +197,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'permission' => 'edit_theme_options',
                         'submenu' => 'styling',
                         'options' => array()
-                    ),
-                    'mainpage_image' => array(
-                        'title' => 'Default Image Mainpage',
-                        'description' => 'Set the image on the main page.',
-                        'help' => '',
-                        'template' => 'upload',
-                        'permission' => 'edit_theme_options',
-                        'submenu' => 'general',
-                        'options' => array('button_text' => 'Upload Image')
-                    ),
+                    )
                 ),
                 'bundle' => 'core'
             )
