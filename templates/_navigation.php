@@ -20,6 +20,8 @@ $activeProgress = isset($postSlider) && $postSlider->hasImages()
 
             <?php wp_nav_menu(array(
                 'menu_class' => 'nav nav-collapse collapse',
+                'menu' => 'header-menu',
+                'fallback_cb' => array('bebelThemeUtils', 'bebel_page_menu'),
                 'container' => '',
                 'walker' => new ConstructMenuWalker())) ?>
         </div>
