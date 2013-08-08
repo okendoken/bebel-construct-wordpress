@@ -1,6 +1,13 @@
 <?php
 
-get_header();
+get_header(); ?>
+    <!--Start Header-->
+    <header>
+        <?php bebelThemeUtils::getLogoTemplate(); ?>
+    </header><!--End Header-->
+    <!--Start Main Content-->
+    <div class="content">
+<?php
 
 $postSlider = new BebelPostSlider(false, "horizontal-large");
 $postSlider->getImages();

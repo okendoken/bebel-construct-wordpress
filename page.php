@@ -1,15 +1,19 @@
 <?php
+get_header();
+
 $page_layout = BebelUtils::getCustomMeta('page_layout', false, get_the_ID());
 
 if(!$page_layout) {
     $page_layout = "with-image";
 }
-$custom_header = get_stylesheet_directory()."/header-{$page_layout}.php";
-if (file_exists($custom_header)){
-    get_header($page_layout);
-} else {
-    get_header();
-}
+?>
+    <!--Start Header-->
+    <header>
+        <?php bebelThemeUtils::getLogoTemplate(false, $page_layout == 'no-image' ? false : true); ?>
+    </header><!--End Header-->
+    <!--Start Main Content-->
+<div class="content">
+<?php
 
 
 $slug = $page_layout;

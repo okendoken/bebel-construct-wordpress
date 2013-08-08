@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php if(isset($doctype)){ language_attributes( $doctype ); } ?>>
+<html <?php language_attributes( ); ?>>
 <head>
     <meta charset="utf-8">
     <title><?php BebelUtils::getPageTitle(); ?></title>
@@ -8,12 +8,6 @@
     <link rel="icon" type="image/x-icon" href="http://localhost/projects/wordpress/clean/wp-content/themes/Construct/favicon.ico" />
     <?php wp_head(); ?>
 </head>
-<body <?php if (isset($class)){ body_class($class); } ?>>
+<body <?php body_class(); ?>>
 
 <div class="wrapper container">
-  <!--Start Header-->
-  <header>
-      <?php bebelThemeUtils::getLogoTemplate(); ?>
-  </header><!--End Header-->
-  <!--Start Main Content-->
-  <div class="content">
