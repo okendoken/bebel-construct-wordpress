@@ -10759,7 +10759,7 @@ hr {
 .logo .logo-content {
   display: block;
   background: white;
-  padding: 20px 20px 15px;
+  padding: 0;
   line-height: 1;
   color: #3d3d3d;
   text-decoration: none;

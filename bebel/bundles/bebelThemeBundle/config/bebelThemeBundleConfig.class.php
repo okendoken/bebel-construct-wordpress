@@ -37,7 +37,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
             'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
 
-            'color_text' => '#666666',
+            'color_text' => '#3d3d3d',
+            'color_second' => '#f24108'
 
         );
 
@@ -50,11 +51,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         $w = array(
             'theme_support' => array(
                 'post-thumbnails',
-                'automatic-feed-links',
-                'custom-background' => array(
-                    'default-color' => 'ffffff',
-                    'default-image' => get_template_directory_uri() . '/images/example/background.jpg',
-                )
+                'automatic-feed-links'
             ),
             'nav_menus' => array(
                 'header-menu' => __( 'Header Menu', BebelSingleton::getInstance('BebelSettings')->getPrefix() ),
@@ -95,11 +92,11 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 'comment-reply'
             ),
             'enqueue_styles' => array(
-                'main-stylesheet' => array(
-                    'path' => get_template_directory_uri() .	'/style.css'
-                ),
                 'application' => array(
                     'path' => get_template_directory_uri() .	'/css/style.css'
+                ),
+                'main-stylesheet' => array(
+                    'path' => get_template_directory_uri() .	'/style.css'
                 )
             ),
             'image_sizes' => array(
@@ -141,7 +138,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
                     'logo_header' => array(
                         'title' => 'Logo Header',
-                        'description' => 'Change your logo in the header. Optimal size: 150x43px',
+                        'description' => 'Change your logo in the header. Optimal size: 289x57px',
                         'help' => '',
                         'template' => 'upload',
                         'permission' => 'edit_theme_options',
@@ -150,7 +147,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     ),
                     'default_background' => array(
                         'title' => 'Default Background Image',
-                        'description' => 'Set a background image for posts without custom background image and every other page that does not use a custom one. Make sure the file is big enough, as it gets streched over the whole background.',
+                        'description' => 'Set a background image for posts. Make sure the file is big enough, as it gets stretched over the whole background.',
                         'help' => '',
                         'template' => 'upload',
                         'permission' => 'edit_theme_options',
@@ -170,6 +167,14 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'color_text' => array(
                         'title' => 'Color of Text',
                         'description' => 'Change the default color of the text.',
+                        'template' => 'colorpicker',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'styling',
+                        'options' => array()
+                    ),
+                    'color_second' => array(
+                        'title' => 'Second Color',
+                        'description' => 'Color of more links, footer, progress bar etc.',
                         'template' => 'colorpicker',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'styling',

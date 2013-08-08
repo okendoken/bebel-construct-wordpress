@@ -14,10 +14,11 @@ class bebelThemeUtils
         <div class="logo <?php echo $bottom ? 'bottom' : ''; echo $with_offset ? ' offset' : ''; ?>">
             <div class="shadow"></div>
             <a class="logo-content" href="<?php echo home_url(); ?>">
-                <span class="square"></span>
-                <span class="name">Construct</span>
-                <span class="slogan">We Build Things</span>
-            </a>
+                <?php if($logo = BebelSingleton::getInstance('BebelSettings')->get('logo_header')): ?>
+                    <img src="<?php echo $logo ?>" alt="Logo" />
+                <?php else: ?>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/example/logo.png" alt="Logo" />
+                <?php endif ?>
         </div><!--end .logo-->
     <?php }
 
