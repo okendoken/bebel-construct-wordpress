@@ -1,11 +1,11 @@
 <?php
 
-class NewsWidget extends WP_Widget {
+class BebelNewsWidget extends WP_Widget {
 
     function __construct() {
-        $widget_ops = array('classname' => 'widget_news', 'description' => __( "The most recent news from your site") );
-        parent::__construct('news', __('News'), $widget_ops);
-        $this->alt_option_name = 'widget_news';
+        $widget_ops = array('classname' => 'widget_bebel_news', 'description' => __( "The most recent news from your site") );
+        parent::__construct('bebel_news', __('News'), $widget_ops);
+        $this->alt_option_name = 'widget_bebel_news';
 
         add_action( 'save_post', array($this, 'flush_widget_cache') );
         add_action( 'deleted_post', array($this, 'flush_widget_cache') );
@@ -13,7 +13,7 @@ class NewsWidget extends WP_Widget {
     }
 
     function widget($args, $instance) {
-        $cache = wp_cache_get('widget_news', 'widget');
+        $cache = wp_cache_get('widget_bebel_news', 'widget');
 
         if ( !is_array($cache) )
             $cache = array();
@@ -34,7 +34,7 @@ class NewsWidget extends WP_Widget {
             $number = 2;
         }
 
-        $q = new WP_Query( apply_filters( 'widget_news_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+        $q = new WP_Query( apply_filters( 'widget_bebel_news_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
         if ($q->have_posts()) :
             ?>
             <?php echo $before_widget; ?>
@@ -55,7 +55,7 @@ class NewsWidget extends WP_Widget {
         endif;
 
         $cache[$args['widget_id']] = ob_get_flush();
-        wp_cache_set('widget_news', $cache, 'widget');
+        wp_cache_set('widget_bebel_news', $cache, 'widget');
     }
 
     function update( $new_instance, $old_instance ) {
@@ -65,14 +65,14 @@ class NewsWidget extends WP_Widget {
         $this->flush_widget_cache();
 
         $alloptions = wp_cache_get( 'alloptions', 'options' );
-        if ( isset($alloptions['widget_news']) )
-            delete_option('widget_news');
+        if ( isset($alloptions['widget_bebel_news']) )
+            delete_option('widget_bebel_news');
 
         return $instance;
     }
 
     function flush_widget_cache() {
-        wp_cache_delete('widget_news', 'widget');
+        wp_cache_delete('widget_bebel_news', 'widget');
     }
 
     function form( $instance ) {

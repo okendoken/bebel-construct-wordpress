@@ -18,7 +18,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
         'bebelmailchimp' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelMailchimp.class.php',
 
         // widget
-        'newsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsletterWidget.class.php',
+        'bebelnewsletterwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelNewsletterWidget.class.php',
         
         
         // mailchimp api
@@ -130,9 +130,7 @@ class bebelMailchimpBundleConfig  extends BebelBundleConfig
 
       return array(
           array(
-              'widget-class' => 'NewsletterWidget',
-              'name' => 'newsletter',
-              'autoload' => false
+              'widget-class' => 'BebelNewsletterWidget'
           )
       );
   }

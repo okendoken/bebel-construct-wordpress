@@ -15,7 +15,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         $a = array(
             'bebelthemebundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleAdminConfig.class.php',
             'bebelthemeutils' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeUtils.class.php',
-            'newswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/NewsWidget.class.php',
+            'bebelnewswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelNewsWidget.class.php',
+            'bebelsocialwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelSocialWidget.class.php',
             'constructmenuwalker' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/ConstructMenuWalker.class.php'
         );
 
@@ -28,7 +29,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
         $s = array(
             'bebel_settings_last_update' => gmdate('D, d M Y H:i:s', time()),
-            'css' => '',
 
 
 
@@ -38,6 +38,12 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
             'footer_text' => 'This site was handcrafted by <a href="#">Bebel</a>',
 
+            'twitter_url' => '',
+            'facebook_url' => '',
+            'linkedin_url' => '',
+            'google_plus_url' => '',
+
+            'css' => '',
             'color_text' => '#3d3d3d',
             'color_second' => '#f24108'
 
@@ -128,15 +134,18 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'title' => 'General Settings',
                         'description' => 'Change your logo, ...'
                     ),
+                    'social' => array(
+                        'title' => 'Twitter, Facebook, LinkedIn',
+                        'description' => 'Set up your twitter, facebook and linkedIn accounts'
+                    ),
                     'styling' => array(
                         'title' => 'Styling',
                         'description' => 'All style / css related'
                     ),
                 ),
                 'widgets' => array(
-                    // logos
 
-
+                    //general
                     'logo_header' => array(
                         'title' => 'Logo Header',
                         'description' => 'Change your logo in the header. Optimal size: 289x57px',
@@ -173,6 +182,46 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'options' => array()
                     ),
 
+                    //social
+
+                    'twitter_url' => array(
+                        'title' => 'Twitter Page URL',
+                        'description' => 'Insert your Twitter page URL',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'social',
+                        'options' => array()
+                    ),
+                    'facebook_url' => array(
+                        'title' => 'Facebook Page URL',
+                        'description' => 'Insert your Facebook page URL',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'social',
+                        'options' => array()
+                    ),
+                    'linkedin_url' => array(
+                        'title' => 'LinkedIn Page URL',
+                        'description' => 'Insert your LinkedIn page URL',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'social',
+                        'options' => array()
+                    ),
+                    'google_plus_url' => array(
+                        'title' => 'Google Plus Page URL',
+                        'description' => 'Insert your Google Plus page URL',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'social',
+                        'options' => array()
+                    ),
+
+                    //styling
                     'css' => array(
                         'title' => 'Custom CSS',
                         'description' => 'If you have css styling you want to load on every page, put it in here. It is loaded after our css, so you can override our classes. But it is also loaded after the custom.css file, so pay attention not to override your own classes.',
@@ -183,7 +232,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'options' => array()
                     ),
                     'color_text' => array(
-                        'title' => 'Color of Text',
+                        'title' => 'Text Color',
                         'description' => 'Change the default color of the text.',
                         'template' => 'colorpicker',
                         'permission' => 'edit_theme_options',
@@ -326,8 +375,13 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
     {
         return array(
             array(
-                'widget-class' => 'NewsWidget',
-                'name' => 'news',
+                'widget-class' => 'BebelNewsWidget',
+                'name' => 'bebel_news',
+                'autoload' => true
+            ),
+            array(
+                'widget-class' => 'BebelSocialWidget',
+                'name' => 'bebel_social',
                 'autoload' => true
             )
         );

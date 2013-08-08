@@ -273,6 +273,9 @@
   a{
     color: $textColor;
     text-decoration: none;
+    display: inline-block;
+    width: 36px;
+    text-align: center;
     @include transition(color .2s);
 
     &:hover{

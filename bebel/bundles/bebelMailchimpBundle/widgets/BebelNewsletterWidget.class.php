@@ -1,18 +1,19 @@
 <?php
 
-class NewsletterWidget extends WP_Widget {
+class BebelNewsletterWidget extends WP_Widget {
     private $bundleDir = 'bebelMailchimpBundle';
 
     function __construct() {
-        $widget_ops = array('classname' => 'widget_newsletter', 'description' => __( "Newsletter subscription form") );
-        parent::__construct('newsletter', __('Newsletter'), $widget_ops);
-        $this->alt_option_name = 'widget_newsletter';
+        $widget_ops = array('classname' => 'widget_bebel_newsletter', 'description' => __( "Newsletter subscription form") );
+        parent::__construct('bebel_newsletter', __('Newsletter'), $widget_ops);
+        $this->alt_option_name = 'widget_bebel_newsletter';
 
+        add_action('update_option_'.BebelSingleton::getInstance('BebelSettings')->getPrefix().'-settings', array($this, 'flush_widget_cache'));
         add_action( 'switch_theme', array($this, 'flush_widget_cache') );
     }
 
     function widget($args, $instance) {
-        $cache = wp_cache_get('widget_newsletter', 'widget');
+        $cache = wp_cache_get('widget_bebel_newsletter', 'widget');
 
         if ( !is_array($cache) )
             $cache = array();
@@ -49,7 +50,7 @@ class NewsletterWidget extends WP_Widget {
 
         <?php
         $cache[$args['widget_id']] = ob_get_flush();
-        wp_cache_set('widget_newsletter', $cache, 'widget');
+        wp_cache_set('widget_bebel_newsletter', $cache, 'widget');
 
         //widget specific js
         wp_enqueue_script(
@@ -68,14 +69,14 @@ class NewsletterWidget extends WP_Widget {
         $this->flush_widget_cache();
 
         $alloptions = wp_cache_get( 'alloptions', 'options' );
-        if ( isset($alloptions['widget_newsletter']) )
-            delete_option('widget_newsletter');
+        if ( isset($alloptions['widget_bebel_newsletter']) )
+            delete_option('widget_bebel_newsletter');
 
         return $instance;
     }
 
     function flush_widget_cache() {
-        wp_cache_delete('widget_newsletter', 'widget');
+        wp_cache_delete('widget_bebel_newsletter', 'widget');
     }
 
     function form( $instance ) {
