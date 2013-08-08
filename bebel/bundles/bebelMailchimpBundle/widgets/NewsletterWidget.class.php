@@ -35,12 +35,16 @@ class NewsletterWidget extends WP_Widget {
         <?php echo $before_widget; ?>
         <?php if ( $title ) echo $before_title . $title . $after_title; ?>
         <div class="description"><?php echo $description; ?></div>
+        <?php if(BebelSingleton::getInstance('BebelSettings')->get('mailchimp_apikey') == ''){?>
+            <strong>No mailchimp API key defined.</strong> Please, define mailchimp API key in your backend.
+        <?php } else { ?>
         <form id="mailchimp-newsletter-form" class="form-inline newsletter-form" action="<?php echo $url; ?>">
             <label>
                 <input type="email" class="input-condensed email" name="email"  placeholder="<?php echo __('E-Mail', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?>" required />
             </label>
             <button type="submit" class="btn btn-danger btn-small"><?php echo __('Submit', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?> <i class="icon-chevron-right"></i></button>
         </form>
+        <?php }?>
         <?php echo $after_widget; ?>
 
         <?php
