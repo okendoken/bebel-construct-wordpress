@@ -16,5 +16,4 @@ if (have_posts()) {
         bebelThemeUtils::getPageFooterTemplate();
     }
 }
-?>
 

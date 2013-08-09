@@ -36,7 +36,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'logo_header' => '',
 
             'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
-            'footer_text' => 'This site was handcrafted by <a href="#">Bebel</a>',
+            'footer_text' => 'This site was handcrafted by Bebel',
 
             'twitter_url' => '',
             'facebook_url' => '',

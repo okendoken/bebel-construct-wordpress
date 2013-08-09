@@ -11014,7 +11014,7 @@ hr {
   color: #3d3d3d;
   text-decoration: none;
   display: inline-block;
-  width: 36px;
+  width: 23%;
   text-align: center;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -11552,19 +11552,20 @@ hr {
 /* line 715, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .description {
   font-size: 10.5px;
+  min-height: 40px;
 }
-/* line 719, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 720, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons {
   margin: 0;
   padding: 5px 10px;
   border-bottom: 1px solid #d7d7d7;
   height: 20px;
 }
-/* line 725, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 726, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons a {
   color: #999999;
 }
-/* line 728, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 729, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons a:hover {
   color: #f24108;
 }
@@ -11572,7 +11573,7 @@ hr {
 /*****************************/
 /*           Utils           */
 /*****************************/
-/* line 756, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 757, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 textarea.input-condensed,
 input[type="text"].input-condensed,
 input[type="password"].input-condensed,
@@ -11593,7 +11594,7 @@ input[type="color"].input-condensed,
   padding: 2px 6px;
 }
 
-/* line 762, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 763, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .text-align-center {
   text-align: center;
 }

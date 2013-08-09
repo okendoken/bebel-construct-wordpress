@@ -37,8 +37,7 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
 
     $w = array(
         'image_sizes' => array(
-            'team-small'     => array(138, 162, true),
-            'team-big'     => array(540, 270, true),
+            'team-small'     => array(169, 169, true)
         ),
     );
 

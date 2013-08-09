@@ -6,17 +6,26 @@ $page_layout = BebelUtils::getCustomMeta('page_layout', false, get_the_ID());
 if(!$page_layout) {
     $page_layout = "with-image";
 }
+
+$settings = BebelSingleton::getInstance('BebelSettings');
+
+$team_page = $settings->get('team_overview_page');
+if(get_the_ID() == $team_page)
+{
+    $slug = 'team';
+    $with_offset = false;
+} else {
+    $slug =  "page-".$page_layout;
+    $with_offset = $page_layout != 'no-image';
+}
 ?>
     <!--Start Header-->
     <header>
-        <?php bebelThemeUtils::getLogoTemplate(false, $page_layout == 'no-image' ? false : true); ?>
+        <?php bebelThemeUtils::getLogoTemplate(false, $with_offset); ?>
     </header><!--End Header-->
     <!--Start Main Content-->
 <div class="content">
 <?php
-
-
-$slug = $page_layout;
 
 // custom css for this page
 $css = BebelUtils::getCustomMeta('css', false, get_the_ID());
@@ -28,6 +37,6 @@ $css = BebelUtils::getCustomMeta('css', false, get_the_ID());
     </style>
 <?php endif; ?>
 
-<?php get_template_part( 'templates/single-'.$slug, get_post_format() );?>
+<?php get_template_part( 'templates/'.$slug, get_post_format() );?>
 
 <?php get_footer(); ?>

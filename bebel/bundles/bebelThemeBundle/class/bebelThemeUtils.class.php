@@ -19,6 +19,7 @@ class bebelThemeUtils
                 <?php else: ?>
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/images/example/logo.png" alt="Logo" />
                 <?php endif ?>
+            </a>
         </div><!--end .logo-->
     <?php }
 

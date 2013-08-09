@@ -274,7 +274,7 @@
     color: $textColor;
     text-decoration: none;
     display: inline-block;
-    width: 36px;
+    width: 23%;
     text-align: center;
     @include transition(color .2s);
 
@@ -714,6 +714,7 @@
 
   .description{
     font-size: $fontSizeMini;
+    min-height: $baseLineHeight * 2;
   }
 
   .social-icons{

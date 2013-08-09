@@ -822,4 +822,57 @@ class BebelUtils
         return $basic_settings;
     }
 
+    /**
+     * Courtesy to kriesi: http://www.kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin
+     * enhanced by bebel
+     *
+     * @param int $pages
+     * @param int $paged
+     * @param int $display_range
+     * @param string $css_class
+     * @param string $active_class
+     * @return string
+     */
+    public static function getNumberedPagination($pages, $paged, $display_range, $css_class, $active_class) {
+
+        $show_items = $display_range * 2 + 1;
+
+
+        if(empty($paged)) $paged = 1;
+        //else $paged = $paged -1;
+        if(!$pages) $pages = 1;
+
+        // more than one page required, right?
+        if($pages > 1) {
+            $li = '';
+            if($paged > 2 && ($paged == $display_range + 1) && $show_items < $pages) {
+                $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link(1).'">&laquo;</a></li>';
+            }
+            if($paged > 1 && $show_items < $pages) {
+                $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link($paged - 1).'">&lsaquo;</a></li>';
+            }
+
+            // loop all the pages
+            for($i = 1; $i<=$pages;$i++) {
+                // if page is not next arrow and if page is not last arrow
+                if(!($i >= $paged+$display_range+1 || $i <= $paged-$display_range-1) || $pages <= $show_items ) {
+                    if($i == $paged) {
+                        $li .= '<li class="'.$active_class.'"><span>'.$i.'</span></li>';
+                    }else {
+                        $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link($i).'">'.$i.'</a></li>';
+                    }
+                }
+            }
+
+            if($paged < $pages && $show_items < $pages) {
+                $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link($paged + 1).'">&rsaquo;</a></li>';
+            }
+            if($paged < $pages-1 && $paged + $display_range-1 < $pages && $show_items < $pages) {
+                $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link($pages).'">&raquo;</a></li>';
+            }
+
+            return $li;
+        }
+    }
+
 }// END CLASS
