@@ -5,17 +5,39 @@
   margin: 0px;
 }
 
-.bebel_admin_panel_tabs_nav {
+.bebel_admin_panel_tabs_nav{
+    margin-bottom: 0;
+}
+
+.bebel_admin_panel_tabs_nav li{
+    margin-bottom: 0;
+}
+
+.bebel_admin_panel_tabs_nav li a{
+    font-size: 150%;
+    line-height: 1.3em;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.bebel_admin_panel_tabs_nav li .nav-tab-active{
+    margin-bottom: -1px;
+    position: relative;
+}
+
+.bebel_admin_panel_tabs_nav:after{
+    display: block;
+    clear: both;
+    content: "";
 }
 
 .bebel_admin_panel_tabs_nav_underline {
   border-top: 1px solid #ccc;
-  margin-bottom: 20px;
-  margin-top: -9px;
   display: block;
   height: 1px;
   width: 100%;
-  margin-left: 0px;
+  margin-left: 0;
+    margin-bottom: 20px;
 }
 
 .bebel_admin_panel_tabs_nav li {
