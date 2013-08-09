@@ -11,6 +11,9 @@ function bebel_do_ajax(){
         case 'mailchimp_subscribe':
             bebel_mailchimp_subscribe($_POST);
             break;
+        case 'generate_2x_images':
+            bebel_generate_2x_images($_POST);
+            break;
         default:
             break;
     }
@@ -50,4 +53,12 @@ function bebel_mailchimp_subscribe($post)
         }
 
 }
+}
+
+function bebel_generate_2x_images($post)
+{
+    echo json_encode(
+        bebelRetinaHelper::generate2xImageForAllAttachments()
+    );
+    die();
 }

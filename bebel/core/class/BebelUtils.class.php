@@ -227,6 +227,9 @@ class BebelUtils
         // color picker
         wp_enqueue_script('js-colorpicker', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/js/colorpicker.js', array('jquery'));
 
+        //retina regenerator
+        wp_enqueue_script('regenerate-retina', BebelUtils::replaceToken('%BCP_BUNDLE_PATH%', 'BCP_BUNDLE_PATH').'/bebelThemeBundle/admin/assets/regenerate-retina.js', array('jquery'));
+
         // load css
         wp_enqueue_style('thickbox');
         wp_enqueue_style('jquery-ui', BebelUtils::replaceToken('%BCP_CORE_PATH%', 'BCP_CORE_PATH').'/assets/css/jquery-ui.css', array());

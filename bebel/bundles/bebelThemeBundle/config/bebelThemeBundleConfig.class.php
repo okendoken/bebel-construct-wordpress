@@ -15,6 +15,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
         $a = array(
             'bebelthemebundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelThemeBundleAdminConfig.class.php',
             'bebelthemeutils' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeUtils.class.php',
+            'bebelretinahelper' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelRetinaHelper.class.php',
             'bebelnewswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelNewsWidget.class.php',
             'bebelsocialwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelSocialWidget.class.php',
             'constructmenuwalker' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/ConstructMenuWalker.class.php'
@@ -37,6 +38,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
             'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
             'footer_text' => 'This site was handcrafted by Bebel',
+            'generate_2x_images' => 'on',
 
             'twitter_url' => '',
             'facebook_url' => '',
@@ -66,7 +68,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'actions' => array(),
             'filters' => array(
                 'widget_text' => 'do_shortcode',
-                'nav_menu_css_class' => array('bebelThemeUtils', 'activeNavClass')
+                'nav_menu_css_class' => array('bebelThemeUtils', 'activeNavClass'),
+                'wp_generate_attachment_metadata' => array('bebelRetinaHelper', 'generateAttachmentMetaData')
             ),
             'enqueue_scripts' => array(
                 'bootstrap-transition' => array(
@@ -84,6 +87,12 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 'app' => array(
                     'path' => get_template_directory_uri() . '/js/app.js',
                     'dependency' => array('jquery')
+                ),
+                //retina
+                'retina' => array(
+                    'path' => get_template_directory_uri() . '/js/lib/retina.js',
+                    'dependency' => array(),
+                    'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("generate_2x_images") == "on";')
                 ),
                 //page specific scripts
                 'bootstrap-carousel' => array(
@@ -137,6 +146,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'social' => array(
                         'title' => 'Twitter, Facebook, LinkedIn',
                         'description' => 'Set up your twitter, facebook and linkedIn accounts'
+                    ),
+                    'retina' => array(
+                        'title' => 'Retina',
+                        'description' => 'Your high ppi options'
                     ),
                     'styling' => array(
                         'title' => 'Styling',
@@ -221,11 +234,29 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'options' => array()
                     ),
 
+                    //retina
+                    'generate_2x_images' => array(
+                        'title' => 'Retina Ready Images',
+                        'description' => 'Whether to generate images for high ppi devices (iPad, MacBook, etc.)',
+                        'template' => 'select_true_false',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'retina',
+                        'options' => array()
+                    ),
+                    'generate_2x_images_action' => array(
+                        'title' => 'All Images',
+                        'description' => 'Press this button if you want to regenerate retina images for all attachments',
+                        'help' => "Note: this may take much time, so don't leave page when generating.",
+                        'template' => 'generate_2x_images',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'retina',
+                        'options' => array()
+                    ),
+
                     //styling
                     'css' => array(
                         'title' => 'Custom CSS',
                         'description' => 'If you have css styling you want to load on every page, put it in here. It is loaded after our css, so you can override our classes. But it is also loaded after the custom.css file, so pay attention not to override your own classes.',
-                        'help' => 'It will check once a week for new updates.',
                         'template' => 'textarea',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'styling',
@@ -248,7 +279,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'options' => array()
                     )
                 ),
-                'bundle' => 'core'
+                'bundle' => $this->bundleDir
             )
         );
 
