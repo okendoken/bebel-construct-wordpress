@@ -18,7 +18,7 @@ $url = BebelUtils::replaceToken('%BCP_BUNDLE_PATH%/'.$bebelConfig->getBundleDir(
             }).done(function( msg ) {
                 $(".ajax_res_<?php echo $key ?>").css('display', 'block');
                 if(msg == "valid") {
-                    $(".ajax_res_<?php echo $key ?>").css('backgroundColor', 'darkgreen');
+                    $(".ajax_res_<?php echo $key ?>").css('backgroundColor', 'green');
                 }else {
                     $(".ajax_res_<?php echo $key ?>").css('backgroundColor', '#ff0000');
                 }
