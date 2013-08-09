@@ -129,6 +129,46 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
                 'permission' => 'edit_post',
                 'scope' => array('member'),
                 'options' => array()
+            ),
+            'member_twitter' => array(
+                'menu_item' => 'layout',
+                'title' => 'User Twitter',
+                'description' => 'Enter Twitter Page address to be displayed',
+                'help' => '',
+                'template' => 'input',
+                'permission' => 'edit_post',
+                'scope' => array('member'),
+                'options' => array()
+            ),
+            'member_facebook' => array(
+                'menu_item' => 'layout',
+                'title' => 'User Facebook Page',
+                'description' => 'Enter Facebook Page address to be displayed',
+                'help' => '',
+                'template' => 'input',
+                'permission' => 'edit_post',
+                'scope' => array('member'),
+                'options' => array()
+            ),
+            'member_linkedin' => array(
+                'menu_item' => 'layout',
+                'title' => 'User Linked In Page',
+                'description' => 'Enter LinkedIn Page address to be displayed',
+                'help' => '',
+                'template' => 'input',
+                'permission' => 'edit_post',
+                'scope' => array('member'),
+                'options' => array()
+            ),
+            'member_googple_plus' => array(
+                'menu_item' => 'layout',
+                'title' => 'User Google Plus Page',
+                'description' => 'Enter Google Plus Page address to be displayed.',
+                'help' => '',
+                'template' => 'input',
+                'permission' => 'edit_post',
+                'scope' => array('member'),
+                'options' => array()
             )
         )
     );

@@ -34,7 +34,7 @@ class BebelAdminPanel extends BebelAdminGeneratorBase {
     foreach($this->modules as $base => $details)
     {
       $i++;
-      $tabs .= '<li><h2><a class="nav-tab" href="#bebel_admin_panel_tabs-'.$i.'">'.$details['title'].'</a></h2></li>';
+      $tabs .= '<li><a class="nav-tab" href="#bebel_admin_panel_tabs-'.$i.'">'.$details['title'].'</a></li>';
     }
     // menu is always set up in core
     include_once(get_template_directory().BebelUtils::getAdminpath().'/panel/templates/menu.php');
