@@ -36,8 +36,21 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
 
     $w = array(
         'image_sizes' => array(
-            'team-small'     => array(169, 169, true)
+            'team-small'     => array(169, 169, true),
+            'team-large'    => array(687, 200, true)
         ),
+        'enqueue_scripts' => array(
+            'picturefill' => array(
+                'path' => get_template_directory_uri() . '/js/lib/picturefill.js',
+                'dependency' => array(),
+                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID();')
+            ),
+            'team' => array(
+                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/team.js',
+                'dependency' => array('jquery'),
+                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID();')
+            ),
+        )
     );
 
     return $w;

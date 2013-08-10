@@ -1,6 +1,15 @@
 <section id="post-<?php the_ID(); ?>" <?php post_class('team-member span3'); ?>>
     <?php if(has_post_thumbnail()): ?>
-        <?php the_post_thumbnail('team-small'); ?>
+        <span data-picture data-alt="<?php the_title() ?>">
+            <?php $small = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'team-small' );?>
+            <span data-src="<?php echo $small[0] ?>"></span>
+            <?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'team-large' );?>
+            <span data-src="<?php echo $large[0] ?>" data-media="(max-width: 767px)"></span>
+            <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+            <noscript>
+                <?php the_post_thumbnail('team-small'); ?>
+            </noscript>
+        </span>
     <?php endif ?>
     <h5 class="name"><?php the_title() ?></h5>
     <?php if(BebelUtils::getCustomMeta('member_position', false, get_the_ID())): ?>

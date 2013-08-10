@@ -38,7 +38,8 @@
   }
 
   .logo,
-  .logo.home{
+  .logo.home,
+  .logo.offset{
     top: 20px;
   }
 
@@ -49,6 +50,11 @@
   .sidebar{
     float: none;
     width: auto;
+  }
+
+  .home-carousel,
+  .page-carousel{
+    height: auto;
   }
 
   .page-carousel .item,
@@ -64,12 +70,11 @@
   .social-icons{
     text-align: left;
     margin-bottom: 10px;
-    a + a{
-      margin-left: 40px;
+    a{
+      width: auto;
     }
-
-    &:after{
-      display: none;
+    a + a{
+      margin-left: 30px;
     }
   }
 
@@ -145,6 +150,11 @@
 
   .team .row-fluid:last-child .team-member:last-child{
     margin-bottom: 0;
+  }
+
+  .team-member img{
+    width: 100%;
+    height: auto;
   }
 
   .navigation{
