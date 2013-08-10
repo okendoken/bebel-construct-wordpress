@@ -13,7 +13,7 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
   public function getAutoload()
   {
     $a = array(
-        'bebelteambundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelTeamBundleAdminConfig.class.php',
+        'bebelteambundleadminconfig' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/config/bebelClientsBundleAdminConfigfig.class.php',
 
     );
 
@@ -25,8 +25,7 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
   {
     $s = array(
         'team_overview_page' => '',
-        'team_per_page' => '8',
-        'team_page_description' => 'Our Awesome Staff Is At Your Service',
+        'team_per_page' => '8'
     );
 
     return $s;
@@ -47,9 +46,6 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
   // admin stuff
   public function getAdmin()
   {
-
-    $templates = $this->getTemplates();
-    unset($templates['categories']['one_column'], $templates['categories']['two_column']);
 
     $modules = array(
         'team' => array(
@@ -78,16 +74,7 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
                     'permission' => 'edit_theme_options',
                     'submenu' => 'general',
                     'options' => array()
-                ),
-                'team_page_description' => array(
-                    'title' => 'Team Page Description',
-                    'description' => 'What text to display next to the logo in the header (empty for none). (eg. Our Awesome Staff Is At Your Service)',
-                    'help' => '',
-                    'template' => 'input',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'general',
-                    'options' => array()
-                ),
+                )
             ),
             'bundle' => $this->bundleDir
           ),
@@ -178,23 +165,6 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
       );
     
     return array('modules' =>$modules, 'pages' => $pages, 'post_modules' => $post_modules);
-  }
-
-  public function getTemplates()
-  {
-    $t = array(
-        'base_portfolio' => array('left' => 'Sidebar on left side', 'right' => 'Sidebar on right side', 'full' => 'No sidebar (full width)'),
-        'header' => 'header-portfolio',
-        'portfolio' => array(
-            'full' => 'Full Width',
-            'sidebar_left' => 'Sidebar Left',
-            'sidebar_right' => 'Sidebar Right',
-        ),
-        'default' => array('portfolio' => 'one_column'),
-        'categories' => array('one_column' => 'One Column', 'two_column' => 'Two Columns', 'three_column' => 'Three Columns')
-    );
-
-    return $t;
   }
 
   public function getPostTypes()
