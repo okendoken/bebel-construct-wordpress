@@ -878,4 +878,15 @@ class BebelUtils
         }
     }
 
+
+    /**
+     * Prefixes url with http:// if necessary
+     */
+    public static function outputUrl($url){
+        if (preg_match("#https?://#", $url) === 0) {
+            $url = 'http://'.$url;
+        }
+        return $url;
+    }
+
 }// END CLASS

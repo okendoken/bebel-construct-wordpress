@@ -94,17 +94,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'dependency' => array(),
                     'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("generate_2x_images") == "on";')
                 ),
-                //page specific scripts
-                'bootstrap-carousel' => array(
-                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-carousel.js',
-                    'dependency' => array('jquery'),
-                    'when' => create_function('', 'return is_home() || is_singular();')
-                ),
-                'home' => array(
-                    'path' => get_template_directory_uri() . '/js/home.js',
-                    'dependency' => array('jquery'),
-                    'when' => create_function('', 'return is_home() || is_singular();')
-                ),
                 'comment-reply'
             ),
             'enqueue_styles' => array(

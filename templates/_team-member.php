@@ -16,16 +16,16 @@
     <?php if ($twitter || $facebook || $linkedin || $googple_plus) { ?>
         <div class="social-icons">
             <?php if ($linkedin) {?>
-                <a target="_blank" href="<?php echo $linkedin; ?>"><i class="icon-linkedin icon-large"></i></a>
+                <a target="_blank" href="<?php echo BebelUtils::outputUrl($linkedin); ?>"><i class="icon-linkedin icon-large"></i></a>
             <?php } ?>
             <?php if ($twitter) {?>
-                <a target="_blank" href="<?php echo $twitter; ?>"><i class="icon-twitter icon-large"></i></a>
+                <a target="_blank" href="<?php echo BebelUtils::outputUrl($twitter); ?>"><i class="icon-twitter icon-large"></i></a>
             <?php } ?>
             <?php if ($facebook) {?>
-                <a target="_blank" href="<?php echo $facebook; ?>"><i class="icon-facebook icon-large"></i></a>
+                <a target="_blank" href="<?php echo BebelUtils::outputUrl($facebook); ?>"><i class="icon-facebook icon-large"></i></a>
             <?php } ?>
             <?php if ($googple_plus) {?>
-                <a target="_blank" href="<?php echo $googple_plus; ?>"><i class="icon-google-plus icon-large"></i></a>
+                <a target="_blank" href="<?php echo BebelUtils::outputUrl($googple_plus); ?>"><i class="icon-google-plus icon-large"></i></a>
             <?php } ?>
         </div>
     <?php } ?>

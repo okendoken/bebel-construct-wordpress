@@ -46,18 +46,15 @@ class bebelSliderBundleConfig  extends BebelBundleConfig
         'image_sizes' => array(
         ),
         'enqueue_scripts' => array(
-            'jquery-touchSwipe' => array(
-                'path' => BebelUtils::replaceToken('%BCP_BUNDLE_PATH%', 'BCP_BUNDLE_PATH').'/'.$this->bundleDir.'/assets/js/jquery.touchSwipe.js',
-                'dependency' => array('jquery')
+            'bootstrap-carousel' => array(
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-carousel.js',
+                'dependency' => array('jquery'),
+                'when' => create_function('', 'return is_home() || is_singular();')
             ),
-            'bebel-slider' => array(
-                'path' => BebelUtils::replaceToken('%BCP_BUNDLE_PATH%', 'BCP_BUNDLE_PATH').'/'.$this->bundleDir.'/assets/js/bebelTouchSlider.js',
-                'dependency' => array('jquery-touchSwipe')
-            )
-        ),
-        'enqueue_styles' => array(
-            'bebel-slider' => array(
-                'path' => BebelUtils::replaceToken('%BCP_BUNDLE_PATH%', 'BCP_BUNDLE_PATH').'/'.$this->bundleDir.'/assets/css/bebelTouchSlider.css'
+            'slider' => array(
+                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/slider.js',
+                'dependency' => array('jquery'),
+                'when' => create_function('', 'return is_home() || is_singular();')
             )
         )
     );

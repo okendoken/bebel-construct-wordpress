@@ -10,10 +10,12 @@ if(!$page_layout) {
 $settings = BebelSingleton::getInstance('BebelSettings');
 
 $team_page = $settings->get('team_overview_page');
-if(get_the_ID() == $team_page)
-{
+$clients_page = $settings->get('clients_page');
+$with_offset = false;
+if(get_the_ID() == $team_page) {
     $slug = 'team';
-    $with_offset = false;
+} elseif(get_the_ID() == $clients_page){
+    $slug = 'clients';
 } else {
     $slug =  "page-".$page_layout;
     $with_offset = $page_layout != 'no-image';
