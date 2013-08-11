@@ -1,7 +1,9 @@
 function loadRetinaImages(){
-    jQuery('img').each(function(){
-        new RetinaImage(this);
-    });
+    if (Retina.isRetina()){
+        jQuery('img').each(function(){
+            new RetinaImage(this);
+        });
+    }
 }
 
 if( window.addEventListener ){

@@ -11610,7 +11610,7 @@ input[type="color"].input-condensed,
 @media (max-width: 767px) {
   /* line 8, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   body {
-    background: none;
+    background: none !important;
     padding: 0;
   }
 
