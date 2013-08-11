@@ -2,6 +2,28 @@
   .content{
     width: 536px;
   }
+
+  .social-icons a{
+    width: 22%;
+  }
+
+  .navigation.navigation-page{
+    top: 268px;
+  }
+
+  .navigation.navigation-home{
+    top: 429px;
+  }
+
+  .home-carousel,
+  .home-carousel .item{
+    height: 496px;
+  }
+
+  .page-carousel,
+  .page-carousel .item{
+    height: 335px;
+  }
 }
 
 @media (max-width: 767px) {
