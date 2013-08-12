@@ -41,23 +41,28 @@ class bebelClientsBundleConfig  extends BebelBundleConfig
             'tab' => array(
                 'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-tab.js',
                 'dependency' => array('jquery'),
-                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("clients_page") == get_the_ID();')
+                'when' => array($this, 'includeClientPageScripts')
             ),
             'tab-collapse' => array(
                 'path' => get_template_directory_uri() . '/js/lib/bootstrap-tabcollapse.js',
                 'dependency' => array('jquery'),
-                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("clients_page") == get_the_ID();')
+                'when' => array($this, 'includeClientPageScripts')
             ),
             'clients' => array(
                 'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/clients.js',
                 'dependency' => array('jquery'),
-                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("clients_page") == get_the_ID();')
+                'when' => array($this, 'includeClientPageScripts')
             ),
         )
     );
 
     return $w;
   }
+
+    public function includeClientPageScripts(){
+        global $post;
+        return $post ? BebelSingleton::getInstance("BebelSettings")->get("clients_page") == get_the_ID() : false;
+    }
 
   // admin stuff
   public function getAdmin()

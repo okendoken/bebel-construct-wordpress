@@ -40,10 +40,10 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
             'team-large'    => array(687, 200, true)
         ),
         'enqueue_scripts' => array(
-            'ajax-retina' => array(
+            'ajax-retina-team' => array(
                 'path' => get_template_directory_uri() . '/js/ajax-retina.js',
                 'dependency' => array('jquery'),
-                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID();')
+                'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID() : false;')
             ),
         )
     );

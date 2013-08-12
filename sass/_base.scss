@@ -518,7 +518,7 @@
   }
 
   & + .post-preview{
-    img{
+    .post-preview-image img{
       margin-top: 30px;
     }
 
@@ -526,13 +526,6 @@
       border-top: 1px solid $dividerColor;
       padding-top: $baseLineHeight;
     }
-  }
-
-  img{
-    display: block;
-    float: left;
-    width: 134px;
-    height: 134px;
   }
 
   .description{
@@ -557,6 +550,13 @@
     position: absolute;
     bottom: 0;
   }
+}
+
+.post-preview-image img{
+  display: block;
+  float: left;
+  width: 134px;
+  height: 134px;
 }
 
 .page-carousel,

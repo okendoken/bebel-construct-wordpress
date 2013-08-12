@@ -11,7 +11,9 @@ $settings = BebelSingleton::getInstance('BebelSettings');
 <?php
 get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
     <section id="page-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
-        <h4 class="page-title"><?php single_cat_title(); ?></h4>
+        <h4 class="page-title"><?php
+            printf( __( 'Posts tagged with: %s', $settings->getPrefix() ), '<span>' . single_tag_title( '', false ) . '</span>' );
+            ?></h4>
         <?php
         if (have_posts()) {
             while (have_posts()) {

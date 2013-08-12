@@ -12,5 +12,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<script type="text/javascript">
+    window.devicePixelRatio = 2;
+</script>
 <div class="wrapper container">

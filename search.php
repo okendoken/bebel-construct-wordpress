@@ -9,9 +9,11 @@ $settings = BebelSingleton::getInstance('BebelSettings');
     <!--Start Main Content-->
 <div class="content">
 <?php
-get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
-    <section id="page-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
-        <h4 class="page-title"><?php single_cat_title(); ?></h4>
+get_template_part( 'templates/_navigation-no-image' ); ?>
+    <section id="page-<?php echo $post ? get_the_ID() : 'no-results'; ?>" class="page-content">
+        <h4 class="page-title"><?php
+            printf( __( 'Search results for: %s', $settings->getPrefix() ), '<span>' . get_search_query() . '</span>' );
+            ?></h4>
         <?php
         if (have_posts()) {
             while (have_posts()) {
@@ -27,6 +29,18 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
                 </div>
             <?php
             }
+        } else {?>
+            <article id="post-0" class="post no-results not-found">
+                <header class="entry-header">
+                    <h2 class="entry-title"><?php _e( 'Nothing Found', $settings->getPrefix() ); ?></h2>
+                </header>
+
+                <div class="entry-content">
+                    <p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', $settings->getPrefix() ); ?></p>
+                    <?php get_search_form(); ?>
+                </div><!-- .entry-content -->
+            </article><!-- #post-0 -->
+        <?php
         }
         ?>
     </section>

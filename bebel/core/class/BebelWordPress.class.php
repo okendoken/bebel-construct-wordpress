@@ -92,7 +92,7 @@ class BebelWordPress
           }
           $options = array_merge($defaultOptions, $source); //we don't need to set 'frontend' everytime
 
-          if($options['environment'] == $currentEnvironment && $options['when']())
+          if($options['environment'] == $currentEnvironment && call_user_func($options['when']))
           {
               wp_enqueue_script(
                   $script,
