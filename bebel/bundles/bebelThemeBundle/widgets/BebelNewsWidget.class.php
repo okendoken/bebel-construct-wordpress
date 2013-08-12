@@ -42,7 +42,7 @@ class BebelNewsWidget extends WP_Widget {
             <ul>
                 <?php while ( $q->have_posts() ) : $q->the_post(); ?>
                     <div class="post">
-                        <?php the_excerpt()?>
+                        <?php get_the_excerpt() == '' ? the_title() : the_excerpt()?>
                         <a href="<?php the_permalink() ?>"  title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>" class="more-link">more...</a>
                     </div>
                 <?php endwhile; ?>
