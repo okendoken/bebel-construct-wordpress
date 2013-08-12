@@ -9,8 +9,8 @@ $settings = BebelSingleton::getInstance('BebelSettings');
     <!--Start Main Content-->
 <div class="content">
 <?php
-get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
-    <section id="page-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
+get_template_part( 'templates/_navigation-no-image'); ?>
+    <section id="page-<?php echo $post ? get_the_ID() : 'no-results'; ?>" class="page-content">
         <h4 class="page-title"><?php wp_title(); ?></h4>
         <?php
         if (have_posts()) {
