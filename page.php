@@ -40,5 +40,5 @@ $css = BebelUtils::getCustomMeta('css', false, get_the_ID());
 <?php endif; ?>
 
 <?php get_template_part( 'templates/'.$slug, get_post_format() );?>
-
+<?php bebelThemeUtils::getLogoTemplate(true); ?>
 <?php get_footer(); ?>

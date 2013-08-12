@@ -32,5 +32,6 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
     </section>
 <?php
 bebelThemeUtils::getPageFooterTemplate();
+bebelThemeUtils::getLogoTemplate(true);
 
 get_footer();
