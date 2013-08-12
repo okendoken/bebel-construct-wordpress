@@ -7,7 +7,14 @@ function loadRetinaImages(){
 }
 
 if( window.addEventListener ){
-    window.addEventListener( "resize", loadRetinaImages, false );
+    var timeout;
+    window.addEventListener( "resize", function(){
+        //let's wait till resize finished
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
+            loadRetinaImages()
+        }, 500);
+    }, false );
     window.addEventListener( "DOMContentLoaded", function(){
         loadRetinaImages();
         // Run once only

@@ -88,11 +88,21 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'path' => get_template_directory_uri() . '/js/app.js',
                     'dependency' => array('jquery')
                 ),
+                //picturefill.js. Responsive images on demand
+                'picturefill' => array(
+                    'path' => get_template_directory_uri() . '/js/lib/picturefill.js',
+                    'dependency' => array()
+                ),
                 //retina
                 'retina' => array(
                     'path' => get_template_directory_uri() . '/js/lib/retina.js',
                     'dependency' => array(),
                     'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("generate_2x_images") == "on";')
+                ),
+                'ajax-retina' => array(
+                    'path' => get_template_directory_uri() . '/js/ajax-retina.js',
+                    'dependency' => array('jquery'),
+                    'when' => create_function('', 'return is_archive();')
                 ),
                 'comment-reply'
             ),
@@ -107,6 +117,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'image_sizes' => array(
                 'horizontal-medium' => array(800, 400, true),
                 'horizontal-large' => array(800, 640, true),
+                'blog-preview-small' => array(134, 134, true),
+                'blog-preview-large' => array(685, 350, true)
             )
         );
 

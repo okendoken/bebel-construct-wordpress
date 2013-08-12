@@ -40,13 +40,8 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
             'team-large'    => array(687, 200, true)
         ),
         'enqueue_scripts' => array(
-            'picturefill' => array(
-                'path' => get_template_directory_uri() . '/js/lib/picturefill.js',
-                'dependency' => array(),
-                'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID();')
-            ),
-            'team' => array(
-                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/team.js',
+            'ajax-retina' => array(
+                'path' => get_template_directory_uri() . '/js/ajax-retina.js',
                 'dependency' => array('jquery'),
                 'when' => create_function('', 'return BebelSingleton::getInstance("BebelSettings")->get("team_overview_page") == get_the_ID();')
             ),

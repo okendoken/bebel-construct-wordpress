@@ -88,7 +88,7 @@
     display: none;
   }
 
-  //make icons align left
+//make icons align left
   .social-icons{
     text-align: left;
     margin-bottom: 10px;
@@ -199,6 +199,32 @@
       font-size: $fontSizeSmall;
     }
   }
+
+  .post-preview{
+
+    & + .post-preview{
+      border-top: 1px solid $dividerColor;
+      .description{
+        border-top: none;
+      }
+
+    }
+    .description{
+      margin-left: 0;
+      padding-top: $baseLineHeight;
+    }
+
+    img{
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .post-preview-image img{
+    float: none;
+    height: auto;
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -228,18 +254,6 @@
 
   .sidebar-item{
     padding: 25px 20px 0;
-  }
-
-  .post-preview{
-    padding-bottom: $baseLineHeight / 2;
-    .description{
-      margin-left: 120px;
-    }
-
-    img{
-      height: 100px;
-      width: 100px;
-    }
   }
 }
 
