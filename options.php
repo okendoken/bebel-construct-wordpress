@@ -4,6 +4,7 @@ function add_options_generated_styles() {
     $backgroundImage = $settings->get('default_background');
     $textColor = $settings->get('color_text');
     $secondColor = $settings->get('color_second');
+    $navItemDescriptionColor = $settings->get('color_navigation_description');
     $custom_css = "
                 body{
                   background-image: url({$backgroundImage});
@@ -83,6 +84,11 @@ function add_options_generated_styles() {
                   background: {$secondColor};
                 }
 
+                .navigation .nav li.dropdown.open > .dropdown-toggle .nav-item-description,
+                .navigation .nav li.dropdown.open.active > .dropdown-toggle .nav-item-description,
+                .navigation .nav > li > a:hover .nav-item-description {
+                  color: {$navItemDescriptionColor};
+                }
                 ";
     $custom_css .= $settings->get('css');
     wp_add_inline_style( 'main-stylesheet', $custom_css );

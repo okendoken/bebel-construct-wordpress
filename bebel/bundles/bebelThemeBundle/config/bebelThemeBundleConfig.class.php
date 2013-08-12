@@ -47,7 +47,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
             'css' => '',
             'color_text' => '#3d3d3d',
-            'color_second' => '#f24108'
+            'color_second' => '#f24108',
+            'color_navigation_description' => '#f3cb85'
 
         );
 
@@ -274,6 +275,14 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'color_second' => array(
                         'title' => 'Second Color',
                         'description' => 'Color of more links, footer, progress bar etc.',
+                        'template' => 'colorpicker',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'styling',
+                        'options' => array()
+                    ),
+                    'color_navigation_description' => array(
+                        'title' => 'Navigation Description Color',
+                        'description' => 'Navigation item description color. A bit lighter than second color.',
                         'template' => 'colorpicker',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'styling',
