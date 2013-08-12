@@ -45,6 +45,12 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'linkedin_url' => '',
             'google_plus_url' => '',
 
+            // contact page
+            'contact_page' => '',
+            'contact_email' => '',
+            'contact_address' => '',
+            'contact_address_html' => '',
+
             'css' => '',
             'color_text' => '#3d3d3d',
             'color_second' => '#f24108',
@@ -149,6 +155,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'title' => 'Twitter, Facebook, LinkedIn',
                         'description' => 'Set up your twitter, facebook and linkedIn accounts'
                     ),
+                    'contact' => array(
+                        'title' => 'Contact Page',
+                        'description' => 'Setup the contact page'
+                    ),
                     'retina' => array(
                         'title' => 'Retina',
                         'description' => 'Your high ppi options'
@@ -252,6 +262,45 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'template' => 'generate_2x_images',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'retina',
+                        'options' => array()
+                    ),
+
+                    // contact page
+
+                    'contact_page' => array(
+                        'title' => 'Contact Page',
+                        'description' => 'Choose a page for the contact page layout.',
+                        'help' => '',
+                        'template' => 'select_page',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
+                        'options' => array()
+                    ),
+                    'contact_email' => array(
+                        'title' => 'Email for Form',
+                        'description' => 'Enter the email address the contact requests should be sent to if no person is selected.<strong>Warning:</strong> If empty, the default admin email address will be used.',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
+                        'options' => array()
+                    ),
+                    'contact_address' => array(
+                        'title' => 'Address',
+                        'description' => 'Enter your address in one line (seperate facts by a comma). Will be used for google maps. Example: Mystreet 32, 12345 New York, NY, USA',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
+                        'options' => array()
+                    ),
+                    'contact_address_html' => array(
+                        'title' => 'Address (formatted)',
+                        'description' => 'Enter your address as you would naturally enter it (with line breaks). This will be shown if google maps is not available. You can use HTML, though. For example for highlighting your company name.',
+                        'help' => '',
+                        'template' => 'textarea',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
                         'options' => array()
                     ),
 
