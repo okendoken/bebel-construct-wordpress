@@ -42,8 +42,8 @@ function add_options_generated_styles() {
                 .progress .bar-danger,
                 .progress-danger.progress-striped .bar,
                 .progress-striped .bar-danger,
-                .navigation .nav li.dropdown.open > .dropdown-toggle,
-                .navigation .nav li.dropdown.open.active > .dropdown-toggle{
+                .navigation .nav li.dropdown:hover > .dropdown-toggle,
+                .navigation .nav li.dropdown.active:hover > .dropdown-toggle{
                   background-color: {$secondColor};
                 }
                 .pagination ul > li > a:hover,
@@ -84,8 +84,8 @@ function add_options_generated_styles() {
                   background: {$secondColor};
                 }
 
-                .navigation .nav li.dropdown.open > .dropdown-toggle .nav-item-description,
-                .navigation .nav li.dropdown.open.active > .dropdown-toggle .nav-item-description,
+                .navigation .nav li.dropdown:hover > .dropdown-toggle .nav-item-description,
+                .navigation .nav li.dropdown.active:hover > .dropdown-toggle .nav-item-description,
                 .navigation .nav > li > a:hover .nav-item-description {
                   color: {$navItemDescriptionColor};
                 }

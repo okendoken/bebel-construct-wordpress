@@ -23,7 +23,7 @@ class ConstructMenuWalker extends Walker_Nav_Menu{
         $attributes = '';
         if ($this->getProperty($args, 'has_children')){
             $classes[] = 'dropdown';
-            $attributes .= ' class="dropdown-toggle" data-toggle="dropdown"';
+            $attributes .= ' class="dropdown-toggle"';
         }
 
         $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
