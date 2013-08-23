@@ -257,6 +257,16 @@
   input[type='email']{
     width: 69px;
   }
+
+  .btn-danger{
+    @include transition(background .3s);
+    background-image: none;
+  }
+
+  .btn-danger:hover{
+    background: #666;
+    @include transition(background .3s);
+  }
 }
 
 .social-icons{
