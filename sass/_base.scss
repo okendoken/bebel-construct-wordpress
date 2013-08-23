@@ -495,7 +495,14 @@
 
     .nav > li > .dropdown-menu {
       &:before {
-        display: none;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 14px solid #ccc;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        top: -14px;
+        left: 50%;
+        border-top: 0;
+        bottom: auto;
       }
       &:after {
         bottom: auto;
@@ -522,7 +529,15 @@
 
   .nav > li > .dropdown-menu {
     &:before {
-      display: none;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 14px solid #ccc;
+      border-top-color: rgba(0, 0, 0, 0.2);
+      top: auto;
+      left: 50%;
+      margin-left: -14px;
+      bottom: -14px;
+      border-bottom: 0;
     }
     &:after {
       border-top: 12px solid #FFF;
