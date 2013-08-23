@@ -637,6 +637,14 @@
     }
   }
 
+  .tab-pane{
+    @include transition(opacity .3s);
+    opacity: 0;
+    &.visible{
+      opacity: 1;
+    }
+  }
+
   .accordion{
     margin-bottom: 0;
   }

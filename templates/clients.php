@@ -40,7 +40,7 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
                     $active = true;
                     while (have_posts()) {
                         the_post();?>
-                        <div class="tab-pane<?php echo $active ? ' active' : ''?>" id="client-<?php echo get_the_ID()?>">
+                        <div class="tab-pane<?php echo $active ? ' active visible' : ''?>" id="client-<?php echo get_the_ID()?>">
                             <?php
                             get_template_part( 'templates/_client', get_post_format() );
                             ?>
