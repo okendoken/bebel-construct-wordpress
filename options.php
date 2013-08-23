@@ -55,6 +55,9 @@ function add_options_generated_styles() {
                 .navigation .dropdown-menu > li > a:focus,
                 .navigation .dropdown-submenu:hover > a,
                 .navigation .dropdown-submenu:focus > a,
+                .navigation .dropdown-menu > .active > a,
+                .navigation .dropdown-menu > .active > a:hover,
+                .navigation .dropdown-menu > .active > a:focus,
                 .clients .nav > li > a:hover,
                 .clients .nav > li > a:focus{
                    color: {$secondColor};
