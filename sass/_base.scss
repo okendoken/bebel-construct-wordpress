@@ -18,7 +18,7 @@
 
 .logo{
   position: absolute;
-  z-index: 10;
+  z-index: $z-index-base + 10;
   top: -57px;
   @include transition(top 0.35s ease);
 
@@ -94,6 +94,16 @@
 
 .home-carousel{
   margin-bottom: 0;
+  overflow: hidden;
+
+  .tp-bannertimer{
+    top: 504px;
+  }
+}
+
+.tp-bannertimer{
+  background: $red;
+  height: 3px;
 }
 
 .home-carousel,
@@ -297,14 +307,14 @@
 
   &.navigation-home{
     position: absolute;
-    z-index: 12;
+    z-index: $z-index-base + 12;
     width: 100%;
     top: 507px;
   }
 
   &.navigation-page{
     position: absolute;
-    z-index: 12;
+    z-index: $z-index-base + 12;
     width: 100%;
     top: 300px;
   }
@@ -447,19 +457,6 @@
     }
   }
 
-  .progress{
-    margin: 0;
-    height: 3px;
-    background: none;
-    &, .bar{
-      @include box-shadow(none);
-    }
-
-    .bar.animation{
-      @include animation(0, 5s, move-progress-bar, infinite, linear);
-    }
-  }
-
   .dropdown-menu{
     top: auto;
     bottom: 85px;
@@ -562,16 +559,6 @@
 
 }
 
-@include key-frame(move-progress-bar) {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
 /*****************************/
 /*           Page            */
 /*****************************/
@@ -628,6 +615,10 @@
   float: left;
   width: 134px;
   height: 134px;
+}
+
+.page-carousel .tp-bannertimer{
+  top: 297px;
 }
 
 .page-carousel,

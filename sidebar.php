@@ -7,7 +7,7 @@ if (BebelSingleton::hasInstance('postSlider')){
 
 <!--sidebar-->
 <aside class="sidebar">
-    <?php if (isset($postSlider) && $postSlider->hasImages() && !$postSlider->hasSingleImage()) { ?>
+    <?php if (isset($postSlider) && $postSlider->hasSlider()) { ?>
         <div class="nav-links">
             <a class="left" href="#home-carousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
             <span class="divider"></span>

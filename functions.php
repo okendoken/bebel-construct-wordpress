@@ -78,6 +78,7 @@ function construct_setup() {
 }
 
 // Files Include
+require_once( get_template_directory().'/install_plugins.php');
 require_once( get_template_directory().'/bebel/core/vendor/mobble/mobble.php');
 require_once( get_template_directory().'/ajax.php');
 require_once( get_template_directory().'/options.php');

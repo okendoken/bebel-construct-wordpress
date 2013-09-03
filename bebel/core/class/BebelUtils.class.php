@@ -889,4 +889,13 @@ class BebelUtils
         return $url;
     }
 
+    public static function listRevSliders(){
+        $data = array();
+        if (class_exists('UniteDBRev')){
+            $db = new UniteDBRev();
+            $data = $db->fetch(GlobalsRevSlider::$table_sliders);
+        }
+        return $data;
+    }
+
 }// END CLASS

@@ -3,10 +3,11 @@
 class bebelSliderBase
 {
     
-    protected $images = array();
+    protected $image;
     protected $html   = false;
     protected $settings;
     protected $post_id;
+    protected $sliderId;
     protected $image_size;
     protected $warning = '';
     
@@ -21,13 +22,12 @@ class bebelSliderBase
     {
         $this->image_size = $size;
     }
-    
-    public function hasImages(){
-        return !empty($this->images);
+
+    public function hasSlider(){
+        return !!$this->sliderId;
     }
 
-    public function hasSingleImage(){
-        return count($this->images) == 1;
+    public function hasImage(){
+        return !!$this->image;
     }
-    
 }

@@ -342,15 +342,11 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             )
         );
 
-        $tax_name = BebelUtils::getTaxonomyFullName('slide');
-
-        $args = array('taxonomy' => $tax_name);
-        $slider_sets_obj = get_categories( $args );
-
+        $slider_sets_obj = BebelUtils::listRevSliders();
         $slider_sets = array();
         foreach($slider_sets_obj as $slider_set)
         {
-            $slider_sets[$slider_set->term_id] = $slider_set->name;
+            $slider_sets[$slider_set['id']] = $slider_set['title'].' ('.$slider_set['alias'].')';
         }
 
 

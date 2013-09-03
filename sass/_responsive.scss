@@ -12,12 +12,20 @@
   }
 
   .navigation.navigation-home{
-    top: 429px;
+    top: 436px;
+  }
+
+  .home-carousel .tp-bannertimer{
+    top: 433px;
   }
 
   .home-carousel,
   .home-carousel .item{
     height: 496px;
+  }
+
+  .page-carousel .tp-bannertimer{
+    top: 265px;
   }
 
   .page-carousel,
@@ -82,6 +90,11 @@
   .page-carousel .item,
   .home-carousel .item{
     height: auto;
+  }
+
+  .page-carousel .tp-bannertimer,
+  .home-carousel .tp-bannertimer{
+    display: none;
   }
 
   .nav-links{

@@ -26,17 +26,17 @@ class bebelPostSlider extends bebelSliderBase
         if($this->settings->get('bebel_slider_enable') == "off")
         {
             // get static mainpage image
-            
+
             $image_url = $this->settings->get('mainpage_image');
             if($image_url)
             {
                 $image_id = BebelUtils::getImageIdByUrl($image_url);
                 if(!$image_id)
                 {
-                    $this->images[] = $image_url;
+                    $this->image = $image_url;
                 }else {
                     $image_url = wp_get_attachment_image_src($image_id, $this->image_size);
-                    $this->images[] = $image_url[0];
+                    $this->image = $image_url[0];
                     
                 }
             }else {
@@ -53,35 +53,9 @@ class bebelPostSlider extends bebelSliderBase
         {
             // slider is on. lets get it!
             $slider_set = $this->settings->get('bebel_slide_set');
-            
-            $query = array(
-                'post_type' => $this->settings->getPrefix() . '_slide',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => BebelUtils::getTaxonomyFullName('slide'),
-                        'field' => 'id',
-                        'terms' => $slider_set,
-                    )
-                )
-            );
-            
-            $slides = new WP_Query($query);
-            $images = false;
-            
-            if($slides->have_posts())
-            {
-                while($slides->have_posts())
-                {
-                    $slides->the_post();
-                    if(has_post_thumbnail())
-                    {
-                        // prepare images for our next round.
-                        
-                        $link = wp_get_attachment_image_src(get_post_thumbnail_id(), $this->image_size);
-                        $this->images[] = $link[0];
 
-                    }
-                }
+            if ($slider_set){
+                $this->sliderId = $slider_set;
             }
             
             
@@ -93,25 +67,15 @@ class bebelPostSlider extends bebelSliderBase
     
     public function prepareHtml()
     {
-        if($this->hasImages())
+        if($this->hasSlider() || $this->hasImage())
         {
             $html = '';
-            if ($this->hasSingleImage()){
-                $html .= '        <img src="'.$this->images[0].'" alt="'.__('Post Image ', $this->settings->getPrefix())."\">\n";
+            if ($this->hasSlider()){
+                ob_start();
+                putRevSlider($this->sliderId);
+                $html .= ob_get_clean();
             } else {
-                $i = 0;
-                $html .= "    <div class=\"carousel-inner\">\n";
-                $active = ' active';
-                foreach($this->images as $image)
-                {
-                    $i++;
-
-                    $html .= "      <div class='item{$active}'>\n";
-                    $html .= '        <img src="'.$image.'" alt="'.__(sprintf('Slider Image %d', $i), $this->settings->getPrefix())."\">\n";
-                    $html .= "      </div>\n";
-                    $active = '';
-                }
-                $html .= "    </div>\n";
+                $html .= '        <img src="'.$this->image.'" alt="'.__('Post Image ', $this->settings->getPrefix())."\">\n";
             }
             
             $this->html = $html;
@@ -128,46 +92,18 @@ class bebelPostSlider extends bebelSliderBase
     
     public function getImagesByPostId()
     {
-        $j = 0;
         $slider_set = BebelUtils::getCustomMeta('slide_set', false, $this->post_id);
 
-        $query = array(
-            'post_type' => $this->settings->getPrefix() . '_slide',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => BebelUtils::getTaxonomyFullName('slide'),
-                    'field' => 'id',
-                    'terms' => $slider_set,
-                )
-            )
-        );
-
-        $slides = new WP_Query($query);
-        $images = false;
-
-        if($slides->have_posts())
-        {
-            while($slides->have_posts())
-            {
-                $slides->the_post();
-                if(has_post_thumbnail())
-                {
-                    // prepare images for our next round.
-
-                    $link = wp_get_attachment_image_src(get_post_thumbnail_id(), $this->image_size);
-                    $this->images[] = $link[0];
-
-                }
-            }
+        if ($slider_set){
+            $this->sliderId = $slider_set;
         }
-        wp_reset_postdata();
 
         //if no slides and post image present
-        if(has_post_thumbnail($this->post_id) && !$this->hasImages())
+        if(has_post_thumbnail($this->post_id) && !$this->hasSlider())
         {
             // get url
             $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), $this->image_size);
-            $this->images[] = $image_url[0];
+            $this->image = $image_url[0];
         }
         $this->prepareHtml();
     }
@@ -180,22 +116,6 @@ class bebelPostSlider extends bebelSliderBase
         }
         return $this->html;
     }
-    
-    
-    public function refreshImageList($size)
-    {
-        // in case we have to get other image sizes
-        $this->image_size = $size;
-        $this->images = array();
-        $this->getImages();
-    }
-    
-    
-    public function getArray()
-    {
-        return $this->images;
-    }
-    
     
     
     
