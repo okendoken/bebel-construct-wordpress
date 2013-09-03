@@ -94,7 +94,6 @@
 
 .home-carousel{
   margin-bottom: 0;
-  overflow: hidden;
 
   .tp-bannertimer{
     top: 504px;
@@ -104,6 +103,11 @@
 .tp-bannertimer{
   background: $red;
   height: 3px;
+}
+
+
+.tparrows, .tp-bannershadow{
+  display: none;
 }
 
 .home-carousel,
@@ -188,6 +192,8 @@
 .sidebar{
   float: right;
   width: $sidebarWidth;
+  position: relative;
+  z-index: $z-index-base + 1;
 
   .nav-links{
     @include clearfix;

@@ -65,7 +65,8 @@ function add_options_generated_styles() {
                 .logo .square{
                    border: 5px solid {$secondColor};
                 }
-                .page-footer{
+                .page-footer,
+                .tp-bannertimer{
                    background: {$secondColor};
                 }
                 .latest-posts-carousel .carousel-control:hover,
