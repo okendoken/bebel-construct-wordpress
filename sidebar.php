@@ -9,9 +9,9 @@ if (BebelSingleton::hasInstance('postSlider')){
 <aside class="sidebar">
     <?php if (isset($postSlider) && $postSlider->hasSlider()) { ?>
         <div class="nav-links">
-            <a class="left" href="#home-carousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+            <a class="left" href="#" data-slide="prev"><i class="icon-chevron-left"></i></a>
             <span class="divider"></span>
-            <a class="right" href="#home-carousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+            <a class="right" href="#" data-slide="next"><i class="icon-chevron-right"></i></a>
         </div>
     <?php } ?>
     <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>

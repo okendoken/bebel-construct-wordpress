@@ -72,7 +72,17 @@ class bebelPostSlider extends bebelSliderBase
             $html = '';
             if ($this->hasSlider()){
                 ob_start();
-                putRevSlider($this->sliderId);
+
+                putRevSlider($this->sliderId);?>
+
+                <script type="text/javascript">
+                    var mainRevSliderApi;
+                    jQuery(function(){
+                        document.mainRevSliderApi = revapi<?php echo $this->sliderId?>;
+                    });
+                </script>
+
+                <?php
                 $html .= ob_get_clean();
             } else {
                 $html .= '        <img src="'.$this->image.'" alt="'.__('Post Image ', $this->settings->getPrefix())."\">\n";
