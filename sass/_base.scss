@@ -95,7 +95,7 @@
 .home-carousel{
   margin-bottom: 0;
 
-  .tp-bannertimer{
+  .progress-wrap{
     top: 504px;
   }
 }
@@ -105,6 +105,14 @@
   height: 3px;
 }
 
+.progress-wrap{
+  width: ($gridColumnWidth * $gridColumns) + ($gridGutterWidth * ($gridColumns - 1)) - $sidebarWidth;
+  z-index: 200;
+  position: absolute;
+  .tp-bannertimer{
+    position: static;
+  }
+}
 
 .tparrows, .tp-bannershadow{
   display: none;
@@ -623,7 +631,7 @@
   height: 134px;
 }
 
-.page-carousel .tp-bannertimer{
+.page-carousel .progress-wrap{
   top: 297px;
 }
 

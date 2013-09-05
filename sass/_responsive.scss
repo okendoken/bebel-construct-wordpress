@@ -15,7 +15,7 @@
     top: 436px;
   }
 
-  .home-carousel .tp-bannertimer{
+  .home-carousel .progress-wrap{
     top: 433px;
   }
 
@@ -24,13 +24,21 @@
     height: 496px;
   }
 
-  .page-carousel .tp-bannertimer{
+  .page-carousel .progress-wrap{
     top: 265px;
   }
 
   .page-carousel,
   .page-carousel .item{
     height: 335px;
+  }
+
+  .progress-wrap{
+    width: ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) - $sidebarWidth;
+  }
+
+  .rev_slider.tp-simpleresponsive{
+    height: 433px !important;
   }
 }
 
@@ -95,6 +103,17 @@
   .page-carousel .tp-bannertimer,
   .home-carousel .tp-bannertimer{
     display: none;
+  }
+
+  .rev_slider_wrapper{
+    float: none !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .rev_slider{
+    width: auto !important;
   }
 
   .nav-links{

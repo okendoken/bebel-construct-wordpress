@@ -10818,7 +10818,7 @@ hr {
   margin-bottom: 0;
 }
 /* line 98, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
-.home-carousel .tp-bannertimer {
+.home-carousel .progress-wrap {
   top: 504px;
 }
 
@@ -10828,12 +10828,23 @@ hr {
   height: 3px;
 }
 
-/* line 109, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 108, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+.progress-wrap {
+  width: 800px;
+  z-index: 200;
+  position: absolute;
+}
+/* line 112, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+.progress-wrap .tp-bannertimer {
+  position: static;
+}
+
+/* line 117, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tparrows, .tp-bannershadow {
   display: none;
 }
 
-/* line 114, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 122, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .home-carousel,
 .home-carousel .item {
   height: 640px;
@@ -10842,52 +10853,52 @@ hr {
 /*****************************/
 /*     Home with Bottom      */
 /*****************************/
-/* line 123, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 131, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .item {
   height: 100px;
   padding: 30px 0;
 }
-/* line 128, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 136, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post {
   text-align: center;
 }
-/* line 132, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 140, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview {
   line-height: 20px;
 }
-/* line 135, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 143, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview:first-child {
   padding-left: 55px;
 }
-/* line 139, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 147, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview:last-child {
   padding-right: 55px;
 }
-/* line 144, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 152, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview + .post-preview .description {
   border-top: none;
   padding-top: 0;
 }
-/* line 149, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 157, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview + .post-preview img {
   margin-top: 0;
 }
-/* line 154, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 162, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview img {
   width: auto;
   height: 100px;
 }
-/* line 159, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 167, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview .description {
   color: #999999;
   margin-left: 150px;
   height: 95px;
 }
-/* line 165, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 173, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .post-preview .title {
   margin-top: 5px;
 }
-/* line 170, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 178, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .carousel-control {
   background: none;
   color: #3d3d3d;
@@ -10903,7 +10914,7 @@ hr {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 182, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 190, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .latest-posts-carousel .carousel-control:hover {
   color: #f24108;
 }
@@ -10911,14 +10922,14 @@ hr {
 /*****************************/
 /*         Sidebar           */
 /*****************************/
-/* line 192, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 200, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar {
   float: right;
   width: 188px;
   position: relative;
   z-index: 401;
 }
-/* line 198, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 206, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar .nav-links {
   *zoom: 1;
   position: relative;
@@ -10933,7 +10944,7 @@ hr {
 .sidebar .nav-links:after {
   clear: both;
 }
-/* line 201, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 209, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar .nav-links a {
   display: block;
   float: left;
@@ -10946,15 +10957,15 @@ hr {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 211, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 219, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar .nav-links a:hover {
   color: #4c4c4c;
 }
-/* line 215, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 223, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar .nav-links a + a {
   border-left: 1px;
 }
-/* line 220, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 228, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar .nav-links .divider {
   position: absolute;
   display: block;
@@ -10965,54 +10976,54 @@ hr {
   background: #d7d7d7;
 }
 
-/* line 232, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 240, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item {
   padding: 25px 15px 0;
   background: white;
 }
-/* line 236, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 244, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item:last-child {
   padding-bottom: 15px;
 }
-/* line 240, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 248, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item .title {
   margin: 0;
 }
-/* line 244, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 252, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item .post, .sidebar-item .description {
   font-size: 11.9px;
   line-height: 17px;
   padding-bottom: 15px;
   color: #999999;
 }
-/* line 251, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 259, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item .description {
   padding-top: 5px;
 }
-/* line 255, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 263, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item .post {
   padding-top: 15px;
   border-bottom: 1px solid #d7d7d7;
 }
-/* line 258, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 266, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item .post p {
   margin-bottom: 5px;
 }
-/* line 263, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 271, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .sidebar-item form {
   margin: 0;
 }
 
-/* line 268, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 276, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .more-link {
   color: #f24108;
 }
 
-/* line 273, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 281, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .newsletter-form input[type='email'] {
   width: 69px;
 }
-/* line 277, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 285, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .newsletter-form .btn-danger {
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -11020,7 +11031,7 @@ hr {
   transition: background 0.3s;
   background-image: none;
 }
-/* line 282, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 290, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .newsletter-form .btn-danger:hover {
   background: #666;
   -webkit-transition: background 0.3s;
@@ -11029,13 +11040,13 @@ hr {
   transition: background 0.3s;
 }
 
-/* line 288, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 296, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .social-icons {
   margin: -10px 0 0;
   padding-top: 10px;
   border-top: 1px solid #d7d7d7;
 }
-/* line 293, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 301, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .social-icons a {
   color: #3d3d3d;
   text-decoration: none;
@@ -11047,7 +11058,7 @@ hr {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 301, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 309, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .social-icons a:hover {
   color: #f24108;
 }
@@ -11055,31 +11066,31 @@ hr {
 /*****************************/
 /*        Navigation         */
 /*****************************/
-/* line 311, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 319, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation {
   font-size: 11.9px;
 }
-/* line 314, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 322, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-home {
   position: absolute;
   z-index: 412;
   width: 100%;
   top: 507px;
 }
-/* line 321, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 329, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-page {
   position: absolute;
   z-index: 412;
   width: 100%;
   top: 300px;
 }
-/* line 328, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 336, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .navbar {
   margin: 0;
   padding: 10px 0;
   background: white;
 }
-/* line 334, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 342, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .navbar-inner {
   background: none;
   border: none;
@@ -11088,29 +11099,29 @@ hr {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 341, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 349, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav-item-description, .navigation .nav-item-title {
   display: block;
 }
-/* line 345, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 353, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav-item-title {
   font-weight: bold;
 }
-/* line 349, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 357, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav-item-description {
   color: #999999;
   font-size: 10.5px;
   line-height: 1.3;
 }
-/* line 355, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 363, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li {
   padding: 0 10px;
 }
-/* line 359, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 367, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li + li {
   border-left: 1px solid #d7d7d7;
 }
-/* line 363, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 371, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > a {
   padding: 5px 15px;
   color: #3d3d3d;
@@ -11120,7 +11131,7 @@ hr {
   -o-transition: color 0.2s, background-color 0.2s, padding 0.2s, margin 0.2s, border-radius 0.2s;
   transition: color 0.2s, background-color 0.2s, padding 0.2s, margin 0.2s, border-radius 0.2s;
 }
-/* line 369, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 377, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > a:hover {
   background: #f24108;
   margin: -5px 0;
@@ -11129,15 +11140,15 @@ hr {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 375, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 383, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > a:hover .nav-item-title {
   color: white;
 }
-/* line 379, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 387, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > a:hover .nav-item-description {
   color: #f3cb85;
 }
-/* line 387, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 395, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > .active > a,
 .navigation .nav > .active > a:hover,
 .navigation .nav > .active > a:focus {
@@ -11146,19 +11157,19 @@ hr {
   box-shadow: none;
   background: none;
 }
-/* line 391, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 399, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > .active > a .nav-item-title,
 .navigation .nav > .active > a:hover .nav-item-title,
 .navigation .nav > .active > a:focus .nav-item-title {
   color: #f24108;
 }
-/* line 395, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 403, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > .active > a .nav-item-description,
 .navigation .nav > .active > a:hover .nav-item-description,
 .navigation .nav > .active > a:focus .nav-item-description {
   color: #999999;
 }
-/* line 400, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 408, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown > .dropdown-menu {
   display: block;
   -webkit-transition: opacity 0.3s;
@@ -11166,7 +11177,7 @@ hr {
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-/* line 405, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 413, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:not(:hover) > .dropdown-menu {
   max-height: 0;
   overflow: hidden;
@@ -11174,13 +11185,13 @@ hr {
   padding: 0;
   top: -1000%;
 }
-/* line 415, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 423, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:hover > .dropdown-menu,
 .navigation .nav li.dropdown.active:hover > .dropdown-menu {
   max-height: none;
   opacity: 1;
 }
-/* line 420, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 428, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:hover > .dropdown-toggle,
 .navigation .nav li.dropdown.active:hover > .dropdown-toggle {
   background-color: #f24108;
@@ -11190,17 +11201,17 @@ hr {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 426, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 434, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:hover > .dropdown-toggle .nav-item-title,
 .navigation .nav li.dropdown.active:hover > .dropdown-toggle .nav-item-title {
   color: white;
 }
-/* line 430, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 438, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:hover > .dropdown-toggle .nav-item-description,
 .navigation .nav li.dropdown.active:hover > .dropdown-toggle .nav-item-description {
   color: #f3cb85;
 }
-/* line 435, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 443, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown:hover:after,
 .navigation .nav li.dropdown.active:hover:after {
   content: "";
@@ -11212,11 +11223,11 @@ hr {
   right: 0;
   margin: 0 -29px;
 }
-/* line 447, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 455, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav li.dropdown.active > .dropdown-toggle {
   background: none;
 }
-/* line 451, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 459, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .btn-navbar {
   background: none;
   text-shadow: none;
@@ -11229,12 +11240,12 @@ hr {
   padding: 0 10px;
   font-size: 21px;
 }
-/* line 460, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 468, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .btn-navbar:hover {
   background: none;
   color: #f24108;
 }
-/* line 466, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 474, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu {
   top: auto;
   bottom: 85px;
@@ -11251,25 +11262,25 @@ hr {
   text-align: center;
   font-size: 10.5px;
 }
-/* line 479, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 487, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu > li {
   padding: 0 25px;
 }
-/* line 483, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 491, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu > li > a {
   padding: 7px 0;
   color: #666;
 }
-/* line 488, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 496, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu > li + li > a {
   border-top: 1px solid #d7d7d7;
 }
-/* line 494, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 502, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-top .dropdown-menu {
   top: 78px;
   bottom: auto;
 }
-/* line 500, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 508, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-top .nav > li > .dropdown-menu:before {
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
@@ -11280,20 +11291,20 @@ hr {
   border-top: 0;
   bottom: auto;
 }
-/* line 510, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 518, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-top .nav > li > .dropdown-menu:after {
   bottom: auto;
   top: -12px;
   border-top: 0;
   border-bottom: 12px solid #FFF;
 }
-/* line 519, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 527, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation.navigation-top .nav li.dropdown:hover:after,
 .navigation.navigation-top .nav li.dropdown.active:hover:after {
   top: 47px;
   bottom: -36px;
 }
-/* line 531, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 539, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu > li > a:hover,
 .navigation .dropdown-menu > li > a:focus,
 .navigation .dropdown-submenu:hover > a,
@@ -11304,13 +11315,13 @@ hr {
   background: none;
   color: #f24108;
 }
-/* line 538, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 546, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .dropdown-menu > .active > a,
 .navigation .dropdown-menu > .active > a:hover,
 .navigation .dropdown-menu > .active > a:focus {
   background: none;
 }
-/* line 543, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 551, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > .dropdown-menu:before {
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
@@ -11322,7 +11333,7 @@ hr {
   bottom: -14px;
   border-bottom: 0;
 }
-/* line 554, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 562, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .navigation .nav > li > .dropdown-menu:after {
   border-top: 12px solid #FFF;
   border-bottom: 0;
@@ -11337,30 +11348,30 @@ hr {
 /*****************************/
 /*           Page            */
 /*****************************/
-/* line 572, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 580, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .page-content {
   padding: 20px 40px;
   min-height: 320px;
 }
 
-/* line 577, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 585, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview {
   padding-bottom: 30px;
 }
-/* line 580, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 588, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview:last-of-type {
   padding-bottom: 0;
 }
-/* line 585, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 593, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview + .post-preview .post-preview-image img {
   margin-top: 30px;
 }
-/* line 589, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 597, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview + .post-preview .description {
   border-top: 1px solid #d7d7d7;
   padding-top: 20px;
 }
-/* line 595, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 603, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview .description {
   position: relative;
   font-size: 11.9px;
@@ -11369,22 +11380,22 @@ hr {
   color: #555555;
   padding-bottom: 20px;
 }
-/* line 604, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 612, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview .title a {
   color: #3d3d3d;
   text-decoration: none;
 }
-/* line 608, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 616, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview .title a:hover {
   color: #f24108;
 }
-/* line 613, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 621, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview .more-link {
   position: absolute;
   bottom: 0;
 }
 
-/* line 619, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 627, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .post-preview-image img {
   display: block;
   float: left;
@@ -11392,25 +11403,25 @@ hr {
   height: 134px;
 }
 
-/* line 626, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
-.page-carousel .tp-bannertimer {
+/* line 634, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+.page-carousel .progress-wrap {
   top: 297px;
 }
 
-/* line 631, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 639, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .page-carousel,
 .page-carousel .item {
   height: 400px;
 }
 
-/* line 635, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 643, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .article-title {
   font-weight: normal;
   font-size: 52px;
   line-height: 1.4;
   margin: 0 0 30px;
 }
-/* line 641, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 649, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .article-title .author {
   font-size: 14px;
   font-style: italic;
@@ -11419,16 +11430,16 @@ hr {
 /*****************************/
 /*          Clients          */
 /*****************************/
-/* line 655, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 663, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients {
   margin: 40px 0 100px;
   font-size: 11.9px;
 }
-/* line 659, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 667, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients > .nav-tabs {
   border-right: none;
 }
-/* line 665, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 673, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients > .nav-tabs > .active > a,
 .clients > .nav-tabs > .active > a:hover,
 .clients > .nav-tabs > .active > a:focus {
@@ -11437,7 +11448,7 @@ hr {
   border: none;
   border-bottom: 1px solid #d7d7d7;
 }
-/* line 672, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 680, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients > .nav-tabs > li > a {
   border: none;
   -webkit-border-radius: 0;
@@ -11447,32 +11458,32 @@ hr {
   color: #999999;
   border-bottom: 1px solid #d7d7d7;
 }
-/* line 683, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 691, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients > .nav-tabs > li:first-child > a,
 .clients > .nav-tabs > .active:first-child > a {
   border-top: 1px solid #d7d7d7;
 }
-/* line 688, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 696, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .nav > li > a:hover,
 .clients .nav > li > a:focus {
   background: none;
   border-color: #d7d7d7;
   color: #f24108;
 }
-/* line 695, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 703, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .tab-content {
   padding-left: 30px;
   color: #555555;
 }
-/* line 699, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 707, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .tab-content img {
   display: block;
 }
-/* line 703, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 711, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .tab-content p {
   margin-top: 30px;
 }
-/* line 708, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 716, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .tab-pane {
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
@@ -11480,37 +11491,37 @@ hr {
   transition: opacity 0.3s;
   opacity: 0;
 }
-/* line 711, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 719, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .tab-pane.visible {
   opacity: 1;
 }
-/* line 716, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 724, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion {
   margin-bottom: 0;
 }
-/* line 720, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 728, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion-group, .clients .accordion-inner {
   border: none;
 }
-/* line 724, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 732, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion-heading {
   border-bottom: 1px solid #d7d7d7;
 }
-/* line 727, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 735, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion-heading a {
   color: #555555;
   padding: 8px 0;
 }
-/* line 733, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 741, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion-group:first-child .accordion-heading {
   border-top: 1px solid #d7d7d7;
 }
-/* line 737, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 745, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients .accordion-inner img {
   margin-bottom: 10px;
 }
 
-/* line 742, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 750, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients-website {
   color: #f24108;
   display: block;
@@ -11518,7 +11529,7 @@ hr {
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
 }
-/* line 749, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 757, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .clients-website:hover {
   color: #f24108;
 }
@@ -11526,7 +11537,7 @@ hr {
 /*****************************/
 /*            Team           */
 /*****************************/
-/* line 758, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 766, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team {
   *zoom: 1;
 }
@@ -11540,49 +11551,49 @@ hr {
 .team:after {
   clear: both;
 }
-/* line 760, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 768, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team .row-fluid {
   float: left;
 }
-/* line 763, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 771, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team .row-fluid + .row-fluid {
   margin-top: 30px;
 }
 
-/* line 769, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 777, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member {
   font-size: 11.9px;
   margin-bottom: 20px;
 }
-/* line 773, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 781, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member img {
   display: block;
 }
-/* line 777, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 785, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .name {
   margin-bottom: 5px;
 }
-/* line 781, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 789, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .position, .team-member .description {
   color: #555555;
 }
-/* line 785, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 793, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .description {
   font-size: 10.5px;
   min-height: 40px;
 }
-/* line 790, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 798, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons {
   margin: 0;
   padding: 5px 10px;
   border-bottom: 1px solid #d7d7d7;
   height: 20px;
 }
-/* line 796, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 804, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons a {
   color: #999999;
 }
-/* line 799, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 807, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .team-member .social-icons a:hover {
   color: #f24108;
 }
@@ -11590,7 +11601,7 @@ hr {
 /*****************************/
 /*           Utils           */
 /*****************************/
-/* line 827, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 835, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 textarea.input-condensed,
 input[type="text"].input-condensed,
 input[type="password"].input-condensed,
@@ -11611,7 +11622,7 @@ input[type="color"].input-condensed,
   padding: 2px 6px;
 }
 
-/* line 833, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 841, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .text-align-center {
   text-align: center;
 }
@@ -11647,7 +11658,7 @@ input[type="color"].input-condensed,
   }
 
   /* line 18, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
-  .home-carousel .tp-bannertimer {
+  .home-carousel .progress-wrap {
     top: 433px;
   }
 
@@ -11658,7 +11669,7 @@ input[type="color"].input-condensed,
   }
 
   /* line 27, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
-  .page-carousel .tp-bannertimer {
+  .page-carousel .progress-wrap {
     top: 265px;
   }
 
@@ -11667,26 +11678,36 @@ input[type="color"].input-condensed,
   .page-carousel .item {
     height: 335px;
   }
+
+  /* line 36, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  .progress-wrap {
+    width: 536px;
+  }
+
+  /* line 40, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  .rev_slider.tp-simpleresponsive {
+    height: 433px !important;
+  }
 }
 @media (max-width: 767px) {
-  /* line 38, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 46, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   body {
     background: none !important;
     padding: 0;
   }
 
-  /* line 43, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 51, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .wrapper {
     margin: 0;
   }
 
-  /* line 47, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 55, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .content {
     float: none;
     width: auto;
   }
 
-  /* line 55, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 63, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation,
   .navigation.navigation-home,
   .navigation.navigation-page,
@@ -11694,7 +11715,7 @@ input[type="color"].input-condensed,
     position: static;
   }
 
-  /* line 60, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 68, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .navbar-inner {
     min-height: 0;
     *zoom: 1;
@@ -11709,192 +11730,205 @@ input[type="color"].input-condensed,
   .navigation .navbar-inner:after {
     clear: both;
   }
-  /* line 65, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 73, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .nav > li {
     float: none;
   }
 
-  /* line 72, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 80, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .logo,
   .logo.home,
   .logo.offset {
     top: 20px;
   }
 
-  /* line 76, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 84, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .logo.bottom {
     display: none;
   }
 
-  /* line 80, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 88, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .sidebar {
     float: none;
     width: auto;
   }
 
-  /* line 86, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 94, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .home-carousel,
   .page-carousel {
     height: auto;
   }
 
-  /* line 91, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 99, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .page-carousel .item,
   .home-carousel .item {
     height: auto;
   }
 
-  /* line 96, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 104, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .page-carousel .tp-bannertimer,
   .home-carousel .tp-bannertimer {
     display: none;
   }
 
-  /* line 100, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 108, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  .rev_slider_wrapper {
+    float: none !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  /* line 115, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  .rev_slider {
+    width: auto !important;
+  }
+
+  /* line 119, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .nav-links {
     display: none;
   }
 
-  /* line 105, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 124, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .social-icons {
     text-align: left;
     margin-bottom: 10px;
   }
-  /* line 108, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 127, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .social-icons a {
     width: auto;
   }
-  /* line 111, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 130, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .social-icons a + a {
     margin-left: 30px;
   }
 
-  /* line 116, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 135, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .newsletter-form input[type='email'] {
     width: 180px;
   }
 
-  /* line 120, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 139, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .article-title {
     font-size: 24.5px;
   }
 
-  /* line 124, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 143, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .page-footer {
     padding-right: 0;
     text-align: center;
   }
 
-  /* line 129, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 148, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel {
     margin-bottom: 0;
   }
-  /* line 132, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 151, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .item {
     padding-bottom: 0;
     height: auto;
   }
-  /* line 137, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 156, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .post-preview {
     margin-bottom: 10px;
     padding: 0 20px;
   }
-  /* line 142, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 161, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .post-preview:first-child, .latest-posts-carousel .post-preview:last-child {
     padding: 0 20px;
   }
-  /* line 146, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 165, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .post-preview .title {
     margin: 0;
   }
-  /* line 150, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 169, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .post-preview .description {
     margin-left: 115px;
     height: 60px;
     min-height: 0;
   }
-  /* line 156, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 175, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .post-preview img {
     height: 80px;
   }
-  /* line 161, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 180, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .carousel-control {
     left: 0;
   }
-  /* line 163, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 182, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .latest-posts-carousel .carousel-control.right {
     left: auto;
     right: 0;
   }
 
-  /* line 170, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 189, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .clients {
     margin: 2em 0 0;
   }
 
-  /* line 174, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 193, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .clients-website {
     border: none;
   }
 
-  /* line 178, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 197, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .page-title {
     margin-top: 2em;
   }
 
-  /* line 182, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 201, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .sidebar-item {
     padding: 25px 40px 0;
   }
 
-  /* line 186, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 205, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .team .row-fluid:last-child .team-member:last-child {
     margin-bottom: 0;
   }
 
-  /* line 190, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 209, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .team-member img {
     width: 100%;
     height: auto;
   }
 
-  /* line 195, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 214, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation {
     font-size: 14px;
   }
-  /* line 198, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 217, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .nav {
     float: none;
   }
-  /* line 201, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 220, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .nav > li > a:hover {
     margin: 0 -5px;
     padding: 5px 20px;
   }
-  /* line 206, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 225, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .nav > li:last-child {
     margin-bottom: 20px;
   }
-  /* line 211, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 230, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .navigation .nav-item-description {
     font-size: 11.9px;
   }
 
-  /* line 218, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 237, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .post-preview + .post-preview {
     border-top: 1px solid #d7d7d7;
   }
-  /* line 220, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 239, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .post-preview + .post-preview .description {
     border-top: none;
   }
-  /* line 225, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 244, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .post-preview .description {
     margin-left: 0;
     padding-top: 20px;
   }
 
-  /* line 231, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 250, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .post-preview-image img {
     float: none;
     height: auto;
@@ -11902,32 +11936,32 @@ input[type="color"].input-condensed,
   }
 }
 @media (max-width: 480px) {
-  /* line 240, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 259, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .logo .square {
     width: 4px;
     height: 4px;
     border-width: 3px;
   }
-  /* line 246, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 265, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .logo .name {
     font-size: 14px;
   }
-  /* line 250, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 269, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .logo .slogan {
     font-size: 10.5px;
   }
 
-  /* line 255, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 274, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .btn-navbar .text {
     display: none;
   }
 
-  /* line 259, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 278, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .page {
     padding: 20px;
   }
 
-  /* line 263, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
+  /* line 282, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .sidebar-item {
     padding: 25px 20px 0;
   }

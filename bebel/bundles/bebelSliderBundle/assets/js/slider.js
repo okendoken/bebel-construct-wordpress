@@ -8,6 +8,22 @@
                 $('.nav-links [data-slide]').click(function(){
                     $sliderApi['rev' + $(this).data('slide')]();
                     return false;
+                });
+
+                function positionProgress(){
+                    var $progressWrap = $progress.parent(),
+                        $sliderWrap = $progress.parents('.rev_slider_wrapper');
+                    $progressWrap.css('top','');
+                    $progressWrap.css('top', parseInt($progressWrap.css('top')) - parseInt($sliderWrap.css('margin-top')));
+                    $progressWrap.css('left','');
+                    $progressWrap.css('left', - parseInt($sliderWrap.css('margin-left')));
+                }
+                positionProgress();
+
+                var timeout;
+                $(window).resize(function(){
+                    clearTimeout(timeout);
+                    timeout = setTimeout(positionProgress, 300);
                 })
             });
         }
