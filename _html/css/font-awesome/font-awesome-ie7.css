@@ -1,0 +1,1958 @@
+/*
+ *  Font Awesome 3.2.0
+ *  the iconic font designed for Bootstrap
+ *  ------------------------------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation can be
+ *  found at http://fontawesome.io.  Stay up to date on Twitter at
+ *  http://twitter.com/fontawesome.
+ *
+ *  License
+ *  ------------------------------------------------------------------------------
+ *  - The Font Awesome font is licensed under SIL OFL 1.1 -
+ *    http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - Font Awesome documentation licensed under CC BY 3.0 -
+ *    http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fontawesome.io"
+ *
+ *  Author - Dave Gandy
+ *  ------------------------------------------------------------------------------
+ *  Email: dave@fontawesome.io
+ *  Twitter: http://twitter.com/byscuits
+ *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ */
+/* line 27, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-large {
+  font-size: 1.33333em;
+  margin-top: -4px;
+  padding-top: 3px;
+  margin-bottom: -4px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+}
+
+/* line 38, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.nav [class^="icon-"],
+.nav [class*=" icon-"] {
+  vertical-align: inherit;
+  margin-top: -4px;
+  padding-top: 3px;
+  margin-bottom: -4px;
+  padding-bottom: 3px;
+}
+/* line 44, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.nav [class^="icon-"].icon-large,
+.nav [class*=" icon-"].icon-large {
+  vertical-align: -25%;
+}
+
+/* line 53, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.nav-pills [class^="icon-"].icon-large,
+.nav-pills [class*=" icon-"].icon-large, .nav-tabs [class^="icon-"].icon-large,
+.nav-tabs [class*=" icon-"].icon-large {
+  line-height: .75em;
+  margin-top: -7px;
+  padding-top: 5px;
+  margin-bottom: -5px;
+  padding-bottom: 4px;
+}
+
+/* line 66, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.btn [class^="icon-"].pull-left, .btn [class^="icon-"].pull-right,
+.btn [class*=" icon-"].pull-left,
+.btn [class*=" icon-"].pull-right {
+  vertical-align: inherit;
+}
+/* line 67, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.btn [class^="icon-"].icon-large,
+.btn [class*=" icon-"].icon-large {
+  margin-top: -.5em;
+}
+
+/* line 74, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+a [class^="icon-"],
+a [class*=" icon-"] {
+  cursor: pointer;
+}
+
+/* line 81, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-glass {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf000;');
+}
+
+/* line 86, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-music {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf001;');
+}
+
+/* line 91, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-search {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf002;');
+}
+
+/* line 96, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-envelope-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf003;');
+}
+
+/* line 101, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-heart {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf004;');
+}
+
+/* line 106, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-star {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf005;');
+}
+
+/* line 111, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-star-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf006;');
+}
+
+/* line 116, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-user {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf007;');
+}
+
+/* line 121, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-film {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf008;');
+}
+
+/* line 126, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-th-large {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf009;');
+}
+
+/* line 131, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-th {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00a;');
+}
+
+/* line 136, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-th-list {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00b;');
+}
+
+/* line 141, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ok {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00c;');
+}
+
+/* line 146, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-remove {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00d;');
+}
+
+/* line 151, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-zoom-in {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf00e;');
+}
+
+/* line 156, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-zoom-out {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf010;');
+}
+
+/* line 161, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-off {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf011;');
+}
+
+/* line 165, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-power-off {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf011;');
+}
+
+/* line 170, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-signal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf012;');
+}
+
+/* line 175, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cog {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf013;');
+}
+
+/* line 180, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-trash {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf014;');
+}
+
+/* line 185, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-home {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf015;');
+}
+
+/* line 190, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-file-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf016;');
+}
+
+/* line 195, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-time {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf017;');
+}
+
+/* line 200, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-road {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf018;');
+}
+
+/* line 205, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-download-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf019;');
+}
+
+/* line 210, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-download {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01a;');
+}
+
+/* line 215, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-upload {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01b;');
+}
+
+/* line 220, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-inbox {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01c;');
+}
+
+/* line 225, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-play-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01d;');
+}
+
+/* line 230, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-repeat {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01e;');
+}
+
+/* line 234, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rotate-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf01e;');
+}
+
+/* line 239, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-refresh {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf021;');
+}
+
+/* line 244, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-list-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf022;');
+}
+
+/* line 249, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-lock {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf023;');
+}
+
+/* line 254, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-flag {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf024;');
+}
+
+/* line 259, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-headphones {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf025;');
+}
+
+/* line 264, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-volume-off {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf026;');
+}
+
+/* line 269, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-volume-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf027;');
+}
+
+/* line 274, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-volume-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf028;');
+}
+
+/* line 279, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-qrcode {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf029;');
+}
+
+/* line 284, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-barcode {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02a;');
+}
+
+/* line 289, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tag {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02b;');
+}
+
+/* line 294, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tags {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02c;');
+}
+
+/* line 299, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-book {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02d;');
+}
+
+/* line 304, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bookmark {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02e;');
+}
+
+/* line 309, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-print {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf02f;');
+}
+
+/* line 314, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-camera {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf030;');
+}
+
+/* line 319, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-font {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf031;');
+}
+
+/* line 324, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bold {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf032;');
+}
+
+/* line 329, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-italic {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf033;');
+}
+
+/* line 334, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-text-height {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf034;');
+}
+
+/* line 339, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-text-width {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf035;');
+}
+
+/* line 344, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-align-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf036;');
+}
+
+/* line 349, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-align-center {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf037;');
+}
+
+/* line 354, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-align-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf038;');
+}
+
+/* line 359, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-align-justify {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf039;');
+}
+
+/* line 364, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-list {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03a;');
+}
+
+/* line 369, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-indent-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03b;');
+}
+
+/* line 374, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-indent-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03c;');
+}
+
+/* line 379, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-facetime-video {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03d;');
+}
+
+/* line 384, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-picture {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03e;');
+}
+
+/* line 389, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-pencil {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf040;');
+}
+
+/* line 394, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-map-marker {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf041;');
+}
+
+/* line 399, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-adjust {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf042;');
+}
+
+/* line 404, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tint {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf043;');
+}
+
+/* line 409, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-edit {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf044;');
+}
+
+/* line 414, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-share {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf045;');
+}
+
+/* line 419, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-check {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf046;');
+}
+
+/* line 424, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-move {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf047;');
+}
+
+/* line 429, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-step-backward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf048;');
+}
+
+/* line 434, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fast-backward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf049;');
+}
+
+/* line 439, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-backward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04a;');
+}
+
+/* line 444, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-play {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04b;');
+}
+
+/* line 449, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-pause {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04c;');
+}
+
+/* line 454, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-stop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04d;');
+}
+
+/* line 459, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-forward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf04e;');
+}
+
+/* line 464, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fast-forward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf050;');
+}
+
+/* line 469, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-step-forward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf051;');
+}
+
+/* line 474, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-eject {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf052;');
+}
+
+/* line 479, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf053;');
+}
+
+/* line 484, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf054;');
+}
+
+/* line 489, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-plus-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf055;');
+}
+
+/* line 494, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-minus-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf056;');
+}
+
+/* line 499, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-remove-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf057;');
+}
+
+/* line 504, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ok-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf058;');
+}
+
+/* line 509, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-question-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf059;');
+}
+
+/* line 514, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-info-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05a;');
+}
+
+/* line 519, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-screenshot {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05b;');
+}
+
+/* line 524, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-remove-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05c;');
+}
+
+/* line 529, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ok-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05d;');
+}
+
+/* line 534, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ban-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf05e;');
+}
+
+/* line 539, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-arrow-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf060;');
+}
+
+/* line 544, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-arrow-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf061;');
+}
+
+/* line 549, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-arrow-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf062;');
+}
+
+/* line 554, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-arrow-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf063;');
+}
+
+/* line 559, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-share-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf064;');
+}
+
+/* line 563, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-mail-forward {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf064;');
+}
+
+/* line 568, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-resize-full {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf065;');
+}
+
+/* line 573, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-resize-small {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf066;');
+}
+
+/* line 578, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-plus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf067;');
+}
+
+/* line 583, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-minus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf068;');
+}
+
+/* line 588, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-asterisk {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf069;');
+}
+
+/* line 593, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-exclamation-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06a;');
+}
+
+/* line 598, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-gift {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06b;');
+}
+
+/* line 603, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-leaf {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06c;');
+}
+
+/* line 608, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fire {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06d;');
+}
+
+/* line 613, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-eye-open {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf06e;');
+}
+
+/* line 618, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-eye-close {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf070;');
+}
+
+/* line 623, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-warning-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf071;');
+}
+
+/* line 628, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-plane {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf072;');
+}
+
+/* line 633, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-calendar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf073;');
+}
+
+/* line 638, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-random {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf074;');
+}
+
+/* line 643, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-comment {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf075;');
+}
+
+/* line 648, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-magnet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf076;');
+}
+
+/* line 653, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf077;');
+}
+
+/* line 658, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf078;');
+}
+
+/* line 663, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-retweet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf079;');
+}
+
+/* line 668, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-shopping-cart {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07a;');
+}
+
+/* line 673, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-folder-close {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07b;');
+}
+
+/* line 678, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-folder-open {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07c;');
+}
+
+/* line 683, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-resize-vertical {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07d;');
+}
+
+/* line 688, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-resize-horizontal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf07e;');
+}
+
+/* line 693, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bar-chart {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf080;');
+}
+
+/* line 698, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-twitter-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf081;');
+}
+
+/* line 703, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-facebook-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf082;');
+}
+
+/* line 708, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-camera-retro {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf083;');
+}
+
+/* line 713, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-key {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf084;');
+}
+
+/* line 718, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cogs {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf085;');
+}
+
+/* line 723, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-comments {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf086;');
+}
+
+/* line 728, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-thumbs-up-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf087;');
+}
+
+/* line 733, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-thumbs-down-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf088;');
+}
+
+/* line 738, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-star-half {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf089;');
+}
+
+/* line 743, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-heart-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08a;');
+}
+
+/* line 748, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-signout {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08b;');
+}
+
+/* line 753, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-linkedin-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08c;');
+}
+
+/* line 758, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-pushpin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08d;');
+}
+
+/* line 763, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-external-link {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf08e;');
+}
+
+/* line 768, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-signin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf090;');
+}
+
+/* line 773, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-trophy {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf091;');
+}
+
+/* line 778, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-github-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf092;');
+}
+
+/* line 783, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-upload-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf093;');
+}
+
+/* line 788, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-lemon {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf094;');
+}
+
+/* line 793, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-phone {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf095;');
+}
+
+/* line 798, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-check-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf096;');
+}
+
+/* line 802, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-unchecked {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf096;');
+}
+
+/* line 807, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bookmark-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf097;');
+}
+
+/* line 812, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-phone-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;');
+}
+
+/* line 817, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-twitter {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;');
+}
+
+/* line 822, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-facebook {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09a;');
+}
+
+/* line 827, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-github {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09b;');
+}
+
+/* line 832, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-unlock {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09c;');
+}
+
+/* line 837, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-credit-card {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09d;');
+}
+
+/* line 842, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rss {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09e;');
+}
+
+/* line 847, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hdd {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a0;');
+}
+
+/* line 852, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bullhorn {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a1;');
+}
+
+/* line 857, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bell {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a2;');
+}
+
+/* line 862, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-certificate {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a3;');
+}
+
+/* line 867, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hand-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a4;');
+}
+
+/* line 872, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hand-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a5;');
+}
+
+/* line 877, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hand-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a6;');
+}
+
+/* line 882, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hand-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a7;');
+}
+
+/* line 887, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle-arrow-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a8;');
+}
+
+/* line 892, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle-arrow-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0a9;');
+}
+
+/* line 897, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle-arrow-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0aa;');
+}
+
+/* line 902, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle-arrow-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ab;');
+}
+
+/* line 907, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-globe {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ac;');
+}
+
+/* line 912, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-wrench {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ad;');
+}
+
+/* line 917, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tasks {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ae;');
+}
+
+/* line 922, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-filter {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b0;');
+}
+
+/* line 927, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-briefcase {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b1;');
+}
+
+/* line 932, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fullscreen {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0b2;');
+}
+
+/* line 937, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-group {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c0;');
+}
+
+/* line 942, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-link {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c1;');
+}
+
+/* line 947, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cloud {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c2;');
+}
+
+/* line 952, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-beaker {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c3;');
+}
+
+/* line 957, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cut {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c4;');
+}
+
+/* line 962, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-copy {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c5;');
+}
+
+/* line 967, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-paper-clip {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c6;');
+}
+
+/* line 971, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-paperclip {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c6;');
+}
+
+/* line 976, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-save {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c7;');
+}
+
+/* line 981, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sign-blank {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c8;');
+}
+
+/* line 986, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-reorder {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c9;');
+}
+
+/* line 991, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-list-ul {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ca;');
+}
+
+/* line 996, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-list-ol {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cb;');
+}
+
+/* line 1001, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-strikethrough {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cc;');
+}
+
+/* line 1006, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-underline {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0cd;');
+}
+
+/* line 1011, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-table {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ce;');
+}
+
+/* line 1016, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-magic {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d0;');
+}
+
+/* line 1021, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-truck {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d1;');
+}
+
+/* line 1026, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-pinterest {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d2;');
+}
+
+/* line 1031, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-pinterest-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d3;');
+}
+
+/* line 1036, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-google-plus-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d4;');
+}
+
+/* line 1041, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-google-plus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d5;');
+}
+
+/* line 1046, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-money {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d6;');
+}
+
+/* line 1051, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-caret-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d7;');
+}
+
+/* line 1056, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-caret-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d8;');
+}
+
+/* line 1061, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-caret-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d9;');
+}
+
+/* line 1066, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-caret-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0da;');
+}
+
+/* line 1071, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-columns {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0db;');
+}
+
+/* line 1076, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dc;');
+}
+
+/* line 1081, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0dd;');
+}
+
+/* line 1086, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0de;');
+}
+
+/* line 1091, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-envelope {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0;');
+}
+
+/* line 1096, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-linkedin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e1;');
+}
+
+/* line 1101, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-undo {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e2;');
+}
+
+/* line 1105, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rotate-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e2;');
+}
+
+/* line 1110, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-legal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e3;');
+}
+
+/* line 1115, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-dashboard {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e4;');
+}
+
+/* line 1120, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-comment-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e5;');
+}
+
+/* line 1125, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-comments-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e6;');
+}
+
+/* line 1130, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bolt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e7;');
+}
+
+/* line 1135, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sitemap {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e8;');
+}
+
+/* line 1140, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-umbrella {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e9;');
+}
+
+/* line 1145, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-paste {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ea;');
+}
+
+/* line 1150, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-lightbulb {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0eb;');
+}
+
+/* line 1155, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-exchange {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ec;');
+}
+
+/* line 1160, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cloud-download {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ed;');
+}
+
+/* line 1165, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cloud-upload {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0ee;');
+}
+
+/* line 1170, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-user-md {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f0;');
+}
+
+/* line 1175, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-stethoscope {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f1;');
+}
+
+/* line 1180, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-suitcase {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f2;');
+}
+
+/* line 1185, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bell-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f3;');
+}
+
+/* line 1190, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-coffee {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f4;');
+}
+
+/* line 1195, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-food {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f5;');
+}
+
+/* line 1200, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-file-text-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f6;');
+}
+
+/* line 1205, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-building {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f7;');
+}
+
+/* line 1210, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-hospital {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f8;');
+}
+
+/* line 1215, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ambulance {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f9;');
+}
+
+/* line 1220, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-medkit {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fa;');
+}
+
+/* line 1225, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fighter-jet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fb;');
+}
+
+/* line 1230, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-beer {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fc;');
+}
+
+/* line 1235, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-h-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fd;');
+}
+
+/* line 1240, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-plus-sign-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0fe;');
+}
+
+/* line 1245, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-double-angle-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf100;');
+}
+
+/* line 1250, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-double-angle-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf101;');
+}
+
+/* line 1255, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-double-angle-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf102;');
+}
+
+/* line 1260, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-double-angle-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf103;');
+}
+
+/* line 1265, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-angle-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf104;');
+}
+
+/* line 1270, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-angle-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf105;');
+}
+
+/* line 1275, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-angle-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf106;');
+}
+
+/* line 1280, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-angle-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf107;');
+}
+
+/* line 1285, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-desktop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf108;');
+}
+
+/* line 1290, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-laptop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf109;');
+}
+
+/* line 1295, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tablet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10a;');
+}
+
+/* line 1300, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-mobile-phone {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10b;');
+}
+
+/* line 1305, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle-blank {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10c;');
+}
+
+/* line 1310, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-quote-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10d;');
+}
+
+/* line 1315, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-quote-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf10e;');
+}
+
+/* line 1320, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-spinner {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf110;');
+}
+
+/* line 1325, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-circle {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf111;');
+}
+
+/* line 1330, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-reply {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf112;');
+}
+
+/* line 1334, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-mail-reply {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf112;');
+}
+
+/* line 1339, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-github-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf113;');
+}
+
+/* line 1344, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-folder-close-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf114;');
+}
+
+/* line 1349, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-folder-open-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf115;');
+}
+
+/* line 1354, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-expand-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf116;');
+}
+
+/* line 1359, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-collapse-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf117;');
+}
+
+/* line 1364, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-smile {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf118;');
+}
+
+/* line 1369, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-frown {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf119;');
+}
+
+/* line 1374, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-meh {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11a;');
+}
+
+/* line 1379, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-gamepad {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11b;');
+}
+
+/* line 1384, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-keyboard {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11c;');
+}
+
+/* line 1389, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-flag-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11d;');
+}
+
+/* line 1394, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-flag-checkered {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf11e;');
+}
+
+/* line 1399, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-terminal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf120;');
+}
+
+/* line 1404, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-code {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf121;');
+}
+
+/* line 1409, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-reply-all {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf122;');
+}
+
+/* line 1414, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-mail-reply-all {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf122;');
+}
+
+/* line 1419, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-star-half-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf123;');
+}
+
+/* line 1423, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-star-half-full {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf123;');
+}
+
+/* line 1428, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-location-arrow {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf124;');
+}
+
+/* line 1433, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-crop {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf125;');
+}
+
+/* line 1438, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-code-fork {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf126;');
+}
+
+/* line 1443, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-unlink {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf127;');
+}
+
+/* line 1448, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-question {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf128;');
+}
+
+/* line 1453, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-info {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf129;');
+}
+
+/* line 1458, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-exclamation {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12a;');
+}
+
+/* line 1463, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-superscript {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12b;');
+}
+
+/* line 1468, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-subscript {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12c;');
+}
+
+/* line 1473, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-eraser {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12d;');
+}
+
+/* line 1478, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-puzzle-piece {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12e;');
+}
+
+/* line 1483, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-microphone {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf130;');
+}
+
+/* line 1488, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-microphone-off {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf131;');
+}
+
+/* line 1493, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-shield {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf132;');
+}
+
+/* line 1498, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-calendar-empty {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf133;');
+}
+
+/* line 1503, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-fire-extinguisher {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf134;');
+}
+
+/* line 1508, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rocket {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf135;');
+}
+
+/* line 1513, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-maxcdn {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf136;');
+}
+
+/* line 1518, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-sign-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf137;');
+}
+
+/* line 1523, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-sign-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf138;');
+}
+
+/* line 1528, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-sign-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf139;');
+}
+
+/* line 1533, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-chevron-sign-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13a;');
+}
+
+/* line 1538, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-html5 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13b;');
+}
+
+/* line 1543, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-css3 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13c;');
+}
+
+/* line 1548, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-anchor {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13d;');
+}
+
+/* line 1553, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-unlock-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13e;');
+}
+
+/* line 1558, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bullseye {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf140;');
+}
+
+/* line 1563, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ellipsis-horizontal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf141;');
+}
+
+/* line 1568, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ellipsis-vertical {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf142;');
+}
+
+/* line 1573, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rss-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf143;');
+}
+
+/* line 1578, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-play-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf144;');
+}
+
+/* line 1583, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-ticket {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf145;');
+}
+
+/* line 1588, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-minus-sign-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf146;');
+}
+
+/* line 1593, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-check-minus {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf147;');
+}
+
+/* line 1598, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-level-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf148;');
+}
+
+/* line 1603, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-level-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf149;');
+}
+
+/* line 1608, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-check-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14a;');
+}
+
+/* line 1613, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-edit-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14b;');
+}
+
+/* line 1618, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-external-link-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14c;');
+}
+
+/* line 1623, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-share-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14d;');
+}
+
+/* line 1628, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-compass {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf14e;');
+}
+
+/* line 1633, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-collapse {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf150;');
+}
+
+/* line 1638, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-collapse-top {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf151;');
+}
+
+/* line 1643, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-expand {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf152;');
+}
+
+/* line 1648, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-eur {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf153;');
+}
+
+/* line 1652, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-euro {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf153;');
+}
+
+/* line 1657, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-gbp {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf154;');
+}
+
+/* line 1662, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-usd {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf155;');
+}
+
+/* line 1666, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-dollar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf155;');
+}
+
+/* line 1671, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-inr {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf156;');
+}
+
+/* line 1675, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-rupee {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf156;');
+}
+
+/* line 1680, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-jpy {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf157;');
+}
+
+/* line 1684, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-yen {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf157;');
+}
+
+/* line 1689, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-cny {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf158;');
+}
+
+/* line 1693, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-renminbi {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf158;');
+}
+
+/* line 1698, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-krw {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf159;');
+}
+
+/* line 1702, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-won {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf159;');
+}
+
+/* line 1707, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-btc {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15a;');
+}
+
+/* line 1711, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bitcoin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15a;');
+}
+
+/* line 1716, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-file {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15b;');
+}
+
+/* line 1721, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-file-text {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15c;');
+}
+
+/* line 1726, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-alphabet {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15d;');
+}
+
+/* line 1731, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-alphabet-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15e;');
+}
+
+/* line 1736, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-attributes {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf160;');
+}
+
+/* line 1741, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-attributes-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf161;');
+}
+
+/* line 1746, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-order {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf162;');
+}
+
+/* line 1751, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sort-by-order-alt {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf163;');
+}
+
+/* line 1756, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-thumbs-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf164;');
+}
+
+/* line 1761, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-thumbs-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf165;');
+}
+
+/* line 1766, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-youtube-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf166;');
+}
+
+/* line 1771, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-youtube {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf167;');
+}
+
+/* line 1776, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-xing {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf168;');
+}
+
+/* line 1781, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-xing-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf169;');
+}
+
+/* line 1786, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-youtube-play {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16a;');
+}
+
+/* line 1791, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-dropbox {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16b;');
+}
+
+/* line 1796, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-stackexchange {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16c;');
+}
+
+/* line 1801, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-instagram {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16d;');
+}
+
+/* line 1806, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-flickr {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16e;');
+}
+
+/* line 1811, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-adn {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf170;');
+}
+
+/* line 1816, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bitbucket {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf171;');
+}
+
+/* line 1821, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bitbucket-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf172;');
+}
+
+/* line 1826, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tumblr {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf173;');
+}
+
+/* line 1831, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-tumblr-sign {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf174;');
+}
+
+/* line 1836, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-long-arrow-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf175;');
+}
+
+/* line 1841, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-long-arrow-up {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf176;');
+}
+
+/* line 1846, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-long-arrow-left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf177;');
+}
+
+/* line 1851, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-long-arrow-right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf178;');
+}
+
+/* line 1856, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-apple {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf179;');
+}
+
+/* line 1861, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-windows {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17a;');
+}
+
+/* line 1866, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-android {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17b;');
+}
+
+/* line 1871, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-linux {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17c;');
+}
+
+/* line 1876, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-dribble {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17d;');
+}
+
+/* line 1881, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-skype {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17e;');
+}
+
+/* line 1886, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-foursquare {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf180;');
+}
+
+/* line 1891, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-trello {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf181;');
+}
+
+/* line 1896, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-female {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf182;');
+}
+
+/* line 1901, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-male {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf183;');
+}
+
+/* line 1906, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-gittip {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf184;');
+}
+
+/* line 1911, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-sun {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf185;');
+}
+
+/* line 1916, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-moon {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf186;');
+}
+
+/* line 1921, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-archive {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf187;');
+}
+
+/* line 1926, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-bug {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf188;');
+}
+
+/* line 1931, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-vk {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf189;');
+}
+
+/* line 1936, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-weibo {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf18a;');
+}
+
+/* line 1941, D:/projects/drunken-octo-ninja/sass/font-awesome/font-awesome-ie7.scss */
+.icon-renren {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf18b;');
+}

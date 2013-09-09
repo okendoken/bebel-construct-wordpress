@@ -1,0 +1,72 @@
+.btn{
+  text-shadow: none;
+  border: none;
+  @include box-shadow(none);
+  //as of border has been removed need to increase padding by 2px
+  padding: 5px 12px;
+  font-weight: bold;
+}
+
+.btn-small{
+  padding: $paddingSmall;
+}
+
+.btn-mini{
+  padding: $paddingMini;
+}
+
+.btn-large{
+  padding: $paddingLarge;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+  @include box-shadow(0 1px 1px #aaa);
+}
+
+// Danger (red)
+.progress-danger .bar, .progress .bar-danger {
+  @include gradient-vertical($red, $red);
+}
+.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
+  @include gradient-striped($red);
+}
+
+.pagination{
+  margin: 30px 0 0;
+  font-weight: bold;
+  font-family: $headingsFontFamily;
+
+  ul{
+    @include box-shadow(none);
+
+    > li > a,
+    > li > span {
+      border: none;
+      color: $textColor;
+      padding: 4px;
+    }
+
+    > li > a:hover,
+    > li > a:focus,
+    > .active > a,
+    > .active > span {
+      background: none;
+      color: $red;
+    }
+  }
+}

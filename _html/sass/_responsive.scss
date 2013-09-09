@@ -1,0 +1,254 @@
+@media (min-width: 768px) and (max-width: 979px) {
+  .content{
+    width: 536px;
+  }
+
+  .social-icons a{
+    width: 22%;
+  }
+
+  .navigation.navigation-page{
+    top: 268px;
+  }
+
+  .navigation.navigation-home{
+    top: 429px;
+  }
+
+  .home-carousel,
+  .home-carousel .item{
+    height: 496px;
+  }
+
+  .page-carousel,
+  .page-carousel .item{
+    height: 335px;
+  }
+}
+
+@media (max-width: 767px) {
+  body{
+    background: none !important;
+    padding: 0;
+  }
+
+  .wrapper{
+    margin: 0;
+  }
+
+  .content{
+    float: none;
+    width: auto;
+  }
+
+  .navigation,
+  .navigation.navigation-home,
+  .navigation.navigation-page,
+  .navigation.navigation-top{
+    position: static;
+  }
+
+  .navigation{
+    .navbar-inner{
+      min-height: 0;
+      @include clearfix();
+    }
+
+    .nav > li{
+      float: none;
+    }
+  }
+
+  .logo,
+  .logo.home,
+  .logo.offset{
+    top: 20px;
+  }
+
+  .logo.bottom{
+    display: none;
+  }
+
+  .sidebar{
+    float: none;
+    width: auto;
+  }
+
+  .home-carousel,
+  .page-carousel{
+    height: auto;
+  }
+
+  .page-carousel .item,
+  .home-carousel .item{
+    height: auto;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+//make icons align left
+  .social-icons{
+    text-align: left;
+    margin-bottom: 10px;
+    a{
+      width: auto;
+    }
+    a + a{
+      margin-left: 30px;
+    }
+  }
+
+  .newsletter-form input[type='email']{
+    width: 180px;
+  }
+
+  .article-title{
+    font-size: $baseFontSize * 1.75;
+  }
+
+  .page-footer{
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .latest-posts-carousel{
+    margin-bottom: 0;
+
+    .item{
+      padding-bottom: 0;
+      height: auto;
+    }
+
+    .post-preview{
+      margin-bottom: 10px;
+      padding: 0 20px;
+
+      &:first-child,
+      &:last-child{
+        padding: 0 20px;
+      }
+
+      .title{
+        margin: 0;
+      }
+
+      .description{
+        margin-left: 115px;
+        height: 60px;
+        min-height: 0;
+      }
+
+      img{
+        height: 80px;
+      }
+    }
+
+    .carousel-control{
+      left: 0;
+      &.right{
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+  .clients{
+    margin: 2em 0 0;
+  }
+
+  .clients-website{
+    border: none;
+  }
+
+  .page-title{
+    margin-top: 2em;
+  }
+
+  .sidebar-item{
+    padding: 25px 40px 0;
+  }
+
+  .team .row-fluid:last-child .team-member:last-child{
+    margin-bottom: 0;
+  }
+
+  .team-member img{
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation{
+    font-size: $baseFontSize;
+
+    .nav{
+      float: none;
+
+      > li > a:hover{
+        margin: 0 -5px;
+        padding: 5px 20px;
+      }
+
+      > li:last-child{
+        margin-bottom: $baseLineHeight; //some additional place for .logo
+      }
+    }
+
+    .nav-item-description{
+      font-size: $fontSizeSmall;
+    }
+  }
+
+  .post-preview{
+
+    & + .post-preview{
+      border-top: 1px solid $dividerColor;
+      .description{
+        border-top: none;
+      }
+
+    }
+    .description{
+      margin-left: 0;
+      padding-top: $baseLineHeight;
+    }
+  }
+
+  .post-preview-image img{
+    float: none;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo{
+    .square{
+      width: 4px;
+      height: 4px;
+      border-width: 3px;
+    }
+
+    .name{
+      font-size: $baseFontSize;
+    }
+
+    .slogan{
+      font-size: $fontSizeMini;
+    }
+  }
+
+  .btn-navbar .text{
+    display: none;
+  }
+
+  .page{
+    padding: 20px;
+  }
+
+  .sidebar-item{
+    padding: 25px 20px 0;
+  }
+}
+

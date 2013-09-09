@@ -1,0 +1,842 @@
+/*****************************/
+/*          Layout           */
+/*****************************/
+
+.wrapper{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.content{
+  background: $white;
+  position: relative;
+  float: left;
+  //bootstrap's grid-core-span mixin formula. see _mixins.scss:603
+  width: ($gridColumnWidth * $gridColumns) + ($gridGutterWidth * ($gridColumns - 1)) - $sidebarWidth;
+}
+
+.logo{
+  position: absolute;
+  z-index: 10;
+  top: -57px;
+  @include transition(top 0.35s ease);
+
+  &.offset{
+    top: -36px;
+  }
+
+  &.bottom{
+    top: auto;
+    bottom: -17px;
+  }
+
+  .logo-content{
+    display: block;
+    background: $white;
+    padding: 0;
+    line-height: 1;
+    color: $textColor;
+    text-decoration: none;
+  }
+
+
+  .shadow{
+    position: absolute;
+    background: url(../img/logo-shadow.png) no-repeat bottom right/100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding-right: 4.5%;
+    padding-bottom: 21px;
+  }
+
+  .name{
+    font-size: $baseFontSize * 1.5;
+    font-weight: bold;
+    font-family: $headingsFontFamily;
+    text-transform: uppercase;
+  }
+
+  .slogan{
+    font-size: $fontSizeSmall;
+  }
+
+  .square{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 5px solid $red;
+  }
+}
+
+.page-footer{
+  font-size: $fontSizeSmall;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 300px;
+
+  position: relative;
+
+  background: $red;
+  color: $white;
+
+  .to-top-link{
+    color: $white;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+/*****************************/
+/*           Home            */
+/*****************************/
+
+.home-carousel{
+  margin-bottom: 0;
+}
+
+.home-carousel,
+.home-carousel .item{
+  height: 640px;
+}
+
+/*****************************/
+/*     Home with Bottom      */
+/*****************************/
+
+.latest-posts-carousel{
+  .item{
+    height: 100px;
+    padding: 30px 0;
+  }
+
+  .post{
+    text-align: center;
+  }
+
+  .post-preview{
+    line-height: $baseLineHeight;
+
+    &:first-child{
+      padding-left: 55px;
+    }
+
+    &:last-child{
+      padding-right: 55px;
+    }
+
+    & + .post-preview{
+      .description{
+        border-top: none;
+        padding-top: 0;
+      }
+
+      img{
+        margin-top: 0;
+      }
+    }
+
+    img{
+      width: auto;
+      height: 100px;
+    }
+
+    .description{
+      color: $grayLight;
+      margin-left: 150px;
+      height: 95px;
+    }
+
+    .title{
+      margin-top: 5px;
+    }
+  }
+
+  .carousel-control{
+    background: none;
+    color: $textColor;
+    font-size: $baseFontSize;
+    opacity: 1;
+    border: none;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    cursor: pointer;
+    @include transition(color .2s);
+
+    &:hover{
+      color: $red;
+    }
+  }
+}
+
+/*****************************/
+/*         Sidebar           */
+/*****************************/
+
+.sidebar{
+  float: right;
+  width: $sidebarWidth;
+
+  .nav-links{
+    @include clearfix;
+    position: relative;
+    a{
+      display: block;
+      float: left;
+      background: $white;
+      color: $grayLight;
+      text-decoration: none;
+      padding: 12px 10px;
+
+      @include transition(color .2s);
+
+      &:hover{
+        color: #4c4c4c;
+      }
+
+      & + a{
+        border-left: 1px;
+      }
+    }
+
+    .divider{
+      position: absolute;
+      display: block;
+      left: 29px;
+      top: 13px;
+      width: 1px;
+      height: 17px;
+      background: $dividerColor;
+    }
+  }
+}
+
+.sidebar-item{
+  padding: 25px 15px 0;
+  background: $white;
+
+  &:last-child{
+    padding-bottom: 15px;
+  }
+
+  .title{
+    margin: 0;
+  }
+
+  .post, .description{
+    font-size: $fontSizeSmall;
+    line-height: 17px;
+    padding-bottom: 15px;
+    color: $grayLight;
+  }
+
+  .description{
+    padding-top: 5px;
+  }
+
+  .post{
+    padding-top: 15px;
+    border-bottom: 1px solid $dividerColor;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  form{
+    margin: 0;
+  }
+}
+
+.more-link{
+  color: $red;
+}
+
+.newsletter-form{
+  input[type='email']{
+    width: 69px;
+  }
+
+  .btn-danger{
+    @include transition(background .3s);
+    background-image: none;
+  }
+
+  .btn-danger:hover{
+    background: #666;
+    @include transition(background .3s);
+  }
+}
+
+.social-icons{
+  margin: -10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid $dividerColor;
+
+  a{
+    color: $textColor;
+    text-decoration: none;
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    @include transition(color .2s);
+
+    &:hover{
+      color: $red;
+    }
+  }
+}
+
+/*****************************/
+/*        Navigation         */
+/*****************************/
+
+.navigation{
+  font-size: $fontSizeSmall;
+
+  &.navigation-home{
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    top: 507px;
+  }
+
+  &.navigation-page{
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    top: 300px;
+  }
+
+  .navbar{
+    margin: 0;
+    padding: 10px 0;
+    background: $white;
+  }
+
+  .navbar-inner{
+    background: none;
+    border: none;
+    padding: 0;
+    @include box-shadow(none);
+  }
+
+  .nav-item-description, .nav-item-title{
+    display: block;
+  }
+
+  .nav-item-title{
+    font-weight: bold;
+  }
+
+  .nav-item-description{
+    color: $grayLight;
+    font-size: $fontSizeMini;
+    line-height: 1.3;
+  }
+
+  .nav > li{
+    padding: 0 10px;
+  }
+
+  .nav > li + li{
+    border-left: 1px solid $dividerColor;
+  }
+
+  .nav > li > a{
+    padding: 5px 15px;
+    color: $textColor;
+    text-shadow: none;
+    @include transition(color .2s, background-color .2s, padding .2s, margin .2s, border-radius .2s);
+
+    &:hover{
+      background: $red;
+      margin: -5px 0;
+      padding: 10px 15px;
+      @include border-radius($inputBorderRadius);
+
+      .nav-item-title{
+        color: $white;
+      }
+
+      .nav-item-description{
+        color: $orangeActiveColor;
+      }
+    }
+  }
+
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus{
+    @include box-shadow(none);
+    background: none;
+
+    .nav-item-title{
+      color: $red;
+    }
+
+    .nav-item-description{
+      color: $grayLight;
+    }
+  }
+
+  .nav li.dropdown > .dropdown-menu{
+    display: block;
+    @include transition(opacity .3s);
+  }
+
+  .nav li.dropdown:not(:hover) > .dropdown-menu{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    top: -1000%;
+  }
+
+  .nav li.dropdown:hover,
+  .nav li.dropdown.active:hover{
+    > .dropdown-menu{
+      max-height: none;
+      opacity: 1;
+    }
+
+    > .dropdown-toggle {
+      background-color: $red;
+      margin: -5px 0;
+      padding: 10px 15px;
+      @include border-radius($inputBorderRadius);
+
+      .nav-item-title{
+        color: $white;
+      }
+
+      .nav-item-description{
+        color: $orangeActiveColor;
+      }
+    }
+
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: -41px;
+      bottom: 49px;
+      left: 0;
+      right: 0;
+      margin: 0 -29px;
+    }
+  }
+
+  .nav li.dropdown.active > .dropdown-toggle{
+    background: none;
+  }
+
+  .btn-navbar{
+    background: none;
+    text-shadow: none;
+    color: $gray;
+    text-decoration: none;
+    @include transition(color .2s);
+    padding: 0 10px;
+    font-size: $baseFontSize * 1.5;
+
+    &:hover{
+      background: none;
+      color: $red;
+    }
+  }
+
+  .progress{
+    margin: 0;
+    height: 3px;
+    background: none;
+    &, .bar{
+      @include box-shadow(none);
+    }
+
+    .bar.animation{
+      @include animation(0, 5s, move-progress-bar, infinite, linear);
+    }
+  }
+
+  .dropdown-menu{
+    top: auto;
+    bottom: 85px;
+    left: auto;
+    right: 50%;
+    margin-right: -80px;
+    border: none;
+    @include box-shadow(0 0 6px $gray);
+    @include border-radius($baseBorderRadius);
+
+    text-align: center;
+    font-size: $fontSizeMini;
+
+    > li{
+      padding: 0 25px;
+    }
+
+    > li > a {
+      padding: 7px 0;
+      color: #666;
+    }
+
+    > li + li > a{
+      border-top: 1px solid $dividerColor;
+    }
+  }
+
+  &.navigation-top{
+    .dropdown-menu{
+      top: 78px;
+      bottom: auto;
+    }
+
+    .nav > li > .dropdown-menu {
+      &:before {
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 14px solid #ccc;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        top: -14px;
+        left: 50%;
+        border-top: 0;
+        bottom: auto;
+      }
+      &:after {
+        bottom: auto;
+        top: -12px;
+        border-top: 0;
+        border-bottom: 12px solid #FFF;
+      }
+    }
+
+    .nav li.dropdown:hover:after,
+    .nav li.dropdown.active:hover:after{
+      top: 47px;
+      bottom: -36px;
+    }
+  }
+
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-submenu:hover > a,
+  .dropdown-submenu:focus > a,
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus{
+    background: none;
+    color: $red;
+  }
+
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    background: none;
+  }
+
+  .nav > li > .dropdown-menu {
+    &:before {
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 14px solid #ccc;
+      border-top-color: rgba(0, 0, 0, 0.2);
+      top: auto;
+      left: 50%;
+      margin-left: -14px;
+      bottom: -14px;
+      border-bottom: 0;
+    }
+    &:after {
+      border-top: 12px solid #FFF;
+      border-bottom: 0;
+      bottom: -12px;
+      top: auto;
+      left: 50%;
+      margin-left: -12px;
+      border-left-width: 12px;
+      border-right-width: 12px;
+    }
+  }
+
+}
+
+@include key-frame(move-progress-bar) {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/*****************************/
+/*           Page            */
+/*****************************/
+
+.page-content{
+  padding: 20px 40px;
+  min-height: 320px;
+}
+
+.post-preview{
+  padding-bottom: 30px;
+
+  &:last-of-type{
+    padding-bottom: 0;
+  }
+
+  & + .post-preview{
+    .post-preview-image img{
+      margin-top: 30px;
+    }
+
+    .description{
+      border-top: 1px solid $dividerColor;
+      padding-top: $baseLineHeight;
+    }
+  }
+
+  .description{
+    position: relative;
+    font-size: $fontSizeSmall;
+    margin-left: 164px;
+    min-height: 120px;
+    color: $gray;
+    padding-bottom: $baseLineHeight;
+  }
+
+  .title a{
+    color: $textColor;
+    text-decoration: none;
+
+    &:hover{
+      color: $red;
+    }
+  }
+
+  .more-link{
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.post-preview-image img{
+  display: block;
+  float: left;
+  width: 134px;
+  height: 134px;
+}
+
+.page-carousel,
+.page-carousel .item{
+  height: 400px;
+}
+
+.article-title{
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 1.4;
+  margin: 0 0 30px;
+
+  .author{
+    font-size: $baseFontSize;
+    font-style: italic;
+  }
+}
+
+.page-title{
+
+}
+
+/*****************************/
+/*          Clients          */
+/*****************************/
+
+.clients{
+  margin: 40px 0 100px;
+  font-size: $fontSizeSmall;
+
+  > .nav-tabs{
+    border-right: none;
+  }
+
+  > .nav-tabs > .active > a,
+  > .nav-tabs > .active > a:hover,
+  > .nav-tabs > .active > a:focus {
+    color: $red;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $dividerColor;
+  }
+
+  > .nav-tabs > li > a {
+    border: none;
+    @include border-radius(0);
+    padding-left: 4px;
+
+    color: $grayLight;
+
+    border-bottom: 1px solid $dividerColor;
+  }
+
+  > .nav-tabs > li:first-child > a,
+  > .nav-tabs > .active:first-child > a{
+    border-top: 1px solid $dividerColor;
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: none;
+    border-color: $dividerColor;
+
+    color: $red;
+  }
+
+  .tab-content{
+    padding-left: 30px;
+    color: $gray;
+
+    img{
+      display: block;
+    }
+
+    p{
+      margin-top: 30px;
+    }
+  }
+
+  .tab-pane{
+    @include transition(opacity .3s);
+    opacity: 0;
+    &.visible{
+      opacity: 1;
+    }
+  }
+
+  .accordion{
+    margin-bottom: 0;
+  }
+
+  .accordion-group, .accordion-inner{
+    border: none;
+  }
+
+  .accordion-heading{
+    border-bottom: 1px solid $dividerColor;
+
+    a{
+      color: $gray;
+      padding: 8px 0;
+    }
+  }
+
+  .accordion-group:first-child .accordion-heading{
+    border-top: 1px solid $dividerColor;
+  }
+
+  .accordion-inner img{
+    margin-bottom: $baseLineHeight / 2;
+  }
+}
+
+.clients-website{
+  color: $red;
+  display: block;
+  line-height: 30px;
+  border-top: 1px solid $dividerColor;
+  border-bottom: 1px solid $dividerColor;
+
+  &:hover{
+    color: $red;
+  }
+}
+
+/*****************************/
+/*            Team           */
+/*****************************/
+
+.team{
+  @include clearfix();
+  .row-fluid{
+    float: left;
+
+    & + .row-fluid{
+      margin-top: 30px;
+    }
+  }
+}
+
+.team-member{
+  font-size: $fontSizeSmall;
+  margin-bottom: 20px;
+
+  img{
+    display: block;
+  }
+
+  .name{
+    margin-bottom: 5px;
+  }
+
+  .position, .description{
+    color: $gray;
+  }
+
+  .description{
+    font-size: $fontSizeMini;
+    min-height: $baseLineHeight * 2;
+  }
+
+  .social-icons{
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid $dividerColor;
+    height: $baseLineHeight;
+
+    a{
+      color: $grayLight;
+
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
+
+
+/*****************************/
+/*           Utils           */
+/*****************************/
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+  &.input-condensed{
+    font-size: $fontSizeMini;
+    padding: 2px 6px;
+  }
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.remove-clearfix{
+  @include remove-clearfix();
+}
