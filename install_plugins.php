@@ -10,11 +10,21 @@ function shopifiq_register_required_plugins() {
         array(
             'name' => 'revslider', 
             'slug' => 'revslider', 
-            'source' => 'http://anpsthemes.com/shopifiq/wp-content/themes/shopifiq/admin-functions/plugins/revslider.zip', 
+            'source' => 'http://anpsthemes.com/shopifiq/wp-content/themes/shopifiq/admin-functions/plugins/revslider.zip', //todo change URL
             'required' => true,
             'version' => '',
             'force_activation' => false, 
             'force_deactivation' => false, 
+            'external_url' => '',
+        ),
+        array(
+            'name' => 'zilla-shortcodes',
+            'slug' => 'zilla-shortcodes',
+            'source' => 'http://wp-test.okendoken.com/plugins/zilla-shortcodes-1.1.zip', //todo change URL
+            'required' => false,
+            'version' => '',
+            'force_activation' => false,
+            'force_deactivation' => false,
             'external_url' => '',
         )
     );
