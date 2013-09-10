@@ -51,6 +51,9 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'contact_address' => '',
             'contact_address_html' => '',
 
+            // blog page
+            'blog_overview_page' => '',
+
             'css' => '',
             'color_text' => '#3d3d3d',
             'color_second' => '#f24108',
@@ -151,13 +154,17 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'title' => 'General Settings',
                         'description' => 'Change your logo, ...'
                     ),
-                    'social' => array(
-                        'title' => 'Twitter, Facebook, LinkedIn',
-                        'description' => 'Set up your twitter, facebook and linkedIn accounts'
-                    ),
                     'contact' => array(
                         'title' => 'Contact Page',
                         'description' => 'Setup the contact page'
+                    ),
+                    'blog' => array(
+                        'title' => 'Blog',
+                        'description' => 'Have a blog? Set up the blog page!'
+                    ),
+                    'social' => array(
+                        'title' => 'Twitter, Facebook, LinkedIn',
+                        'description' => 'Set up your twitter, facebook and linkedIn accounts'
                     ),
                     'retina' => array(
                         'title' => 'Retina',
@@ -301,6 +308,18 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'template' => 'textarea',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'contact',
+                        'options' => array()
+                    ),
+
+                    // blog page
+
+                    'blog_overview_page' => array(
+                        'title' => 'Blog Page',
+                        'description' => 'Choose a page for the blog page layout. This is where all your blog categories will be displayed.',
+                        'help' => '',
+                        'template' => 'select_page',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'blog',
                         'options' => array()
                     ),
 

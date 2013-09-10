@@ -15,6 +15,10 @@
     <?php endif; ?>
     <div class="description">
         <h5 class="title"><a href="#"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title()?></a></h5>
+        <?php
+        global $more;
+        $more = 0;
+        ?>
         <?php the_content(__('more...', BebelSingleton::getInstance('BebelSettings')->getPrefix()))?>
     </div>
 </section>
