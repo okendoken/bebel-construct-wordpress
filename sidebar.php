@@ -14,6 +14,8 @@ if (BebelSingleton::hasInstance('postSlider')){
             <a class="right" href="#" data-slide="next"><i class="icon-chevron-right"></i></a>
         </div>
     <?php } ?>
-    <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-    <?php endif; // end sidebar widget area ?>
+    <div class="sidebar-inner">
+        <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+        <?php endif; // end sidebar widget area ?>
+    </div>
 </aside>

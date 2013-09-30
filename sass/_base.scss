@@ -237,12 +237,19 @@
   }
 }
 
+.sidebar-inner{
+  background: #ffffff;
+}
+
 .sidebar-item{
-  padding: 25px 15px 0;
+  margin: 0 15px;
+  padding: 25px 0 15px;
+  border-bottom: 1px solid $dividerColor;
   background: $white;
 
   &:last-child{
-    padding-bottom: 15px;
+    border-bottom: none;
+
   }
 
   .title{
@@ -263,6 +270,11 @@
   .post{
     padding-top: 15px;
     border-bottom: 1px solid $dividerColor;
+    &:last-child{
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
     p {
       margin-bottom: 5px;
     }
@@ -294,9 +306,7 @@
 }
 
 .social-icons{
-  margin: -10px 0 0;
-  padding-top: 10px;
-  border-top: 1px solid $dividerColor;
+  margin-top: -15px;
 
   a{
     color: $textColor;
