@@ -27,10 +27,20 @@ wp_reset_postdata();
 
 get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
     <section id="page-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
-        <h1 class="article-title">
+        <h4 class="page-title">
             <?php the_title() ?>
-        </h1>
-        <?php the_content() ?>
+        </h4>
+        <div class="address-info">
+            <div class="row-fluid">
+                <div class="span4">
+                    <div class="address-info-entry">
+                        <div class="row-fluid">
+                            div
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <form class="contact_form" action="">
 
 

@@ -39,7 +39,7 @@ class bebelClientsBundleConfig  extends BebelBundleConfig
         ),
         'enqueue_scripts' => array(
             'tab' => array(
-                'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-tab.js',
+                'path' => get_template_directory_uri() . '/js/lib/bootstrap/tab.js',
                 'dependency' => array('jquery'),
                 'when' => array($this, 'includeClientPageScripts')
             ),

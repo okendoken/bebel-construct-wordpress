@@ -1,3 +1,7 @@
+.container{
+  padding: 0;
+}
+
 .btn{
   text-shadow: none;
   border: none;
@@ -49,7 +53,7 @@ input[type="color"],
 .pagination{
   margin: 30px 0 0;
   font-weight: bold;
-  font-family: $headingsFontFamily;
+  font-family: $headings-font-family;
 
   ul{
     @include box-shadow(none);

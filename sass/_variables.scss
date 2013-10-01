@@ -11,7 +11,9 @@ $orangeActiveColor: #f3cb85;
 
 $textColor: #3d3d3d;
 
-$z-index-base: 400; //need it to be more that revolution slider
+$z-index-base: 1100; //need it to be more than revolution slider
+
+$font-size-mini:          11px; // ~11px
 
 //////////////////////////////////////
 //          Template Mixins         //
@@ -84,7 +86,7 @@ $z-index-base: 400; //need it to be more that revolution slider
 //////////////////////////////////////
 
 $sansFontFamily: sans-serif;
-$headingsFontFamily: 'Nobile', sans-serif;
+$headings-font-family: 'Nobile', sans-serif;
 
 $baseBorderRadius: 0;
 $borderRadiusSmall: 0;
@@ -107,6 +109,15 @@ $btnDangerBackground:               $red !default;
 $btnDangerBackgroundHighlight:      $red !default;
 
 $navbarCollapseWidth: 767px;
+
+// Small screen / tablet
+$container-tablet:           724px;
+
+// Medium screen / desktop
+$container-desktop:           988px;
+
+// Large screen / wide desktop
+$container-lg-desktop:        $container-desktop;
 
 //////////////////////////////////////
 // Font Awesome Variables Override  //

@@ -56,8 +56,8 @@
     };
 
     $.fn.tabCollapse.defaults = {
-        accordionClass: 'visible-phone',
-        tabsClass: 'hidden-phone'
+        accordionClass: 'visible-xs',
+        tabsClass: 'hidden-xs'
     }
 
 }(window.jQuery);

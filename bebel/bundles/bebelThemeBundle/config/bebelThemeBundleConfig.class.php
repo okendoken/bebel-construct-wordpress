@@ -83,15 +83,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             ),
             'enqueue_scripts' => array(
                 'bootstrap-transition' => array(
-                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-transition.js',
+                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/transition.js',
                     'dependency' => array('jquery')
                 ),
                 'bootstrap-dropdown' => array(
-                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-dropdown.js',
+                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/dropdown.js',
                     'dependency' => array('jquery')
                 ),
                 'bootstrap-collapse' => array(
-                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/bootstrap-collapse.js',
+                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/collapse.js',
                     'dependency' => array('jquery')
                 ),
                 'app' => array(

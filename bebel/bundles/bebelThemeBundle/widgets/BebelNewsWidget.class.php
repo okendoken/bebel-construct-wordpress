@@ -39,14 +39,12 @@ class BebelNewsWidget extends WP_Widget {
             ?>
             <?php echo $before_widget; ?>
             <?php if ( $title ) echo $before_title . $title . $after_title; ?>
-            <ul>
                 <?php while ( $q->have_posts() ) : $q->the_post(); ?>
                     <div class="post">
                         <?php get_the_excerpt() == '' ? the_title() : the_excerpt()?>
                         <a href="<?php the_permalink() ?>"  title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>" class="more-link">more...</a>
                     </div>
                 <?php endwhile; ?>
-            </ul>
             <?php echo $after_widget; ?>
 <?php
 // Reset the global $the_post as this query will have stomped on it

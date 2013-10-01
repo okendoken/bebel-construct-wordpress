@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
   .content{
     width: 536px;
   }
@@ -34,7 +34,7 @@
   }
 
   .progress-wrap{
-    width: ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) - $sidebarWidth;
+    width: 536px;
   }
 
   .rev_slider.tp-simpleresponsive{
@@ -137,7 +137,7 @@
   }
 
   .article-title{
-    font-size: $baseFontSize * 1.75;
+    font-size: $font-size-base * 1.75;
   }
 
   .page-footer{
@@ -199,7 +199,7 @@
   }
 
   .sidebar-item{
-    padding: 25px 40px 0;
+    padding: 25px 40px 15px;
   }
 
   .team .row-fluid:last-child .team-member:last-child{
@@ -212,7 +212,7 @@
   }
 
   .navigation{
-    font-size: $baseFontSize;
+    font-size: $font-size-base;
 
     .nav{
       float: none;
@@ -223,12 +223,12 @@
       }
 
       > li:last-child{
-        margin-bottom: $baseLineHeight; //some additional place for .logo
+        margin-bottom: $line-height-base; //some additional place for .logo
       }
     }
 
     .nav-item-description{
-      font-size: $fontSizeSmall;
+      font-size: $font-size-small;
     }
   }
 
@@ -243,7 +243,7 @@
     }
     .description{
       margin-left: 0;
-      padding-top: $baseLineHeight;
+      padding-top: $line-height-base;
     }
   }
 
@@ -263,11 +263,11 @@
     }
 
     .name{
-      font-size: $baseFontSize;
+      font-size: $font-size-base;
     }
 
     .slogan{
-      font-size: $fontSizeMini;
+      font-size: $font-size-mini;
     }
   }
 
@@ -284,3 +284,20 @@
   }
 }
 
+//bs3 container override
+//
+@media (min-width: $screen-tablet) {
+  .container {
+    width: $container-tablet;
+  }
+}
+@media (min-width: $screen-desktop) {
+  .container {
+    width: $container-desktop;
+  }
+}
+@media (min-width: $screen-lg-desktop) {
+  .container {
+    width: $container-lg-desktop;
+  }
+}
