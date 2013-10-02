@@ -73,6 +73,10 @@
     .nav > li{
       float: none;
     }
+
+    .navbar-toggle{
+      display: block;
+    }
   }
 
   .logo,
@@ -223,7 +227,7 @@
       }
 
       > li:last-child{
-        margin-bottom: $line-height-base; //some additional place for .logo
+        margin-bottom: $line-height-computed; //some additional place for .logo
       }
     }
 
@@ -243,7 +247,7 @@
     }
     .description{
       margin-left: 0;
-      padding-top: $line-height-base;
+      padding-top: $line-height-computed;
     }
   }
 
@@ -271,7 +275,7 @@
     }
   }
 
-  .btn-navbar .text{
+  .navbar-toggle .text{
     display: none;
   }
 

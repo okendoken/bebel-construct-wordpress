@@ -43,6 +43,7 @@
 
 
   .shadow{
+    @include box-sizing(content-box);
     position: absolute;
     background: url(../images/logo-shadow.png) no-repeat bottom right/100% 100%;
     height: 100%;
@@ -139,7 +140,7 @@
   }
 
   .post-preview{
-    line-height: $line-height-base;
+    line-height: $line-height-computed;
 
     &:first-child{
       padding-left: 55px;
@@ -351,10 +352,22 @@
     @include border-radius(0);
   }
 
-  .navbar-collapse.collapse{
-    display: block;
-    height: 0;
-    overflow-x: hidden;
+  .navbar-collapse{
+    border-top: none;
+    padding: 0;
+    &.collapse{
+      display: block;
+      height: 0;
+      overflow-x: hidden;
+
+    }
+    &.in{
+      overflow-y: visible;
+    }
+  }
+
+  .navbar-nav{
+    margin: 0;
   }
 
   .navbar-inner{
@@ -382,8 +395,10 @@
     padding: 0 10px;
   }
 
-  .nav > li + li{
-    border-left: 1px solid $dividerColor;
+  @media (min-width: $screen-sm) {
+    .nav > li + li{
+      border-left: 1px solid $dividerColor;
+    }
   }
 
   .nav > li > a{
@@ -475,13 +490,19 @@
   }
 
   .navbar-toggle{
+    float: none;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+    font-size: $font-size-base * 1.5;
+    text-align: right;
     background: none;
     text-shadow: none;
     color: $gray;
     text-decoration: none;
     @include transition(color .2s);
-    padding: 0 10px;
-    font-size: $font-size-base * 1.5;
 
     &:hover{
       background: none;
@@ -614,7 +635,7 @@
 
     .description{
       border-top: 1px solid $dividerColor;
-      padding-top: $line-height-base;
+      padding-top: $line-height-computed;
     }
   }
 
@@ -624,7 +645,7 @@
     margin-left: 164px;
     min-height: 120px;
     color: $gray;
-    padding-bottom: $line-height-base;
+    padding-bottom: $line-height-computed;
   }
 
   .title a{
@@ -761,7 +782,7 @@
   }
 
   .accordion-inner img{
-    margin-bottom: $line-height-base / 2;
+    margin-bottom: $line-height-computed / 2;
   }
 }
 
@@ -810,14 +831,14 @@
 
   .description{
     font-size: $font-size-mini;
-    min-height: $line-height-base * 2;
+    min-height: $line-height-computed * 2;
   }
 
   .social-icons{
     margin: 0;
     padding: 5px 10px;
     border-bottom: 1px solid $dividerColor;
-    height: $line-height-base;
+    height: $line-height-computed;
 
     a{
       color: $gray-light;

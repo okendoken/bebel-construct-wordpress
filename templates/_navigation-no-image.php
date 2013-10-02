@@ -1,6 +1,6 @@
 <nav class="navigation navigation-top">
     <div class="navbar">
-        <a id="menu-toggle" class="pull-right navbar-toggle" href="#" data-toggle="collapse" data-target=".navbar-collapse">
+        <a id="menu-toggle" class="navbar-right navbar-toggle" href="#" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="text">Menu</span> <i class="icon-reorder icon-large"></i>
         </a>
 

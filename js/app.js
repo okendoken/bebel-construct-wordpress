@@ -44,5 +44,9 @@ function css($element, property, value){
                 $('.logo').css("top", '');
             }
         });
+        $(window).resize(function(){
+            $menu.collapse('hide');
+            $('.logo').css("top", '');
+        });
     });
 }(window.jQuery);

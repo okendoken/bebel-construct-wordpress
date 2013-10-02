@@ -59,7 +59,8 @@ function add_options_generated_styles() {
                 .navigation .dropdown-menu > .active > a:hover,
                 .navigation .dropdown-menu > .active > a:focus,
                 .clients .nav > li > a:hover,
-                .clients .nav > li > a:focus{
+                .clients .nav > li > a:focus,
+                .navigation .navbar-toggle:hover{
                    color: {$secondColor};
                 }
                 .logo .square{
