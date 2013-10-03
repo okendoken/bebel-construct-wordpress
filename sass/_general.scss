@@ -15,3 +15,7 @@ ul, ol {
 hr{
   border-top-color: $dividerColor;
 }
+
+a{
+  @include transition(color .2s);
+}
