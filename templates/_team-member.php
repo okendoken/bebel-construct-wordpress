@@ -1,4 +1,4 @@
-<section id="post-<?php the_ID(); ?>" <?php post_class('team-member span3'); ?>>
+<section id="post-<?php the_ID(); ?>" <?php post_class('team-member col-md-3 col-sm-6'); ?>>
     <?php if(has_post_thumbnail()): ?>
         <span data-picture data-alt="<?php the_title() ?>">
             <?php $small = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'team-small' );?>

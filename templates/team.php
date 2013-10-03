@@ -27,7 +27,7 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
                 while (have_posts()) {
                     the_post();
                     if ($i % 4 == 0){//for each fourth display .row-fluid?>
-                        <div class="row-fluid">
+                        <div class="row">
                         <?php
                         $row_closed = false;
                     }
@@ -49,8 +49,8 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
             <?php
             global $wp_query;
             if ($wp_query->max_num_pages > 1){?>
-                <div class="pagination text-align-center">
-                    <ul>
+                <div class="text-align-center">
+                    <ul class="pagination">
                         <?php echo bebelUtils::getNumberedPagination($wp_query->max_num_pages, $paged, 3, '', 'active'); ?>
                     </ul>
                 </div>

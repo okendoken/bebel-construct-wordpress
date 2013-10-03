@@ -642,6 +642,7 @@
   }
 
   .description{
+    @include box-sizing(content-box);
     position: relative;
     font-size: $font-size-small;
     margin-left: 164px;
@@ -844,6 +845,7 @@
   }
 
   .social-icons{
+    @include box-sizing(content-box);
     margin: 0;
     padding: 5px 10px;
     border-bottom: 1px solid $dividerColor;
