@@ -618,7 +618,9 @@
 
 .page-content{
   padding: 20px 40px;
-  min-height: 320px;
+  @media (min-width: $screen-sm){
+    min-height: 320px;
+  }
 }
 
 .post-preview{
