@@ -670,6 +670,13 @@
   height: 134px;
 }
 
+.page-carousel,
+.home-carousel{
+  img {
+    max-width: 100%;
+  }
+}
+
 .page-carousel .progress-wrap{
   top: 297px;
 }

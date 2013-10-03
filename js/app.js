@@ -34,7 +34,11 @@ function css($element, property, value){
                 var $logo = $('.logo'),
                     $menuItems = $menu.find('ul > li'),
                     lastChildMargin = parseInt($menu.find('ul > li:last-child').css('margin-bottom')),
-                    menuHeight = $menuItems.height() * $menuItems.length + lastChildMargin;
+                    menuHeight = 0;
+                $menuItems.each(function(){
+                    menuHeight += $(this).height()
+                });
+                menuHeight += lastChildMargin;
                 $logo.css("top", parseInt($logo.css('top')) + menuHeight);
             }
         });
