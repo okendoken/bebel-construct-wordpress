@@ -94,6 +94,9 @@ function add_options_generated_styles() {
                 .navigation .nav > li > a:hover .nav-item-description {
                   color: {$navItemDescriptionColor};
                 }
+                .newsletter-input:focus{
+                  border-color: {$secondColor};
+                }
                 ";
     $custom_css .= $settings->get('css');
     wp_add_inline_style( 'main-stylesheet', $custom_css );
