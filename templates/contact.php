@@ -33,42 +33,57 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
         <div class="address-info">
             <table>
                 <tr>
-                    <td>
-                        <div class="address-info-entry">
-                            <p class="icon">
-                                <i class="icon-map-marker"></i>
-                            </p>
-                            <div class="entry-content">
-                                <p class="text">Business Headquarter</p>
-                                <p class="text">128 Susanne Street 10927 Melbourne, Australia</p>
+                    <?php if ($settings->get('contact_business_name') !== '' or $settings->get('contact_address') !== ''){ ?>
+                        <td>
+                            <div class="address-info-entry">
+                                <p class="icon">
+                                    <i class="icon-map-marker"></i>
+                                </p>
+                                <div class="entry-content">
+                                    <p class="text"><?php echo $settings->get('contact_business_name')?></p>
+                                    <p class="text"><?php echo $settings->get('contact_address')?></p>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="address-info-entry">
-                            <p class="icon">
-                                <i class="icon-envelope"></i>
-                            </p>
-                            <div class="entry-content">
-                                <p class="text"><a href="mailto:info@envato.com">info@envato.com</a></p>
-                                <p class="text"><a href="mailto:info@envato.com">info@envato.com</a></p>
+                        </td>
+                    <?php }
+                    if ($settings->get("contact_email") !== ''){
+                        ?>
+                        <td>
+                            <div class="address-info-entry">
+                                <p class="icon">
+                                    <i class="icon-envelope"></i>
+                                </p>
+                                <div class="entry-content">
+                                    <p class="text">
+                                        <a href="mailto:<?php echo $settings->get('contact_email')?>">
+                                            <?php echo $settings->get('contact_email')?>
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="address-info-entry">
-                            <p class="icon">
-                                <i class="icon-phone"></i>
-                            </p>
-                            <div class="entry-content">
-                                <p class="text">+49 30 4765 2945</p>
-                                <p class="text">+49 465 284 59</p>
+                        </td>
+                    <?php }
+                    if ($settings->get("contact_phone") !== '') { ?>
+                        <td>
+                            <div class="address-info-entry">
+                                <p class="icon">
+                                    <i class="icon-phone"></i>
+                                </p>
+                                <div class="entry-content">
+                                    <p class="text"><?php echo $settings->get("contact_phone") ?></p>
+                                </div>
                             </div>
-                        </div>
-                    </td>
+                        </td>
+                    <?php } ?>
                 </tr>
             </table>
         </div>
+        <?php if ($settings->get("contact_display_google_maps") == 'on' and $settings->get('contact_address') !== ''): ?>
+            <script type="text/javascript">
+                window.contactFormAddress = '<?php echo $settings->get('contact_address')?>';
+            </script>
+            <div class="contact-map" id="contact-map"></div>
+        <?php endif ?>
     </section>
 <?php
 bebelThemeUtils::getPageFooterTemplate();

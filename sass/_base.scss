@@ -912,6 +912,9 @@
   }
   .text{
     margin-bottom: 2px;
+    &:only-child{
+      padding-top: 8px;
+    }
   }
 
   a{
@@ -920,6 +923,11 @@
       color: $red;
     }
   }
+}
+
+.contact-map{
+  height: 300px;
+  margin-top: $line-height-computed;
 }
 
 

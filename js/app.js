@@ -52,5 +52,17 @@ function css($element, property, value){
             $menu.collapse('hide');
             $('.logo').css("top", '');
         });
+
+        $("#contact-map").gmap3({
+            marker:{
+                address: window.contactFormAddress || 'Minsk'
+            },
+            map:{
+                options:{
+                    zoom: 17,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+            }
+        });
     });
 }(window.jQuery);

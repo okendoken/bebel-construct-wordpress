@@ -48,8 +48,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             // contact page
             'contact_page' => '',
             'contact_email' => '',
+            'contact_phone' => '',
+            'contact_business_name' => '',
+            'contact_display_google_maps' => 'on',
             'contact_address' => '',
-            'contact_address_html' => '',
 
             // blog page
             'blog_overview_page' => '',
@@ -113,6 +115,17 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'path' => get_template_directory_uri() . '/js/ajax-retina.js',
                     'dependency' => array('jquery'),
                     'when' => create_function('', 'return is_archive();')
+                ),
+                //gmap3
+                'gmaps-api' => array(
+                    'path' => 'http://maps.google.com/maps/api/js?sensor=false&language=en',
+                    'dependency' => array(),
+                    'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("contact_page") == get_the_ID() : false;')
+                ),
+                'gmap3' => array(
+                    'path' => get_template_directory_uri() . '/js/lib/gmap3.min.js',
+                    'dependency' => array(),
+                    'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("contact_page") == get_the_ID() : false;')
                 ),
                 'comment-reply'
             ),
@@ -292,6 +305,24 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'submenu' => 'contact',
                         'options' => array()
                     ),
+                    'contact_phone' => array(
+                        'title' => 'Phone Number',
+                        'description' => "Leave blank if you don't want to show it",
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
+                        'options' => array()
+                    ),
+                    'contact_business_name' => array(
+                        'title' => 'Business Name',
+                        'description' => 'The legal name of your business',
+                        'help' => '',
+                        'template' => 'input',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'contact',
+                        'options' => array()
+                    ),
                     'contact_address' => array(
                         'title' => 'Address',
                         'description' => 'Enter your address in one line (seperate facts by a comma). Will be used for google maps. Example: Mystreet 32, 12345 New York, NY, USA',
@@ -301,16 +332,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'submenu' => 'contact',
                         'options' => array()
                     ),
-                    'contact_address_html' => array(
-                        'title' => 'Address (formatted)',
-                        'description' => 'Enter your address as you would naturally enter it (with line breaks). This will be shown if google maps is not available. You can use HTML, though. For example for highlighting your company name.',
+                    'contact_display_google_maps' => array(
+                        'title' => 'Google Maps',
+                        'description' => 'Whether to display google maps.',
                         'help' => '',
-                        'template' => 'textarea',
+                        'template' => 'select_true_false',
                         'permission' => 'edit_theme_options',
                         'submenu' => 'contact',
                         'options' => array()
                     ),
-
                     // blog page
 
                     'blog_overview_page' => array(
