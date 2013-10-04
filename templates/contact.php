@@ -31,47 +31,44 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
             <?php the_title() ?>
         </h4>
         <div class="address-info">
-            <div class="row-fluid">
-                <div class="span4">
-                    <div class="address-info-entry">
-                        <div class="row-fluid">
-                            div
+            <table>
+                <tr>
+                    <td>
+                        <div class="address-info-entry">
+                            <p class="icon">
+                                <i class="icon-map-marker"></i>
+                            </p>
+                            <div class="entry-content">
+                                <p class="text">Business Headquarter</p>
+                                <p class="text">128 Susanne Street 10927 Melbourne, Australia</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                    <td>
+                        <div class="address-info-entry">
+                            <p class="icon">
+                                <i class="icon-envelope"></i>
+                            </p>
+                            <div class="entry-content">
+                                <p class="text"><a href="mailto:info@envato.com">info@envato.com</a></p>
+                                <p class="text"><a href="mailto:info@envato.com">info@envato.com</a></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="address-info-entry">
+                            <p class="icon">
+                                <i class="icon-phone"></i>
+                            </p>
+                            <div class="entry-content">
+                                <p class="text">+49 30 4765 2945</p>
+                                <p class="text">+49 465 284 59</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <form class="contact_form" action="">
-
-
-            <?php if($option != ''): ?>
-                <div class="input_left">
-                    <select name="to_author" class="uniform_author to_author">
-                        <?php echo $option ?>
-                    </select>
-                </div><br class="clear">
-            <?php endif; ?>
-
-
-            <div class="inputFrame input_left">
-                <input type="text" class="contact_name" placeholder="<?php _e(sprintf('Name:'), $settings->getPrefix()) ?>" required="" value="" id="author" name="contact_name">
-            </div>
-
-            <div class="inputFrame input_right">
-                <input type="email" class="contact_email" placeholder="<?php _e(sprintf('Email:'), $settings->getPrefix()) ?>" required="" value="" id="email" name="contact_email">
-            </div>
-            <br class="clear">
-            <div class="inputFrameBigContact">
-                <textarea placeholder="<?php _e(sprintf('Message:'), $settings->getPrefix()) ?>" required="" id="comment" class="contact_message" name="contact_message"></textarea>
-            </div>
-
-            <br class="clear">
-            <p class="form-submit">
-                <input name="submit" class="submit" type="submit" id="post-comment-form-submit" value="<?php _e(sprintf('Send'), $settings->getPrefix()) ?>">
-            </p>
-            <div id="add_response"></div>
-
-        </form>
     </section>
 <?php
 bebelThemeUtils::getPageFooterTemplate();

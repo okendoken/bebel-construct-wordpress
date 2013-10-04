@@ -82,7 +82,8 @@ function add_options_generated_styles() {
                 .clients > .nav-tabs > .active > a:focus,
                 .clients-website,
                 .clients-website:hover,
-                .team-member .social-icons a:hover{
+                .team-member .social-icons a:hover,
+                .address-info-entry a:hover{
                   color: {$secondColor};
                 }
                 .navigation .nav > li > a:hover{
