@@ -105,26 +105,6 @@ class bebelTeamBundleConfig  extends BebelBundleConfig
                 'scope' => array('member'),
                 'options' => array()
             ),
-            'member_show_email' => array(
-                'menu_item' => 'layout',
-                'title' => 'Show User Email',
-                'description' => 'If activated, the users will be shown in a drop down list on the contact page, and an<br> "email user" button below the member entry on the team page. The email will not be shown to the user, it will be used to send the contact form email to him.',
-                'help' => '',
-                'template' => 'select_true_false',
-                'permission' => 'edit_post',
-                'scope' => array('member'),
-                'options' => array()
-            ),
-            'member_email' => array(
-                'menu_item' => 'layout',
-                'title' => 'User Email',
-                'description' => 'Enter the Email address to be used.',
-                'help' => '',
-                'template' => 'input',
-                'permission' => 'edit_post',
-                'scope' => array('member'),
-                'options' => array()
-            ),
             'member_twitter' => array(
                 'menu_item' => 'layout',
                 'title' => 'User Twitter',

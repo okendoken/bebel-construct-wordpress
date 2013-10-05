@@ -312,9 +312,8 @@
   border: 1px solid #ddd;
   font-size: $font-size-mini;
   line-height: 20px;
-  @include border-radius(4px);
   outline: 0;
-  @include transition(border-color .2s);
+  @include box-shadow(0 1px 1px #aaa);
   &:focus{
     border-color: $red;
   }
@@ -424,7 +423,7 @@
       background: $red;
       margin: -5px 0;
       padding: 10px 15px;
-      @include border-radius($inputBorderRadius);
+      @include border-radius($input-border-radius);
 
       .nav-item-title{
         color: #fff;
@@ -475,7 +474,7 @@
       background-color: $red;
       margin: -5px 0;
       padding: 10px 15px;
-      @include border-radius($inputBorderRadius);
+      @include border-radius($input-border-radius);
 
       .nav-item-title{
         color: #fff;
@@ -531,7 +530,7 @@
     margin-right: -80px;
     border: none;
     @include box-shadow(0 0 6px $gray);
-    @include border-radius($baseBorderRadius);
+    @include border-radius($border-radius-base);
 
     text-align: center;
     font-size: $font-size-mini;
@@ -928,6 +927,21 @@
 .contact-map{
   height: 300px;
   margin-top: $line-height-computed;
+}
+
+.contact-form{
+  margin-top: $line-height-computed * 2;
+
+  @include input-size('.form-control', $input-height-large, $padding-large-vertical, $padding-large-horizontal,
+    $font-size-base, $line-height-large, $border-radius-large);
+
+  .form-control.contact-form-message{
+    height: 165px;
+  }
+
+  .contact-form-submit{
+    font-size: $font-size-base;
+  }
 }
 
 

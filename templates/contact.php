@@ -1,29 +1,5 @@
 <?php
 $settings = BebelSingleton::getInstance('BebelSettings');
-query_posts(array(
-    'post_type' => 'construct_member'
-));
-if(have_posts())
-{
-    $option = '<option value="0">'.__('Select Person to Contact', $settings->getPrefix()).'</option>';
-    while(have_posts())
-    {
-        the_post();
-        if(BebelUtils::getCustomMeta('member_show_email', false, get_the_ID()) && BebelUtils::getCustomMeta('member_email', false, get_the_ID()) != "")
-        {
-            $selected = '';
-            if(isset($_GET['send_to']) && $_GET['send_to'] == get_the_ID())
-            {
-                $selected = ' selected="selected"';
-            }
-
-            $option .= '<option value="'.get_the_ID().'"'.$selected.'>'. get_the_title() .'</option>';
-        }
-    }
-}
-
-wp_reset_query();
-wp_reset_postdata();
 
 get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
     <section id="page-<?php the_ID(); ?>" <?php post_class('page-content'); ?>>
@@ -84,6 +60,33 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
             </script>
             <div class="contact-map" id="contact-map"></div>
         <?php endif ?>
+        <form action="#" class="contact-form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <textarea id="message" class="form-control contact-form-message" name="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="clearfix">
+                    <button type="submit" class="contact-form-submit btn btn-danger btn-lg pull-right">
+                        Submit <i class="icon-angle-right icon-large"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
     </section>
 <?php
 bebelThemeUtils::getPageFooterTemplate();

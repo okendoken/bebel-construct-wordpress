@@ -85,15 +85,13 @@ $font-size-mini:          11px; // ~11px
 //   Bootstrap variables override   //
 //////////////////////////////////////
 
-$sansFontFamily: sans-serif;
+$font-family-sans-serif: sans-serif;
 $headings-font-family: 'Nobile', sans-serif;
 $headings-font-weight:    bold;
 
-$baseBorderRadius: 0;
-$borderRadiusSmall: 0;
-$borderRadiusLarge: 0;
-
-$inputBorderRadius: 4px;
+$border-radius-base:             0 !default;
+$border-radius-large:            0 !default;
+$border-radius-small:            0 !default;
 
 //as of border has been removed need to increase padding by 2px
 $paddingLarge:          12px 19px !default; // 44px
