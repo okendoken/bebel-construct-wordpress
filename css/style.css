@@ -10910,10 +10910,15 @@ a {
   font-size: 14px;
 }
 
+/* line 947, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+.contact-messages ul {
+  padding: 0;
+}
+
 /*****************************/
 /*           Utils           */
 /*****************************/
-/* line 952, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 956, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .text-align-center {
   text-align: center;
 }
@@ -10942,67 +10947,67 @@ a {
   clear: both;
 }
 
-/* line 974, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 978, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tab-content {
   overflow: auto;
 }
 
-/* line 981, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 985, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs,
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
   border-bottom: 0;
 }
 
-/* line 987, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 991, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
 }
 
-/* line 991, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 995, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tab-content > .active,
 .pill-content > .active {
   display: block;
 }
 
-/* line 999, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1003, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs {
   border-top: 1px solid #ddd;
 }
 
-/* line 1002, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1006, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs > li {
   margin-top: -1px;
   margin-bottom: 0;
 }
 
-/* line 1006, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1010, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs > li > a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 1009, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1013, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs > li > a:hover, .tabs-below > .nav-tabs > li > a:focus {
   border-bottom-color: transparent;
   border-top-color: #ddd;
 }
 
-/* line 1016, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1020, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .nav-tabs > .active > a:focus {
   border-color: transparent #ddd #ddd #ddd;
 }
 
-/* line 1025, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1029, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs > li,
 .tabs-right > .nav-tabs > li {
   float: none;
 }
 
-/* line 1029, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1033, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs > li > a,
 .tabs-right > .nav-tabs > li > a {
   min-width: 74px;
@@ -11010,25 +11015,25 @@ a {
   margin-bottom: 3px;
 }
 
-/* line 1036, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1040, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs {
   float: left;
 }
 
-/* line 1039, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1043, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs > li > a {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-/* line 1043, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1047, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
   border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 
-/* line 1048, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1052, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
@@ -11036,14 +11041,14 @@ a {
   *border-right-color: #fff;
 }
 
-/* line 1054, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1058, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-right > .nav-tabs {
   float: right;
   margin-left: 19px;
   border-left: 1px solid #ddd;
 }
 
-/* line 1059, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1063, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-right > .nav-tabs > li > a {
   margin-left: -1px;
   -webkit-border-radius: 0 4px 4px 0;
@@ -11051,13 +11056,13 @@ a {
   border-radius: 0 4px 4px 0;
 }
 
-/* line 1064, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1068, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
   border-color: #eeeeee #eeeeee #eeeeee #dddddd;
 }
 
-/* line 1069, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
+/* line 1073, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_base.scss */
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {

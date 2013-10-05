@@ -18,7 +18,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'bebelretinahelper' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelRetinaHelper.class.php',
             'bebelnewswidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelNewsWidget.class.php',
             'bebelsocialwidget' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/widgets/BebelSocialWidget.class.php',
-            'constructmenuwalker' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/ConstructMenuWalker.class.php'
+            'constructmenuwalker' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/ConstructMenuWalker.class.php',
+            'bebelthememailing' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/class/bebelThemeMailing.class.php'
         );
 
         return $a;
@@ -94,6 +95,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                 ),
                 'bootstrap-collapse' => array(
                     'path' => get_template_directory_uri() . '/js/lib/bootstrap/collapse.js',
+                    'dependency' => array('jquery')
+                ),
+                'bootstrap-alert' => array(
+                    'path' => get_template_directory_uri() . '/js/lib/bootstrap/alert.js',
                     'dependency' => array('jquery')
                 ),
                 'app' => array(

@@ -60,33 +60,37 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
             </script>
             <div class="contact-map" id="contact-map"></div>
         <?php endif ?>
-        <form action="#" class="contact-form">
+        <form id="contact-form" action="<?php echo site_url()."/wp-admin/admin-ajax.php"; ?>" class="contact-form">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="<?php _e(sprintf('Name'), $settings->getPrefix()) ?>" required="required">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="<?php _e(sprintf('Email'), $settings->getPrefix()) ?>" required="required">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="<?php _e(sprintf('Subject'), $settings->getPrefix()) ?>" required="required">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <textarea id="message" class="form-control contact-form-message" name="message" placeholder="Message"></textarea>
+                        <textarea id="message" class="form-control contact-form-message" name="message" placeholder="<?php _e(sprintf('Message'), $settings->getPrefix()) ?>" required="required"></textarea>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="clearfix">
                     <button type="submit" class="contact-form-submit btn btn-danger btn-lg pull-right">
-                        Submit <i class="icon-angle-right icon-large"></i>
+                        <?php _e(sprintf('Send'), $settings->getPrefix()) ?> <i class="icon-angle-right icon-large"></i>
                     </button>
                 </div>
             </div>
         </form>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 contact-messages" id="messages" >
+            </div>
+        </div>
     </section>
 <?php
 bebelThemeUtils::getPageFooterTemplate();

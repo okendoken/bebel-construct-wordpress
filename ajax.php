@@ -14,6 +14,9 @@ function bebel_do_ajax(){
         case 'generate_2x_images':
             bebel_generate_2x_images($_POST);
             break;
+        case 'send_contact_form':
+            bebel_send_contact_form($_POST);
+            break;
         default:
             break;
     }
@@ -61,4 +64,26 @@ function bebel_generate_2x_images($post)
         bebelRetinaHelper::generate2xImageForAllAttachments()
     );
     die();
+}
+
+function bebel_send_contact_form($post)
+{
+    $bSettings = BebelSingleton::getInstance('BebelSettings');
+    $required = array(
+        'name' => array('string', _x('Please tell us your name :)', $bSettings->getPrefix())),
+        'email' => array('email', _x('We need a valid email address to get back to you.', $bSettings->getPrefix())),
+        'message' => array('string', _x('What do you want to tell us? Enter some text, please!', $bSettings->getPrefix())),
+        'subject' => array('string', _x('Please enter message subject.', $bSettings->getPrefix())),
+    );
+
+    $mail = new bebelThemeMailing();
+    $mail->validateFields($required, $post);
+
+
+    if(!$mail->isValid())
+    {
+        $mail->displayErrors();
+    }
+
+    $mail->send();
 }
