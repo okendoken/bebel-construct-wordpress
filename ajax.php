@@ -33,7 +33,7 @@ function bebel_mailchimp_subscribe($post)
 
     if(!isset($valid_data['email']) || $valid_data['email'] == '' || !is_email($valid_data['email']))
     {
-        die('<div class="error">'.__('Please enter a valid Email Address', $settings->getPrefix()).'</div>');
+        die(__('Please enter a valid Email Address', $settings->getPrefix()));
     }
 
 
@@ -50,9 +50,9 @@ function bebel_mailchimp_subscribe($post)
         
         if($mc_result === true)
         {
-            die('<div class="success">'.__('Successfully Subscribed. Thanks', $settings->getPrefix()).'</div>');
+            die(__('Successfully Subscribed. Thanks', $settings->getPrefix()));
         }else {
-            die('<div class="error">'.$mc_result.'</div>');
+            die($mc_result);
         }
 
 }

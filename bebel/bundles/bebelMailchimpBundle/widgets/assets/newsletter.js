@@ -9,7 +9,7 @@ jQuery(function($){
             data: {
                 action: 'bebel_do_ajax',
                 fn: 'mailchimp_subscribe',
-                email: $this.find('.email').val()
+                email: $this.find('#email').val()
             }
         }).done(function( msg ) {
                 alert(msg);
