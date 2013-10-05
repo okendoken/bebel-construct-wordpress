@@ -62,7 +62,7 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
         <?php endif ?>
         <form action="#" class="contact-form">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="form-group">
                         <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
@@ -73,7 +73,7 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() );  ?>
                         <input type="text" class="form-control" id="subject" placeholder="Subject">
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="form-group">
                         <textarea id="message" class="form-control contact-form-message" name="message" placeholder="Message"></textarea>
                     </div>
