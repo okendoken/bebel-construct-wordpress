@@ -717,6 +717,37 @@
 
 }
 
+.comments{
+  padding: 0 30px;
+
+  #{headings()}{
+    font-family: $font-family-base;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  .comment-reply-link{
+    font-size: $font-size-mini;
+    font-weight: bold;
+    color: $text-color;
+    &:hover{
+      color: $gray;
+    }
+  }
+}
+
+.comments-title{
+  margin-bottom: $line-height-computed;
+}
+
+.comment-title{
+  time{
+    font-weight: normal;
+  }
+}
+
 /*****************************/
 /*          Clients          */
 /*****************************/

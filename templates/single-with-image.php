@@ -12,7 +12,7 @@ if (have_posts()) {
         get_template_part( 'templates/_navigation', get_post_format() );
         get_template_part( 'templates/_carousel', get_post_format() );
         get_template_part( 'templates/_article', get_post_format() );
-
+        comments_template();
         bebelThemeUtils::getPageFooterTemplate();
     }
 }
