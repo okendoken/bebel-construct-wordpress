@@ -718,7 +718,7 @@
 }
 
 .comments{
-  padding: 0 30px;
+  padding: 0 30px 15px;
 
   #{headings()}{
     font-family: $font-family-base;
@@ -742,6 +742,14 @@
 
   .form-submit{
     display: none;
+  }
+
+  form{
+    @extend .form-horizontal;
+  }
+
+  .form-actions{
+    margin-bottom: 0;
   }
 }
 

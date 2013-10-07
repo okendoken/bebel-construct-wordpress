@@ -101,12 +101,10 @@ class Bebel_Walker_Comment extends Walker_Comment{
         'must_log_in'          => '<p class="must-log-in">You must be logged in to leave a reply.</p>',
         'title_reply' => 'Leave a comment',
         'comment_notes_before'  => '<p><small>Your email address will not be published.</small></p>',
-        'comment_notes_after'  => '<div class="form-group"><div class="col-md-12"><button type="submit"
+        'comment_notes_after'  => '<div class="form-group form-actions no-margin"><div class="col-md-12"><button type="submit"
          id="comment-submit" class="btn btn-danger pull-right">'.__( 'Submit', $settings->getPrefix() ).' <i class="icon-angle-right icon-large"></i></button></div></div>'
     );
     ?>
-    <div class="form-horizontal">
-        <?php comment_form( $defaults );?>
-    </div>
+    <?php comment_form( $defaults );?>
 
 </div>
