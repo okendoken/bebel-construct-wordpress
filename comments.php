@@ -23,20 +23,22 @@ class Bebel_Walker_Comment extends Walker_Comment{
                             <?php echo get_avatar($comment,$size='64' ); ?>
                         </span>
             <div class="media-body">
-                <span class="pull-right">
-                                    <?php echo comment_reply_link(array_merge( array('reply_text' => 'reply') , array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
-                                </span>
-                <h5 class="media-heading comment-title">
-                    <?php comment_author(); ?>
-                    <time class="text-muted" datetime="">
-                        <?php echo get_comment_date("M d \\a\\t G:i"); ?>
-                    </time>
-                </h5>
-                <?php if($comment->comment_approved == 0): ?>
-                        <em><?php _e('Your comment is awaiting approval.', BebelSingleton::getInstance('BebelSettings')->getPrefix()) ?></em>
-                <?php else: ?>
-                        <?php comment_text() ?>
-                <?php endif; ?>
+                <div class="comment-inner">
+                    <span class="pull-right">
+                        <?php echo comment_reply_link(array_merge( array('reply_text' => 'reply') , array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+                    </span>
+                    <h5 class="media-heading comment-title">
+                        <?php comment_author(); ?>
+                        <time class="text-muted" datetime="">
+                            <?php echo get_comment_date("M d \\a\\t G:i"); ?>
+                        </time>
+                    </h5>
+                    <?php if($comment->comment_approved == 0): ?>
+                            <em><?php _e('Your comment is awaiting approval.', BebelSingleton::getInstance('BebelSettings')->getPrefix()) ?></em>
+                    <?php else: ?>
+                            <?php comment_text() ?>
+                    <?php endif; ?>
+                </div>
     <?php
     }
 

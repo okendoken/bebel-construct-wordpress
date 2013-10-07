@@ -725,7 +725,7 @@
   }
 
   h3{
-    font-size: 18px;
+    font-size: $font-size-base;
   }
 
   .comment-reply-link{
@@ -750,11 +750,36 @@
 }
 
 .comment-title{
+  font-size: $font-size-small;
+  font-weight: 600;
   time{
     font-weight: normal;
   }
 }
 
+.comments > .media-list > .comment{
+  border-top: 1px solid $dividerColor;
+  border-bottom: 1px solid $dividerColor;
+  + .comment{
+    margin-top: -1px;
+  }
+}
+
+.comment{
+  padding: 25px 0;
+  font-size: $font-size-small;
+
+  > .pull-left{
+    margin-right: 25px;
+  }
+}
+.comment-inner{
+  min-height: 64px;
+
+  > p:last-child{
+    margin-bottom: 0;
+  }
+}
 /*****************************/
 /*          Clients          */
 /*****************************/
