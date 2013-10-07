@@ -28,6 +28,10 @@
   padding: $paddingLarge;
 }
 
+.form-control{
+  @include box-shadow(none);
+}
+
 // Danger (red)
 .progress-danger .bar, .progress .bar-danger {
   @include gradient-vertical($red, $red);

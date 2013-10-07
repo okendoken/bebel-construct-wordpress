@@ -736,6 +736,13 @@
       color: $gray;
     }
   }
+
+  @include input-size('.form-control', $input-height-base, $padding-base-vertical, $padding-base-horizontal,
+    $font-size-small, $line-height-base, $border-radius-base);
+
+  .form-submit{
+    display: none;
+  }
 }
 
 .comments-title{

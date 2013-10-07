@@ -32,7 +32,11 @@ class Bebel_Walker_Comment extends Walker_Comment{
                         <?php echo get_comment_date("M d \\a\\t G:i"); ?>
                     </time>
                 </h5>
-                <?php comment_text() ?>
+                <?php if($comment->comment_approved == 0): ?>
+                        <em><?php _e('Your comment is awaiting approval.', BebelSingleton::getInstance('BebelSettings')->getPrefix()) ?></em>
+                <?php else: ?>
+                        <?php comment_text() ?>
+                <?php endif; ?>
     <?php
     }
 
@@ -69,42 +73,38 @@ class Bebel_Walker_Comment extends Walker_Comment{
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <?php previous_comments_link( __( '&larr; Older Comments', $settings->getPrefix() ) ); ?>
             <?php next_comments_link( __( 'Newer Comments &rarr;', $settings->getPrefix() ) ); ?>
-        <?php endif; // check for comment navigation ?>
+        <?php endif;  ?>
 
-    <?php else : // or, if we don't have comments:
-
-        /* If there are no comments and comments are closed,
-         * let's leave a little note, shall we?
-         */
+    <?php else :
         if ( ! comments_open() ) :
             ?>
             <p><?php _e( 'Comments are closed.', $settings->getPrefix() ); ?></p>
-        <?php endif; // end ! comments_open() ?>
+        <?php endif; ?>
 
-    <?php endif; // end have_comments() ?>
+    <?php endif;  ?>
 
 
 
     <?php
     if(!isset($fields))
         $fields =  array(
-            'author' => '<p class="comment-form-author">' .
-            '<input id="author" name="author" type="text" placeholder="' . __( 'Name', 'domainreference' ) . ( $req ? '*' : '') . '" size="30" /></p>',
-            'email'  => '<p class="comment-form-email">' .
-            '<input id="email" name="email" type="text" placeholder="' . __( 'Email', 'domainreference' ) . ( $req ? '*' : '') . '" size="30" /></p>'
+            'author' => '<div class="form-group"> <div class="col-md-6">' .
+            '<input id="author" name="author" type="text" class="form-control" placeholder="' . __( 'Name:', $settings->getPrefix() )  . '"/></div></div>',
+            'email'  => '<div class="form-group"> <div class="col-md-6">' .
+            '<input id="email" name="email" type="text" class="form-control" placeholder="' . __( 'Email:', $settings->getPrefix() ) . '"/></div></div>'
         );
     $defaults = array(
         'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
-        'comment_field'        => '<p class="comment-form-comment"><div class="wrap-area"><textarea class="required" name="comment" title="message" cols="45" rows="8" aria-required="true"></textarea></div></p>',
+        'comment_field'        => '<div class="form-group"> <div class="col-md-12"><textarea class="form-control" name="comment" title="message" aria-required="true" rows="8" placeholder="'.__( 'Message:', $settings->getPrefix() ).'"></textarea></div></div>',
         'must_log_in'          => '<p class="must-log-in">You must be logged in to leave a reply.</p>',
         'title_reply' => 'Leave a comment',
-        'id_form'              => 'commentform',
-        'id_submit'            => 'submit',
+        'comment_notes_before'  => '<p><small>Your email address will not be published.</small></p>',
+        'comment_notes_after'  => '<div class="form-group"><div class="col-md-12"><button type="submit"
+         id="comment-submit" class="btn btn-danger pull-right">'.__( 'Submit', $settings->getPrefix() ).' <i class="icon-angle-right icon-large"></i></button></div></div>'
     );
-
-
-    comment_form( $defaults );
-
     ?>
+    <div class="form-horizontal">
+        <?php comment_form( $defaults );?>
+    </div>
 
 </div>
