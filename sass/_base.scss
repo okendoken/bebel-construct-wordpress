@@ -34,9 +34,11 @@
 
   .logo-content{
     display: block;
-    background: #fff;
+    min-height: 57px;
+    line-height: 57px;
     padding: 0;
-    line-height: 1;
+    vertical-align: middle;
+    background: #fff;
     color: $textColor;
     text-decoration: none;
   }
