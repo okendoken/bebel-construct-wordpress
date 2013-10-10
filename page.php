@@ -13,6 +13,7 @@ $team_page = $settings->get('team_overview_page');
 $clients_page = $settings->get('clients_page');
 $contact_page = $settings->get('contact_page');
 $blog_page = $settings->get('blog_overview_page');
+$portfolio_page = $settings->get('portfolio_overview_page');
 $with_offset = false;
 if(get_the_ID() == $team_page) {
     $slug = 'team';
@@ -22,6 +23,8 @@ if(get_the_ID() == $team_page) {
     $slug = 'contact';
 } elseif(get_the_ID() == $blog_page){
     $slug = 'blog';
+} elseif(get_the_ID() == $portfolio_page){
+    $slug = 'portfolio';
 } else {
     $slug =  "page-".$page_layout;
     $with_offset = $page_layout != 'no-image';

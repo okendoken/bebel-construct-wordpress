@@ -20,7 +20,8 @@ $activeBundles = array(
     'bebelMailchimpBundle',
     'bebelSliderBundle',
     'bebelTeamBundle',
-    'bebelClientsBundle'
+    'bebelClientsBundle',
+    'bebelPortfolioBundle'
 );
 
 $bundle = new BebelBundle($settings, $wordpress, $postTypeGenerator);
