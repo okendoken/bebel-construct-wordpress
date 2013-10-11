@@ -25,7 +25,7 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
   {
     $s = array(
         'portfolio_overview_page' => '',
-        'portfolio_per_page' => '8'
+        'portfolio_per_page' => '6'
     );
 
     return $s;
@@ -35,6 +35,10 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
   {
 
     $w = array(
+        'image_sizes' => array(
+            'portfolio-small'     => array(227, 227, true),
+            'portfolio-large'    => array(687, 200, true)
+        ),
         'enqueue_scripts' => array(
             'ajax-retina-team' => array(
                 'path' => get_template_directory_uri() . '/js/ajax-retina.js',
