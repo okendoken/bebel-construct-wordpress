@@ -32,7 +32,7 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
                         $row_closed = false;
                     }
 
-                    get_template_part( 'templates/_team-member', get_post_format() );
+                    get_template_part( 'templates/_portfolio-item', get_post_format() );
 
                     if ($i % 4 == 3){//for each fourth close .row-fluid?>
                         </div>
