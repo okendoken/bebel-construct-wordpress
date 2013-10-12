@@ -52,7 +52,7 @@ class bebelClientsBundleConfig  extends BebelBundleConfig
                 'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/clients.js',
                 'dependency' => array('jquery'),
                 'when' => array($this, 'includeClientPageScripts')
-            ),
+            )
         )
     );
 

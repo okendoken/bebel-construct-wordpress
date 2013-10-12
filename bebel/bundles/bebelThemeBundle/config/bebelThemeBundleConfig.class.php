@@ -132,6 +132,11 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'dependency' => array(),
                     'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("contact_page") == get_the_ID() : false;')
                 ),
+                'contact' => array(
+                    'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/contact.js',
+                    'dependency' => array(),
+                    'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("contact_page") == get_the_ID() : false;')
+                ),
                 'comment-reply'
             ),
             'enqueue_styles' => array(

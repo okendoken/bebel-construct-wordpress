@@ -16,11 +16,31 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
         }
         query_posts(array(
             'post_type' => 'construct_portfolio',
-            'paged' => get_query_var('paged'),
-            'posts_per_page' => $settings->get('portfolio_per_page')
+            'paged' => get_query_var('paged')
         ));
         if (have_posts()) {?>
-            <div class="team">
+            <?php
+            $tags = get_terms( $settings->getPrefix().'_portfolio-category');
+            if ($tags) {
+                $tags_string = "";
+                if ($tags) {
+                    foreach($tags as $tag) {
+                        $tags_string .= ' '.$tag->name;
+                    }
+                }
+                ?>
+                <ul id="portfolio-filters" class="portfolio-filters">
+                    <li><span class="filter active label" data-filter="<?php echo $tags_string ?>">
+                            <?php echo __('All', $settings->getPrefix()) ?>
+                    </span></li>
+                    <?php foreach($tags as $tag) { ?>
+                        <li><span href="#" class="filter label" data-filter="<?php echo $tag->name ?>"><?php echo $tag->name ?></span></li>
+                    <?php } ?>
+                </ul>
+            <?php
+            }
+            ?>
+            <div class="team" id="portfolio">
                 <?php
                 $i = 0;
                 $row_closed = true;

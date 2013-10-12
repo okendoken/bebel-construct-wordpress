@@ -24,8 +24,7 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
   public function getSettings()
   {
     $s = array(
-        'portfolio_overview_page' => '',
-        'portfolio_per_page' => '6'
+        'portfolio_overview_page' => ''
     );
 
     return $s;
@@ -40,11 +39,26 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
             'portfolio-large'    => array(687, 200, true)
         ),
         'enqueue_scripts' => array(
+            'jquery.easing' => array(
+                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/lib/jquery.easing.1.3.js',
+                'dependency' => array('jquery'),
+                'when' => array($this, 'includeClientPageScripts')
+            ),
+            'jquery.mixitup' => array(
+                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/lib/jquery.mixitup.js',
+                'dependency' => array('jquery'),
+                'when' => array($this, 'includeClientPageScripts')
+            ),
             'ajax-retina-team' => array(
                 'path' => get_template_directory_uri() . '/js/ajax-retina.js',
                 'dependency' => array('jquery'),
-                'when' => create_function('', 'global $post; return $post ? BebelSingleton::getInstance("BebelSettings")->get("portfolio_overview_page") == get_the_ID() : false;')
+                'when' => array($this, 'includeClientPageScripts')
             ),
+            'portfolio' => array(
+                'path' => get_template_directory_uri().BebelUtils::getBundlePath() .'/'. $this->bundleDir. '/assets/js/portfolio.js',
+                'dependency' => array('jquery'),
+                'when' => array($this, 'includeClientPageScripts')
+            )
         )
     );
 
@@ -70,15 +84,6 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
                     'description' => 'Select a page where to show the overview over all of your completed works',
                     'help' => '',
                     'template' => 'select_page',
-                    'permission' => 'edit_theme_options',
-                    'submenu' => 'general',
-                    'options' => array()
-                ),
-                'portfolio_per_page' => array(
-                    'title' => 'Items Per Page',
-                    'description' => 'How many portfolio items should be displayed on one page before the pagination begins?',
-                    'help' => '',
-                    'template' => 'input',
                     'permission' => 'edit_theme_options',
                     'submenu' => 'general',
                     'options' => array()
@@ -133,7 +138,10 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
             'type_hierarchical' => false,
             'supports' => array('title', 'editor', 'author', 'thumbnail', 'attachment', 'custom-fields', 'revisions', 'category'),
             'type_rewrite' => array('slug' => 'portfolio', 'with_front' => true),
-            'use_taxonomy' => false, // required by our framework
+            'use_taxonomy' => true,
+            'taxonomy_hierarchical' => false,
+            'taxonomy_name' => 'Portfolio Categories',
+            'taxonomy_name_singular' => 'Portfolio Category',
             'menu_icon' => '%BCP_BUNDLE_PATH%/'.$this->bundleDir.'/assets/images/post_type_icon.png',
         ),
 
@@ -159,5 +167,10 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
 
     return $w;
   }
+
+    public function includeClientPageScripts(){
+        global $post;
+        return $post ? BebelSingleton::getInstance("BebelSettings")->get("portfolio_overview_page") == get_the_ID() : false;
+    }
 
 }

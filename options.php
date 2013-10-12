@@ -43,7 +43,8 @@ function add_options_generated_styles() {
                 .progress-danger.progress-striped .bar,
                 .progress-striped .bar-danger,
                 .navigation .nav li.dropdown:hover > .dropdown-toggle,
-                .navigation .nav li.dropdown.active:hover > .dropdown-toggle{
+                .navigation .nav li.dropdown.active:hover > .dropdown-toggle,
+                .portfolio-filters > li > .label.active{
                   background-color: {$secondColor};
                 }
                 .pagination ul > li > a:hover,

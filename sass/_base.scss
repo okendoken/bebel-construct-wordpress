@@ -959,6 +959,37 @@
   }
 }
 
+.portfolio-filters{
+  margin: $line-height-computed/2 0 $line-height-computed;
+  padding: 0;
+  @include clearfix();
+  > li{
+    float: left;
+    list-style: none;
+    > .label{
+      margin-right: 12px;
+      padding: 4px 12px;
+      font-size: $font-size-small;
+      font-weight: normal;
+      color: $gray-light;
+
+      cursor: pointer;
+      &:hover{
+        color: $gray;
+      }
+      &.active{
+        background: $red;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.portfolio-item{
+  opacity: 0;
+  display: none;
+}
+
 /*****************************/
 /*          Contact          */
 /*****************************/

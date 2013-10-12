@@ -1,4 +1,14 @@
-<section id="post-<?php the_ID(); ?>" <?php post_class('team-member col-md-4 col-sm-6'); ?>>
+<?php
+$settings = BebelSingleton::getInstance('BebelSettings');
+$post_tags = get_the_terms( $post->ID, $settings->getPrefix().'_portfolio-category');
+$post_tags_string = "";
+if ($post_tags) {
+    foreach($post_tags as $tag) {
+        $post_tags_string .= $tag->name . ' ';
+    }
+}
+?>
+<section id="post-<?php the_ID(); ?>" <?php post_class('team-member portfolio-item col-md-4 col-sm-6 '.$post_tags_string); ?>>
     <?php if(has_post_thumbnail()): ?>
         <span data-picture data-alt="<?php the_title() ?>">
             <?php $small = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'portfolio-small' );?>

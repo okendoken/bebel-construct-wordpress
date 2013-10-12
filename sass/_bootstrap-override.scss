@@ -62,3 +62,7 @@
     color: $red;
   }
 }
+
+.label{
+  @include transition(background-color .2s, color .2s);
+}
