@@ -6,7 +6,7 @@ class bebelportfolioBundleConfig  extends BebelBundleConfig
 
   public function __construct()
   {
-    $this->bundleDir = 'bebelportfolioBundle';
+    $this->bundleDir = 'bebelPortfolioBundle';
   }
 
 
