@@ -13,9 +13,11 @@
                 function syncSliderMargin(){
                     var $sliderWrap = $progress.parents('.rev_slider_wrapper')
                     if ($(window).width() > 767 && $(window).width() < 992){
-                        var marginTop = parseInt($sliderWrap.css('margin-top'));
-                        $sliderWrap.data('initial-margin-top', marginTop);
-                        $sliderWrap.css('margin-top', marginTop * 536 / 800)
+                        if (!$sliderWrap.data('initial-margin-top')){
+                            var marginTop = parseInt($sliderWrap.css('margin-top'));
+                            $sliderWrap.data('initial-margin-top', marginTop);
+                            $sliderWrap.css('margin-top', marginTop * 536 / 800)
+                        }
                     }
                     if ($(window).width() >= 992){
                         if ($sliderWrap.data('initial-margin-top')){
