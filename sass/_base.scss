@@ -249,6 +249,7 @@
   margin: 0 15px;
   padding: 25px 0 15px;
   border-bottom: 1px solid $dividerColor;
+  font-size: $font-size-small;
   background: #fff;
 
   &:last-child{
@@ -286,6 +287,34 @@
 
   form{
     margin: 0;
+  }
+
+  ul{
+    padding: 0;
+    > li{
+      list-style: none;
+    }
+  }
+
+  > ul{
+    margin-top: $line-height-computed / 2;
+  }
+
+  > .tagcloud{
+    margin-top: $line-height-computed / 2;
+    a{
+      @extend .label;
+      @extend .label-default;
+    }
+  }
+
+  table{
+    width: 100%;
+  }
+
+  .search-query{
+    @extend .newsletter-input;
+    width: 100%;
   }
 }
 

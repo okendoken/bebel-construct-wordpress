@@ -96,7 +96,8 @@ function add_options_generated_styles() {
                 .navigation .nav > li > a:hover .nav-item-description {
                   color: {$navItemDescriptionColor};
                 }
-                .newsletter-input:focus{
+                .newsletter-input:focus,
+                .sidebar-item .search-query:focus{
                   border-color: {$secondColor};
                 }
                 ";
