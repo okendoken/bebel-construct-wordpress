@@ -17,8 +17,8 @@ function add_options_generated_styles() {
                 .navigation .nav > li > a,
                 .navigation .dropdown-menu > li > a,
                 .post-preview .title a,
-                .pagination ul > li > a,
-                .pagination ul > li > span
+                .pagination > li > a,
+                .pagination > li > span
                 {
                   color: {$textColor};
                 }
@@ -47,10 +47,10 @@ function add_options_generated_styles() {
                 .portfolio-filters > li > .label.active{
                   background-color: {$secondColor};
                 }
-                .pagination ul > li > a:hover,
-                .pagination ul > li > a:focus,
-                .pagination ul > .active > a,
-                .pagination ul > .active > span,
+                .pagination > li > a:hover,
+                .pagination > li > a:focus,
+                .pagination > .active > a,
+                .pagination > .active > span,
                 .navigation .btn-navbar:hover,
                 .navigation .dropdown-menu > li > a:hover,
                 .navigation .dropdown-menu > li > a:focus,
