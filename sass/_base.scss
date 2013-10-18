@@ -630,6 +630,11 @@
   }
 
   .nav > li > .dropdown-menu {
+    &:before, &:after{
+      display: inline-block;
+      content: '';
+      position: absolute;
+    }
     &:before {
       border-left: 14px solid transparent;
       border-right: 14px solid transparent;
@@ -642,14 +647,14 @@
       border-bottom: 0;
     }
     &:after {
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
       border-top: 12px solid #FFF;
       border-bottom: 0;
       bottom: -12px;
       top: auto;
       left: 50%;
       margin-left: -12px;
-      border-left-width: 12px;
-      border-right-width: 12px;
     }
   }
 
