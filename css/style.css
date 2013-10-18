@@ -9870,20 +9870,21 @@ html, body {
 body {
   background: url(../images/example/background.jpg) no-repeat;
   background-size: cover;
-  background-position: bottom right;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-/* line 11, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 12, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 ul, ol {
   margin: 0;
 }
 
-/* line 15, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 16, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 hr {
   border-top-color: #d7d7d7;
 }
 
-/* line 19, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 20, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 a {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;

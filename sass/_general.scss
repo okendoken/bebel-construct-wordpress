@@ -5,7 +5,8 @@ html, body{
 body{
   background: url(../images/example/background.jpg) no-repeat;
   background-size: cover;
-  background-position: bottom right;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 ul, ol {
