@@ -14,8 +14,6 @@ $wordpress = new BebelWordpress();
 $postTypeGenerator = new BebelPostTypeGenerator($settings->getPrefix());
 
 $activeBundles = array(
-    //'bebelOneClickInstallationBundle', todo include later
-
     'bebelThemeBundle',
     'bebelMailchimpBundle',
     'bebelSliderBundle',

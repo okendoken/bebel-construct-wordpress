@@ -2,15 +2,15 @@
 
 require_once  get_template_directory().'/bebel/core/vendor/class-tgm-plugin-activation.php';
 
-add_action('tgmpa_register', 'shopifiq_register_required_plugins');
+add_action('tgmpa_register', 'bebel_register_required_plugins');
 
-function shopifiq_register_required_plugins() {
+function bebel_register_required_plugins() {
 
     $plugins = array(
         array(
             'name' => 'revslider', 
             'slug' => 'revslider', 
-            'source' => 'http://anpsthemes.com/shopifiq/wp-content/themes/shopifiq/admin-functions/plugins/revslider.zip', //todo change URL
+            'source' => 'http://wordpress.thebebel.com/demo/construct/wp-content/plugins/revslider.zip',
             'required' => true,
             'version' => '',
             'force_activation' => false, 
@@ -20,7 +20,7 @@ function shopifiq_register_required_plugins() {
         array(
             'name' => 'zilla-shortcodes',
             'slug' => 'zilla-shortcodes',
-            'source' => 'http://wp-test.okendoken.com/plugins/zilla-shortcodes-1.1.zip', //todo change URL
+            'source' => 'http://wordpress.thebebel.com/demo/construct/wp-content/plugins/zilla-shortcodes-1.1.zip',
             'required' => false,
             'version' => '',
             'force_activation' => false,
@@ -29,7 +29,7 @@ function shopifiq_register_required_plugins() {
         )
     );
 
-    $theme_text_domain = 'shopifiq';
+    $theme_text_domain = BebelSingleton::getInstance('BebelSettings')->getPrefix();
 
     $config = array(
         'domain' => $theme_text_domain, 
