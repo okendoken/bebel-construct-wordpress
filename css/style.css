@@ -9872,19 +9872,20 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-color: whitesmoke;
 }
 
-/* line 12, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 13, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 ul, ol {
   margin: 0;
 }
 
-/* line 16, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 17, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 hr {
   border-top-color: #d7d7d7;
 }
 
-/* line 20, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
+/* line 21, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_general.scss */
 a {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;

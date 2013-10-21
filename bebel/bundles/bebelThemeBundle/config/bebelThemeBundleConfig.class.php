@@ -34,10 +34,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
 
 
-            'default_background' => '%IMAGES_PATH%/example/background.jpg',
+            'default_background' => '',
             'logo_header' => '',
 
-            'mainpage_image' => '%IMAGES_PATH%/example/mainpage_image.jpg',
+            'mainpage_image' => '',
             'footer_text' => 'This site was handcrafted by Bebel',
             'generate_2x_images' => 'on',
 
