@@ -35,8 +35,27 @@
                     $progressWrap.css('left', - parseInt($sliderWrap.css('margin-left')));
                 }
 
+                function adjustCarouselHeight(){
+                    if ($(window).width() >= 992){
+                        $('.page-carousel').height('auto');
+                    }
+                    if ($(window).width() > 767 && $(window).width() < 992){
+                        var $navigation = $('.navigation'),
+                            $sliderWrap = $('.rev_slider_wrapper');
+                        $('.page-carousel').height(
+                            $navigation.height()
+                                + parseInt($navigation.css('top'))
+                                - parseInt($sliderWrap.length > 0 ? $sliderWrap.css('margin-top') : 0)
+                        );
+                    }
+                    if ($(window).width() <= 767){
+                        $('.page-carousel').height('');
+                    }
+                }
+
                 syncSliderMargin();
                 positionProgress();
+                adjustCarouselHeight();
 
                 var timeout;
                 $(window).resize(function(){
@@ -44,6 +63,7 @@
                     timeout = setTimeout(function(){
                         syncSliderMargin();
                         positionProgress();
+                        adjustCarouselHeight();
                     }, 300);
                 })
             });

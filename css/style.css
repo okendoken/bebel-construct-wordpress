@@ -11388,7 +11388,7 @@ a {
   /* line 94, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */
   .home-carousel,
   .page-carousel {
-    height: auto;
+    height: auto !important;
   }
 
   /* line 99, D:/projects/wordpress/clean/wp-content/themes/Construct/sass/_responsive.scss */

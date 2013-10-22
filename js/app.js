@@ -48,9 +48,27 @@ function css($element, property, value){
                 $('.logo').css("top", '');
             }
         });
+
+        function adjustCarouselHeight(){
+            if ($(window).width() > 767 && $(window).width() < 992){
+                var $navigation = $('.navigation'),
+                    $sliderWrap = $('.rev_slider_wrapper');
+                $('.page-carousel').height(
+                    $navigation.height()
+                        + parseInt($navigation.css('top'))
+                        - parseInt($sliderWrap.length > 0 ? $sliderWrap.css('margin-top') : 0)
+                );
+            }
+            if ($(window).width() <= 767 || $(window).width() >= 992){
+                $('.page-carousel').height('');
+            }
+        }
+
+        adjustCarouselHeight();
         $(window).resize(function(){
             $menu.collapse('hide');
             $('.logo').css("top", '');
+            adjustCarouselHeight();
         });
     });
 }(window.jQuery);
