@@ -225,6 +225,34 @@
       > li:last-child{
         margin-bottom: $line-height-computed; //some additional place for .logo
       }
+
+      li.dropdown > .dropdown-menu{
+        position: static;
+        width: 100%;
+        font-size: $font-size-base;
+        text-align: left;
+        @include box-shadow(none);
+
+        &:before, &:after{
+          display: none;
+        }
+
+        > li > a{
+          border-top: none;
+        }
+      }
+
+      li.dropdown:hover,
+      li.dropdown.active:hover{
+        > .dropdown-toggle{
+          margin: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        &:after{
+          display: none;
+        }
+      }
     }
 
     .nav-item-description{
