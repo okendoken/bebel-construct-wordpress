@@ -228,6 +228,7 @@
 
       li.dropdown > .dropdown-menu{
         position: static;
+        float: none;
         width: 100%;
         font-size: $font-size-base;
         text-align: left;
