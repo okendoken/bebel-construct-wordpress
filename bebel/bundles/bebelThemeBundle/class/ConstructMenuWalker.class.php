@@ -21,7 +21,7 @@ class ConstructMenuWalker extends Walker_Nav_Menu{
         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
 
         $attributes = '';
-        if ($this->getProperty($args, 'has_children')){
+        if ($this->getProperty($args, 'has_children') && $depth == 0){
             $classes[] = 'dropdown';
             $attributes .= ' class="dropdown-toggle"';
         }
@@ -58,7 +58,16 @@ class ConstructMenuWalker extends Walker_Nav_Menu{
 
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+        if ($depth == 0){
+            $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+        }
+    }
+
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        if ($depth == 0){
+           $output .= "$indent</ul>\n";
+        }
     }
 
     //sometimes $args is array sometimes is object
