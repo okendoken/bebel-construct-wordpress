@@ -33,10 +33,13 @@
 			<li><a href="#introduction">Introduction</a></li>
 			<li><a href="#installation">Installation</a></li>
 			<li><a href="#installed">Uploaded, Installed, What Now?</a></li>
-			<li><a href="#setup-theme">Setting The Theme Up</a></li>
-			<li><a href="#setup-menu">Setting Up The Menu</a></li>
-            <li><a href="#post">Post Options & The Sliders</a></li>
-            <li><a href="#creating">Creating the Contact Page</a></li>
+			<li><a href="#dummy">Install Dummy Content</a></li>
+            <li><a href="#slider">How to setup the Slider</a></li>
+            <li><a href="#contact">Creating the Contact Page</a></li>
+            <li><a href="#portfolio">Creating the Portfolio Page</a></li>
+            <li><a href="#blog">Creating the Blog Page</a></li>
+            <li><a href="#team">Creating the Team Page</a></li>
+            <li><a href="#clients">Creating the Clients Page</a></li>
 			<li><a href="#activating-mailchimp">Activating Mailchimp</a></li>
 			<li><a href="#your-code">Extending and Modifying the Theme</a></li>
 			<li><a href="#credits">Sources and Credits</a></li>
@@ -132,61 +135,65 @@
             theme's settings. We have plenty of them, but all are pretty self explanatory. </p>
 
 
-        <h4 id="help-support"><strong>4) Help &amp; Support</strong> - <a href="#toc">top</a></h4>
+        <h4 id="help-support"><strong>2) Help &amp; Support</strong> - <a href="#toc">top</a></h4>
 
-        <p>The fourth point, <em>Help &amp; Support</em> contains this help file. You don't have to worry if you
+        <p>The second point, <em>Help &amp; Support</em> contains this help file. You don't have to worry if you
             log on from another computer. You can always read this documentation in your WordPress backend.</p>
 
 
 
-        <h3 id="setup-theme"><strong>D) Setting the theme up</strong> - <a href="#toc">top</a></h3>
-
-        <p>This part has a video and some text. Please read and watch both. It will teach you all the important
-            things about the theme. Please watch it, as it contains several important information!</p>
-
-        <h4>Withouth the autoinstall feature</h4>
-        <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/CaOtfitLvwo" frameborder="0" allowfullscreen></iframe>
-
-
-        <h4>With the autoinstall feature</h4>
-
-        <p>When activating the theme, or by clicking on "Installation / Reset" found in the theme menu, you can install
-            the theme automatically. Now, this does not set up the page like the demo.
-            We can not do this because of the image licensing and copyright of the images we provide on the demo.
-            So we set up a easy to start with xml file, which will be automatically inserted into your installation.</p>
-        <p>Just follow the steps written on the one click installation page and you are ready to go.</p>
+        <h3 id="dummy"><strong>D) Install Dummy Content</strong> - <a href="#toc">top</a></h3>
+        <ul>
+            <li>Click Tools &gt; Import</li>
+            <li>Click on WordPress</li>
+            <li>Install the Importer by clicking "Install Now" and then "Activate Plugin &amp; Run Importer"</li>
+            <li> Upload the xml file called <strong>"constructxml.wordpress.2013-10-21.xml"</strong>, that you can find in the main folder.</li>
+            <li> Now assign your posts to an existing user, check the "Download and import file attachments" checkbox and click "Submit".</li>
+        </ul>
 
 		<hr>
 
-        <h3 id="setup-menu"><strong>E) Settig Up the Menu</strong> - <a href="#toc">top</a></h3>
-
-        <p>We use the default way of wordpress to set up the menu. Please read this tutorial of the wordpress
-            documentation: <a href="http://codex.wordpress.org/WordPress_Menu_User_Guide" target="_blank">http://codex.wordpress.org/WordPress_Menu_User_Guide</a></p>
-
-
-		<hr>
-
-        <h3 id="post"><strong>F) Post Options & The Sliders</strong> - <a href="#toc">top</a></h3>
+        <h3 id="slider"><strong>E) How to set up the Slider</strong> - <a href="#toc">top</a></h3>
 
         <p>This part is video only. It will teach you all the important things about the post options.
             Please watch it, as it contains several important information!</p>
 
-        <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/nJPL0y38uV0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/6F3BH6HgfB0?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
 
         <hr>
 
-        <h3 id="creating"><strong>G) Creating the Contact Page</strong> - <a href="#toc">top</a></h3>
+        <h3 id="contact"><strong>G) Creating the Contact Page</strong> - <a href="#toc">top</a></h3>
 
         <p>This part is video only. It will teach you all the important things about the theme.
             Please watch it, as it contains several important information!</p>
 
-        <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/zrnM1zOrYV4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/dAi3TLPPA1U?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
         <br>
 
         <hr>
 
+        <h3 id="portfolio"><strong>H) Creating the Portfolio Page</strong> - <a href="#toc">top</a></h3>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/CPBIMicHoPE?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
 
-        <h3 id="activating-mailchimp"><strong>H) Activating Mailchimp</strong> - <a href="#toc">top</a></h3>
+        <h3 id="blog"><strong>I) Creating the Blog Page</strong> - <a href="#toc">top</a></h3>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/Q0PWnrgettc?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
+
+        <h3 id="team"><strong>J) Creating the Team Page</strong> - <a href="#toc">top</a></h3>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/2nyc8mU5KQU?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
+
+        <h3 id="clients"><strong>K) Creating the Clients Page</strong> - <a href="#toc">top</a></h3>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/xDLFr137_ms?list=UUISL0b1_nJQijhWD34MrNrA" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <hr>
+
+
+        <h3 id="activating-mailchimp"><strong>L) Activating Mailchimp</strong> - <a href="#toc">top</a></h3>
 
         <p>
             What is Mailchimp?<br />
@@ -220,7 +227,7 @@
 
 		<hr>
 
-		<h3 id="your-code"><strong>I) Extending and Modifying the Theme</strong> - <a href="#toc">top</a></h3>
+		<h3 id="your-code"><strong>M) Extending and Modifying the Theme</strong> - <a href="#toc">top</a></h3>
 
 		<p>I am pretty sure you want to extend or / and modify the theme's layout and functionality to
             fit your needs. Here are a few points, you should remember when modifying any files.</p>
@@ -245,8 +252,8 @@
 		</ol>
 
 		<h5>1. Theme Configuration Panel</h5>
-		<p>Simply write the css code inside the field found at "Misc/Styling".</p>
-		<img src="<?php echo get_stylesheet_directory_uri().BebelUtils::getBundlePath() ?>/bebelThemeBundle/help/images/extend/css_backend.png" />
+		<p>Simply write the css code inside the 'Custom CSS' field.</p>
+		<img src="<?php echo get_stylesheet_directory_uri().BebelUtils::getBundlePath() ?>/bebelThemeBundle/help/images/extend/doc1.jpg" />
 
 		<h5>2. css/custom.css</h5>
 		<p>Paste the code into the custom.css file. The only difference to point 1. is that you can edit it in your favorite css editor.</p>
@@ -254,7 +261,7 @@
 
 		<h5>3. Add to Post</h5>
 		<p>This option should only be used if you have a css class only for one or two posts. This output won't be cached!</p>
-		<img src="<?php echo get_stylesheet_directory_uri().BebelUtils::getBundlePath() ?>/bebelThemeBundle/help/images/extend/css_post.png" />
+		<img src="<?php echo get_stylesheet_directory_uri().BebelUtils::getBundlePath() ?>/bebelThemeBundle/help/images/extend/doc2.jpg" />
 
 
 		<h4 id="your-php"><strong>2) Custom PHP</strong> - <a href="#toc">top</a></h4>
@@ -266,28 +273,33 @@
 
 		<hr>
 
-		<h3 id="credits"><strong>J) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<h3 id="credits"><strong>N) Sources and Credits</strong> - <a href="#toc">top</a></h3>
 
 		<p>Thanks to the following projects for making Construct possible<br />
 
         <ul>
             <li><a href="http://jquery.com/">jQuery</a></li>
             <li><a href="http://getbootstrap.com//">Bootstrap</a></li>
+            <li><a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Revolution Slider</a></li>
             <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+            <li><a href="http://danielbruce.se/">Entypo Glyph Set by Daniel Bruce</a></li>
+            <li><a href="http://gmap3.net/">Gmap3</a></li>
+            <li><a href="https://github.com/scottjehl/picturefill">picturefill</a></li>
+            <li><a href="http://retinajs.com/">Retina JS</a></li>
+            <li><a href="http://xoxco.com/projects/code/breakpoints">Breakpoints.js</a></li>
         </ul>
 
-    <h3>Most images licensed from Photodone and iStock</h3> <br />
+    <h3>Most images licensed from Photodone and iStock</h3>
 
-    <h3>Other Images</h3> <br />
+    <h3>Other Images</h3>
     <ul>
         <li>Layered Pixels on <a href="http://themeforest.net/user/LayeredPixels" target="_blank">Themeforest</a></li>
-        <li><a href="http://www.flickr.com/photos/zachd1_618/4886806652/">Zach Dischner</a></li>
-        <li><a href="http://www.flickr.com/photos/wolfgangstaudt/2204054918/">Wolfgang Staudt</a></li>
+        <li><a href="http://www.flickr.com/photos/denemiles/3970279665/in/photostream/">Dene' Miles</a></li>
+        <li><a href="http://www.flickr.com/photos/denemiles/3971887734/">Dene' Miles</a></li>
 	</ul>
 
 
-    <h3>Fonts Used</h3> <br />
-
+    <h3>Fonts Used</h3>
     <ul>
 		<li>Arial (Standard Font)</li>
         <li>Nobile</li>
