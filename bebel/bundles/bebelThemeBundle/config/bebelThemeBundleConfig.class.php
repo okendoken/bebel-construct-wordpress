@@ -475,14 +475,6 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
 
 
         $pages = array(
-            'bebelHelp' =>
-            array(
-                'title' => 'Help & Support',
-                'page_title' => 'You can get free support here',
-                'parent' => 'bebelAdminTop',
-                'permission' => 'edit_theme_options',
-                'class' => $this->bundleDir
-            )
         );
 
         return array('modules' =>$modules, 'pages' => $pages, 'post_modules' => $post_modules);
