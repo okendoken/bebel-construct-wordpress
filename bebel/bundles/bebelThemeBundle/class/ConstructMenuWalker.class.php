@@ -12,7 +12,7 @@ class ConstructMenuWalker extends Walker_Nav_Menu{
         return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
     }
 
-    function start_el(&$output, $item, $depth, $args){
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ){
         global $wp_query;
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
