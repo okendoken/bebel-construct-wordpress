@@ -485,7 +485,7 @@
 
   .nav li.dropdown > .dropdown-menu{
     display: block;
-    @include transition(opacity .3s);
+    @include transition(opacity .3s ease-out, margin-bottom .3s ease-out);
   }
 
   .nav li.dropdown:not(:hover) > .dropdown-menu{
@@ -494,6 +494,7 @@
     opacity: 0;
     padding: 0;
     top: -1000%;
+    margin-bottom: -5px;
   }
 
   .nav li.dropdown:hover,
@@ -501,6 +502,7 @@
     > .dropdown-menu{
       max-height: none;
       opacity: 1;
+      margin-bottom: 0;
     }
 
     > .dropdown-toggle {
