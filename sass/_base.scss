@@ -1021,6 +1021,18 @@
 .portfolio-item{
   opacity: 0;
   display: none;
+  img{
+    @include transition(opacity .2s ease-out);
+  }
+
+  .team:hover &{
+    img{
+      opacity: .7 !important;
+    }
+    &:hover img{
+      opacity: 1 !important;
+    }
+  }
 }
 
 /*****************************/
