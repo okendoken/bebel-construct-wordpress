@@ -973,6 +973,7 @@
     @include box-sizing(content-box);
     margin: 0;
     padding: 5px 10px;
+    border-top: 1px solid $dividerColor;
     border-bottom: 1px solid $dividerColor;
     height: $line-height-computed;
 
