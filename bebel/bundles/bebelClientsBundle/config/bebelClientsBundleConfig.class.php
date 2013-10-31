@@ -35,7 +35,7 @@ class bebelClientsBundleConfig  extends BebelBundleConfig
 
     $w = array(
         'image_sizes' => array(
-            'clients-preview'     => array(526, 280, true)
+            'clients-preview'     => array(613, 280, true)
         ),
         'enqueue_scripts' => array(
             'tab' => array(
