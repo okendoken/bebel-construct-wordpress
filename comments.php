@@ -8,7 +8,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
         echo '</ul>';
     }
 
-    function start_el( &$output, $comment, $depth, $args, $id = 0 ) {
+    function start_el( &$output, $comment, $depth = 0, $args = array(), $id = 0 )  {
         $depth++;
         $GLOBALS['comment_depth'] = $depth;
         $GLOBALS['comment'] = $comment;
@@ -50,7 +50,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
 }
 ?>
 
-<div class="comments">
+<div id="comments" class="comments">
     <?php $settings = BebelSingleton::getInstance('BebelSettings');?>
 
     <?php if ( post_password_required() ) : ?>

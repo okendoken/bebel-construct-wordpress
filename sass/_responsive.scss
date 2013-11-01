@@ -264,7 +264,6 @@
   .post-preview{
 
     & + .post-preview{
-      border-top: 1px solid $dividerColor;
       .description{
         border-top: none;
       }
