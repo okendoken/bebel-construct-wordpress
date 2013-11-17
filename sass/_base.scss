@@ -447,16 +447,18 @@
   }
 
   .nav > li > a{
+    height: 44px;
     padding: 5px 15px;
     color: $textColor;
     text-shadow: none;
-    @include transition(color .2s, background-color .2s, padding .2s, margin .2s, border-radius .2s);
+    @include border-radius(4px);
+    @include transition(color .2s, background-color .2s, padding .2s, margin .2s, height .2s);
 
     &:hover{
       background: $red;
+      height: 54px;
       margin: -5px 0;
       padding: 10px 15px;
-      @include border-radius(4px);
 
       .nav-item-title{
         color: #fff;
@@ -506,10 +508,10 @@
     }
 
     > .dropdown-toggle {
+      height: 54px;
       background-color: $red;
       margin: -5px 0;
       padding: 10px 15px;
-      @include border-radius($input-border-radius);
 
       .nav-item-title{
         color: #fff;
