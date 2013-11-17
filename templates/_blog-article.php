@@ -33,20 +33,26 @@
         }
         ?>
         <div class="post-preview-info">
-            <span class="category-link">
-                <i class="icon-inbox"></i>
-                <?php echo __('posted in', BebelSingleton::getInstance('BebelSettings')->getPrefix())?>
-                <?php echo trim($output, $separator);?>
-            </span>
-            <span class="comments-link">
-                <i class="icon-comments"></i>
-                <a href="<?php the_permalink(); ?>#comments" title="<?php the_title_attribute(); ?>">
-                    <?php comments_number(
-                        __('No Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
-                        __('One Comment', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
-                        __('% Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix())); ?>
-                </a>
-            </span>
+            <div class="row">
+                <div class="col-sm-7 col-sm-offset-2 col-xs-10">
+                    <span class="category-link">
+                        <i class="icon-inbox"></i>
+                                <?php echo __('posted in', BebelSingleton::getInstance('BebelSettings')->getPrefix())?>
+                                <?php echo trim($output, $separator);?>
+                    </span>
+                </div>
+                <div class="col-sm-3 col-xs-10">
+                    <span class="comments-link">
+                        <i class="icon-comments"></i>
+                        <a href="<?php the_permalink(); ?>#comments" title="<?php the_title_attribute(); ?>">
+                            <?php comments_number(
+                                __('No Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
+                                __('One Comment', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
+                                __('% Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix())); ?>
+                        </a>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </section>

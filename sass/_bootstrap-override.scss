@@ -61,6 +61,18 @@
     background: none;
     color: $red;
   }
+
+  > a{
+    color: $textColor;
+    text-decoration: none;
+    &:hover{
+      color: $red;
+    }
+  }
+
+  &{ //active link in case of post pagination
+    color: $red;
+  }
 }
 
 .label{

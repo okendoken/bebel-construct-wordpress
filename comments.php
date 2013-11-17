@@ -56,6 +56,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
     <?php if ( post_password_required() ) : ?>
         <p><?php _e( 'This post is password protected. Enter the password to view any comments.', $settings->getPrefix() ); ?></p>
         <?php
+        echo '</div>';
         return;
     endif;
     ?>

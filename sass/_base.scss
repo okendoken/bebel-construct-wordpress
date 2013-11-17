@@ -724,6 +724,10 @@
     z-index: 1;
     bottom: 5px;
     left: 2px;
+    @media (max-width: $screen-xs-max) {
+      left: auto;
+      right: 2px;
+    }
   }
 }
 
@@ -735,16 +739,15 @@
 }
 
 .post-preview-info{
-  @include clearfix;
-  position: relative;
-  height: 27px;
   margin-top: $line-height-computed * 1.5;
   padding: 4px 0;
   border-top: 1px solid $dividerColor;
   border-bottom: 1px solid $dividerColor;
+  @media (min-width: $screen-sm) {
+    text-align: right;
+  }
 
   .category-link, .comments-link{
-    position: absolute;
 
     &, > a{
       color: $gray-light;
@@ -758,11 +761,13 @@
   }
 
   .category-link{
-    right: 117px;
+    @media (min-width: $screen-sm) {
+      margin-right: -10%;
+    }
   }
 
   .comments-link{
-    right: 2px;
+    margin-right: 2px;
   }
 }
 
@@ -867,6 +872,14 @@
 
   > p:last-child{
     margin-bottom: 0;
+  }
+}
+
+.post-preview,
+.post{
+  img, .wp-caption{
+    max-width: 100%;
+    height: auto;
   }
 }
 /*****************************/
@@ -1166,6 +1179,18 @@
   @include remove-clearfix();
 }
 
+/** wordpres classes */
+img.alignright  { float:right; margin:0 0 1em 1em }
+
+img.alignleft { float:left; margin:0 1em 1em 0 }
+
+img.aligncenter { display: block; margin-left: auto; margin-right: auto }
+
+.alignright { float:right; }
+
+.alignleft { float:left; }
+
+.aligncenter { display: block; margin-left: auto; margin-right: auto }
 /********************************/
 /*          Tabbable            */
 /********************************/

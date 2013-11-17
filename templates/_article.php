@@ -4,4 +4,8 @@
         <small class="author">/ by <?php echo ucfirst(get_the_author()); ?></small>
     </h1>
     <?php the_content() ?>
+    <?php wp_link_pages(array(
+        'before'           => '<div class="text-align-center"><div class="pagination">' ,
+        'after'            => '</div></div>'
+    )) ?>
 </article>
