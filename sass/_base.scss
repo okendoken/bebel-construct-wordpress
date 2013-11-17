@@ -683,6 +683,7 @@
 
 .page-content{
   padding: 20px 30px;
+  @include clearfix();
   @media (min-width: $screen-sm){
     min-height: 320px;
   }
@@ -876,7 +877,8 @@
 }
 
 .post-preview,
-.post{
+.post,
+.page{
   img, .wp-caption{
     max-width: 100%;
     height: auto;

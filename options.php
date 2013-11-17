@@ -18,7 +18,9 @@ function add_options_generated_styles() {
                 .navigation .dropdown-menu > li > a,
                 .post-preview .title a,
                 .pagination > li > a,
-                .pagination > li > span
+                .pagination > li > span,
+                .pagination > a:hover,
+                .pagination
                 {
                   color: {$textColor};
                 }
