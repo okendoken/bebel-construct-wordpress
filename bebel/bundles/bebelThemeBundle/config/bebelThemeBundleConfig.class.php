@@ -37,6 +37,8 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'default_background' => '',
             'logo_header' => '',
 
+            'home_page' => '',
+
             'mainpage_image' => '',
             'footer_text' => 'This site was handcrafted by Bebel',
             'generate_2x_images' => 'on',
@@ -177,6 +179,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                         'title' => 'General Settings',
                         'description' => 'Change your logo, ...'
                     ),
+                    'home' => array(
+                        'title' => 'Home Page',
+                        'description' => 'Setup the home page'
+                    ),
                     'contact' => array(
                         'title' => 'Contact Page',
                         'description' => 'Setup the contact page'
@@ -199,6 +205,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     ),
                 ),
                 'widgets' => array(
+                    'home_page' => array(
+                        'title' => 'Home Page',
+                        'description' => 'Choose a page for the home page layout.',
+                        'help' => '',
+                        'template' => 'select_page',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'home',
+                        'options' => array()
+                    ),
 
                     //general
                     'logo_header' => array(

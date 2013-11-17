@@ -14,6 +14,7 @@ $clients_page = $settings->get('clients_page');
 $contact_page = $settings->get('contact_page');
 $blog_page = $settings->get('blog_overview_page');
 $portfolio_page = $settings->get('portfolio_overview_page');
+$home_page = $settings->get('home_page');
 $with_offset = false;
 if(get_the_ID() == $team_page) {
     $slug = 'team';
@@ -25,6 +26,8 @@ if(get_the_ID() == $team_page) {
     $slug = 'blog';
 } elseif(get_the_ID() == $portfolio_page){
     $slug = 'portfolio';
+} elseif(get_the_ID() == $home_page){
+    $slug = 'home';
 } else {
     $slug =  "page-".$page_layout;
     $with_offset = $page_layout != 'no-image';
@@ -48,6 +51,9 @@ $css = BebelUtils::getCustomMeta('css', false, get_the_ID());
     </style>
 <?php endif; ?>
 
-<?php get_template_part( 'templates/'.$slug, get_post_format() );?>
-<?php bebelThemeUtils::getLogoTemplate(true); ?>
-<?php get_footer(); ?>
+<?php
+get_template_part( 'templates/'.$slug, get_post_format() );
+if(get_the_ID() != $home_page){
+    bebelThemeUtils::getLogoTemplate(true);
+}
+get_footer();
