@@ -18,9 +18,7 @@ function add_options_generated_styles() {
                 .navigation .dropdown-menu > li > a,
                 .post-preview .title a,
                 .pagination > li > a,
-                .pagination > li > span,
-                .pagination > a:hover,
-                .pagination
+                .pagination > li > span
                 {
                   color: {$textColor};
                 }
@@ -63,7 +61,10 @@ function add_options_generated_styles() {
                 .navigation .dropdown-menu > .active > a:focus,
                 .clients .nav > li > a:hover,
                 .clients .nav > li > a:focus,
-                .navigation .navbar-toggle:hover{
+                .navigation .navbar-toggle:hover,
+                .comment-title > a:hover,
+                .pagination > a:hover,
+                .pagination{
                    color: {$secondColor};
                 }
                 .logo .square{

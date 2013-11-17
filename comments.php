@@ -18,7 +18,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
         if ( email_exists($email) )
             $user_id = email_exists($email);
         $GLOBALS['comment'] = $comment; ?>
-        <li <?php comment_class('media'); ?> id="comment-<?php comment_ID(); ?>">
+        <li <?php comment_class('media discussion-item'); ?> id="comment-<?php comment_ID(); ?>">
             <span class="pull-left">
                             <?php echo get_avatar($comment,$size='64' ); ?>
                         </span>
@@ -28,7 +28,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
                         <?php echo comment_reply_link(array_merge( array('reply_text' => 'reply') , array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
                     </span>
                     <h5 class="media-heading comment-title">
-                        <?php comment_author(); ?>
+                        <?php comment_author_link(); ?>
                         <time class="text-muted" datetime="">
                             <?php echo get_comment_date("M d \\a\\t G:i"); ?>
                         </time>

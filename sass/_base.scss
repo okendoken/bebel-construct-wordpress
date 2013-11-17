@@ -847,20 +847,27 @@
 .comment-title{
   font-size: $font-size-small;
   font-weight: 600;
+  > a{
+    color: $textColor;
+    &:hover{
+      color: $red;
+
+    }
+  }
   time{
     font-weight: normal;
   }
 }
 
-.comments > .media-list > .comment{
+.comments > .media-list > .discussion-item{
   border-top: 1px solid $dividerColor;
   border-bottom: 1px solid $dividerColor;
-  + .comment{
+  + .discussion-item{
     margin-top: -1px;
   }
 }
 
-.comment{
+.discussion-item{
   padding: 25px 0;
   font-size: $font-size-small;
 
