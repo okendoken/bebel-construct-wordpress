@@ -10,7 +10,7 @@ $settings = BebelSingleton::getInstance('BebelSettings');
 <div class="content">
 <?php
 get_template_part( 'templates/_navigation-no-image' ); ?>
-    <section id="page-<?php echo $post ? get_the_ID() : 'no-results'; ?>" class="page-content">>
+    <section id="page-<?php echo $post ? get_the_ID() : 'no-results'; ?>" class="page-content">
         <h4 class="page-title"><?php
             if ( is_day() ) :
                 printf( __( 'Daily Archives: %s', $settings->getPrefix()  ), '<span>' . get_the_date() . '</span>' );
