@@ -797,6 +797,9 @@
   .author{
     font-size: $font-size-base;
     font-style: italic;
+    a{
+      color: $gray-light;
+    }
   }
 }
 
