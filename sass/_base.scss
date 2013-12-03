@@ -305,6 +305,10 @@
     a{
       @extend .label;
       @extend .label-default;
+      max-width: 100%;
+      white-space: normal;
+      display: inline-block;
+      margin-top: .2em;
     }
   }
 
@@ -315,6 +319,14 @@
   .search-query{
     @extend .newsletter-input;
     width: 100% !important;
+  }
+
+  select, img{
+    max-width: 100%;
+  }
+
+  img{
+    height: auto;
   }
 }
 
