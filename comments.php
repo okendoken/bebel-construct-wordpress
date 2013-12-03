@@ -74,8 +74,20 @@ class Bebel_Walker_Comment extends Walker_Comment{
         </ul>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-            <?php previous_comments_link( __( '&larr; Older Comments', $settings->getPrefix() ) ); ?>
-            <?php next_comments_link( __( 'Newer Comments &rarr;', $settings->getPrefix() ) ); ?>
+            <div class="text-align-center">
+                <ul class="pagination">
+                    <?php
+                    $links = paginate_comments_links(array('type' => 'array', 'echo' => false, 'prev_text' => '<', 'next_text' => '>'));
+                    foreach($links as $link){
+                        $active_class = '';
+                        if (strpos($link,"<span class='page-numbers current'>") !== false) {
+                            $active_class = ' class="active"';
+                        }
+                        echo "<li$active_class>".$link.'</li>';
+                    }
+                    ?>
+                </ul>
+            </div>
         <?php endif;  ?>
 
     <?php else :

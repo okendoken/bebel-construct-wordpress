@@ -51,6 +51,7 @@ function add_options_generated_styles() {
                 .pagination > li > a:focus,
                 .pagination > .active > a,
                 .pagination > .active > span,
+                .pagination > .active > span:hover,
                 .navigation .btn-navbar:hover,
                 .navigation .dropdown-menu > li > a:hover,
                 .navigation .dropdown-menu > li > a:focus,
