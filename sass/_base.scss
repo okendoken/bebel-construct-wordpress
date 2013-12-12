@@ -692,7 +692,7 @@
 /*****************************/
 
 .page-content{
-  padding: 20px 30px;
+  padding: 40px 30px 20px;
   @include clearfix();
   @media (min-width: $screen-sm){
     min-height: 320px;
@@ -815,10 +815,12 @@
   }
 
   + .description{
-    margin: -30px 0 40px;
+    margin: -20px 0 40px;
 
     .post-preview-info{
       margin-top: 0;
+      text-align: left;
+      line-height: 1.6em;
 
       .category-link{
         @media (min-width: $screen-sm) {

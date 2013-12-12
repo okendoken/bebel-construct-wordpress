@@ -1,5 +1,5 @@
 <?php
-function add_options_generated_styles() {
+function bebel_add_options_generated_styles() {
     $settings = BebelSingleton::getInstance('BebelSettings');
     $backgroundImage = $settings->get('default_background');
     $textColor = $settings->get('color_text');
@@ -108,4 +108,4 @@ function add_options_generated_styles() {
     $custom_css .= $settings->get('css');
     wp_add_inline_style( 'main-stylesheet', $custom_css );
 }
-add_action( 'wp_enqueue_scripts', 'add_options_generated_styles' );
+add_action( 'wp_enqueue_scripts', 'bebel_add_options_generated_styles' );

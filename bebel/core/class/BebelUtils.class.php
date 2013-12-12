@@ -855,6 +855,7 @@ class BebelUtils
                 $li .= '<li class="'.$css_class.'"><a href="'.get_pagenum_link($paged - 1).'">&lsaquo;</a></li>';
             }
 
+            paginate_links();
             // loop all the pages
             for($i = 1; $i<=$pages;$i++) {
                 // if page is not next arrow and if page is not last arrow
