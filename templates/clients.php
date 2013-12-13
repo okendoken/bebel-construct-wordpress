@@ -15,7 +15,8 @@ get_template_part( 'templates/_navigation-no-image', get_post_format() ); ?>
             }
         }
         query_posts(array(
-            'post_type' => 'construct_client'
+            'post_type' => 'construct_client',
+            'posts_per_page' => 1000
         ));
         if (have_posts()) {?>
             <div class="tabbable tabs-left clients">

@@ -1,4 +1,4 @@
-<h5><?php the_title()?></h5>
+<h5 class="client-title"><?php the_title()?></h5>
 <?php if(has_post_thumbnail()): ?>
     <?php the_post_thumbnail('clients-preview'); ?>
 <?php endif ?>

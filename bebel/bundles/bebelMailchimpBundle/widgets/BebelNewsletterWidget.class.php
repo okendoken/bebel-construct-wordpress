@@ -10,6 +10,8 @@ class BebelNewsletterWidget extends WP_Widget {
 
         add_action('update_option_'.BebelSingleton::getInstance('BebelSettings')->getPrefix().'-settings', array($this, 'flush_widget_cache'));
         add_action( 'switch_theme', array($this, 'flush_widget_cache') );
+        //widget specific js
+        add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
     }
 
     function widget($args, $instance) {
@@ -51,15 +53,6 @@ class BebelNewsletterWidget extends WP_Widget {
         <?php
         $cache[$args['widget_id']] = ob_get_flush();
         wp_cache_set('widget_bebel_newsletter', $cache, 'widget');
-
-        //widget specific js
-        wp_enqueue_script(
-            'newsletter',
-            get_template_directory_uri().BebelUtils::getBundlePath().'/'.$this->bundleDir.'/widgets/assets/newsletter.js',
-            array('jquery'),
-            false,
-            true
-        );
     }
 
     function update( $new_instance, $old_instance ) {
@@ -102,6 +95,16 @@ class BebelNewsletterWidget extends WP_Widget {
                 echo '<p class="help">Displays a newsletter signup form that directly sends the email addresses to mailchimp.</p>';
             }
         }
+    }
+
+    function enqueue_scripts(){
+        wp_enqueue_script(
+            'newsletter',
+            get_template_directory_uri().BebelUtils::getBundlePath().'/'.$this->bundleDir.'/widgets/assets/newsletter.js',
+            array('jquery'),
+            false,
+            true
+        );
     }
 }
 // End Newsletter widget

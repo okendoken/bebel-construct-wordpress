@@ -23,6 +23,10 @@
 .bebel_admin_panel_tabs_nav li .nav-tab-active{
     margin-bottom: -1px;
     position: relative;
+    color: #000;
+    background: 0 0;
+    border-color: #CCC;
+    border-bottom-color: #F1F1F1;
 }
 
 .bebel_admin_panel_tabs_nav:after{

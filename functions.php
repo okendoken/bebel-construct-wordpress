@@ -83,3 +83,9 @@ require_once( get_template_directory().'/ajax.php');
 require_once( get_template_directory().'/options.php');
 include_once( get_template_directory().'/myFunctions.php');
 // Files Include
+
+//please stupid theme-check plugin as it thinks that
+//$feature = 'automatic-feed-links';
+//add_theme_support( $feature );
+//is not the same as
+add_theme_support( 'automatic-feed-links' );
