@@ -76,6 +76,15 @@ function construct_setup() {
 	load_theme_textdomain( 'construct', get_template_directory() . '/lang' );
 }
 
+add_filter('widget_tag_cloud_args', 'construct_tag_cloud');
+function construct_tag_cloud(){
+    return array(
+        'smallest'                  => 13,
+        'largest'                   => 22,
+        'unit'                      => 'px'
+);
+}
+
 // Files Include
 require_once( get_template_directory().'/install_plugins.php');
 require_once( get_template_directory().'/bebel/core/vendor/mobble/mobble.php');

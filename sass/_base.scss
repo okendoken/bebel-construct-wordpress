@@ -302,13 +302,18 @@
 
   > .tagcloud{
     margin-top: $line-height-computed / 2;
+    word-spacing: .4em;
     a{
       @extend .label;
       @extend .label-default;
       max-width: 100%;
-      white-space: normal;
       display: inline-block;
-      margin-top: .2em;
+      margin-top: .3em;
+      padding-left: .8em;
+      padding-right: .8em;
+      white-space: normal;
+      word-wrap: break-word;
+      background-color: #ccc;
     }
   }
 
@@ -318,7 +323,6 @@
 
   .search-query{
     @extend .newsletter-input;
-    width: 100% !important;
   }
 
   select, img{
@@ -327,6 +331,10 @@
 
   img{
     height: auto;
+  }
+
+  > .title + select{
+    margin-top: 5px;
   }
 }
 
