@@ -147,7 +147,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     'path' => get_template_directory_uri() .	'/css/style.css'
                 ),
                 'main-stylesheet' => array(
-                    'path' => get_template_directory_uri() .	'/style.css'
+                    'path' => get_stylesheet_directory_uri() .	'/style.css'
                 )
             ),
             'image_sizes' => array(

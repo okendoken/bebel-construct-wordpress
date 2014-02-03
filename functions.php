@@ -1,7 +1,7 @@
 <?php
 
 // load autoloader
-require_once get_stylesheet_directory().'/bebel/core/class/BebelAutoloader.class.php';
+require_once 'bebel/core/class/BebelAutoloader.class.php';
 $autoLoader = BebelAutoloader::getInstance();
 $autoLoader->register();
 

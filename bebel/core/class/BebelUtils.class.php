@@ -29,16 +29,16 @@ class BebelUtils
                 $string = str_replace('%BCP_BUNDLE_PATH%', self::$bcp_bundle_path, $string);
                 break;
             case 'BCP_BUNDLE_PATH':
-                $string = str_replace('%BCP_BUNDLE_PATH%', get_stylesheet_directory_uri().self::$bcp_path.self::$bcp_bundle_path, $string);
+                $string = str_replace('%BCP_BUNDLE_PATH%', get_template_directory_uri().self::$bcp_path.self::$bcp_bundle_path, $string);
                 break;
             case 'BCP_PATH':
-                $string = str_replace('%BCP_PATH%', get_stylesheet_directory_uri().self::$bcp_path, $string);
+                $string = str_replace('%BCP_PATH%', get_template_directory_uri().self::$bcp_path, $string);
                 break;
             case 'BCP_CORE_PATH':
-                $string = str_replace('%BCP_CORE_PATH%', get_stylesheet_directory_uri().self::$bcp_path.self::$bcp_core_path, $string);
+                $string = str_replace('%BCP_CORE_PATH%', get_template_directory_uri().self::$bcp_path.self::$bcp_core_path, $string);
                 break;
             case 'IMAGES_PATH':
-                $string = str_replace('%IMAGES_PATH%', get_stylesheet_directory_uri().self::$images_path, $string);
+                $string = str_replace('%IMAGES_PATH%', get_template_directory_uri().self::$images_path, $string);
                 break;
 
             default:
@@ -819,7 +819,9 @@ class BebelUtils
         $basic_settings['base_theme_info'] = array(
             'theme_name' => $wordpress_theme_data->Name,
             'theme_version' => $wordpress_theme_data->Version,
-            'theme_prefix' => preg_replace('/\s+/', '-', strtolower($wordpress_theme_data->Name)) //replace all whitespaces with dashes
+            'theme_prefix' => preg_replace('/\s+/', '-', strtolower( is_child_theme()
+                    ?  $wordpress_theme_data->Template
+                    :  $wordpress_theme_data->Name)) //replace all whitespaces with dashes
         );
 
         return $basic_settings;

@@ -17,7 +17,7 @@ class bebelThemeUtils
                 <?php if($logo = BebelSingleton::getInstance('BebelSettings')->get('logo_header')): ?>
                     <img src="<?php echo $logo ?>" alt="Logo" />
                 <?php else: ?>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/example/logo.png" alt="Logo" />
+                    <img src="<?php echo get_template_directory_uri() ?>/images/example/logo.png" alt="Logo" />
                 <?php endif ?>
             </a>
         </div><!--end .logo-->

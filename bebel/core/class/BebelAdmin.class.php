@@ -20,12 +20,12 @@ class BebelAdmin
     public function initAdmin()
     {
         $pref_icon = get_template_directory().'/images/core/admin-nav-icon.png';
-        $pref_icon_uri = get_stylesheet_directory_uri().'/images/core/admin-nav-icon.png';
+        $pref_icon_uri = get_template_directory_uri().'/images/core/admin-nav-icon.png';
 
         if(file_exists($pref_icon)) {
             $icon = $pref_icon_uri;
         }else {
-            $icon = get_stylesheet_directory_uri().'/bebel/core/assets/images/icons/admin-nav-icon.png';
+            $icon = get_template_directory_uri().'/bebel/core/assets/images/icons/admin-nav-icon.png';
         }
 
 
