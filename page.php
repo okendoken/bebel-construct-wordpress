@@ -17,15 +17,20 @@ $portfolio_page = $settings->get('portfolio_overview_page');
 $home_page = $settings->get('home_page');
 $with_offset = false;
 if(get_the_ID() == $team_page) {
-    $slug = 'team';
+    $slug = 'team-'.$page_layout;
+    $with_offset = $page_layout != 'no-image';
 } elseif(get_the_ID() == $clients_page){
-    $slug = 'clients';
+    $slug = 'clients-'.$page_layout;
+    $with_offset = $page_layout != 'no-image';
 } elseif(get_the_ID() == $contact_page){
-    $slug = 'contact';
+    $slug = 'contact-'.$page_layout;
+    $with_offset = $page_layout != 'no-image';
 } elseif(get_the_ID() == $blog_page){
-    $slug = 'blog';
+    $slug = 'blog-'.$page_layout;
+    $with_offset = $page_layout != 'no-image';
 } elseif(get_the_ID() == $portfolio_page){
-    $slug = 'portfolio';
+    $slug = 'portfolio-'.$page_layout;
+    $with_offset = $page_layout != 'no-image';
 } elseif(get_the_ID() == $home_page){
     $slug = 'home';
 } else {
