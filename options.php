@@ -105,6 +105,20 @@ function bebel_add_options_generated_styles() {
                   border-color: {$secondColor};
                 }
                 ";
+    $google_font_setting = $settings->get('googlefont');
+    if($google_font_setting != '') {
+        $google_font_url = "http://fonts.googleapis.com/css?family=".rawurlencode($google_font_setting);
+        wp_enqueue_style('googlefont', $google_font_url);
+
+        $google_font_family = strrpos($google_font_setting, ":") === false
+            ? $google_font_setting
+            : strstr($google_font_setting, ':', true);
+        $custom_css .= "
+                        body, h1, h2, h3, h4, h5, h6, .logo .name, .pagination {
+                          font-family: {$google_font_family};
+                        }
+                        ";
+    }
     $custom_css .= $settings->get('css');
     wp_add_inline_style( 'main-stylesheet', $custom_css );
 }

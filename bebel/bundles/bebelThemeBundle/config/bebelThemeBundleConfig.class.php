@@ -59,6 +59,7 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             // blog page
             'blog_overview_page' => '',
 
+            'googlefont' => '',
             'css' => '',
             'color_text' => '#3d3d3d',
             'color_second' => '#f24108',
@@ -379,6 +380,15 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
                     ),
 
                     //styling
+                    'googlefont' => array(
+                        'title' => 'Google Font',
+                        'description' => 'A complete list of all google fonts (last update: February 3rd 2014). Feel free to use whichever you would like to. You can get a preview <a href="http://www.google.com/webfonts/" target="_blank">here</a>.',
+                        'help' => 'It will check once a week for new updates.',
+                        'template' => 'select_custom',
+                        'permission' => 'edit_theme_options',
+                        'submenu' => 'styling',
+                        'options' => array('options' => listgooglefontoptions(), 'first' => 'Font')
+                    ),
                     'css' => array(
                         'title' => 'Custom CSS',
                         'description' => 'If you have css styling you want to load on every page, put it in here. It is loaded after our css, so you can override our classes. But it is also loaded after the custom.css file, so pay attention not to override your own classes.',
@@ -550,5 +560,10 @@ class bebelThemeBundleConfig  extends BebelBundleConfig
             'before_title' => '<h4 class="title">',
             'after_title' => ':</h4>',
         ));
+    }
+
+    public function runHook()
+    {
+        include dirname(__FILE__).'/../misc/google_font_list.php';
     }
 }
