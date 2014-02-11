@@ -36,14 +36,14 @@
                             <?php if (!empty($cat_output)){ ?>
                                 <span class="category-link">
                                     <i class="icon-inbox"></i>
-                                        <?php echo __('posted in', BebelSingleton::getInstance('BebelSettings')->getPrefix())?>
+                                        <?php echo __('posted in', 'bebel')?>
                                         <?php echo trim($cat_output, $cat_separator);?>
                                 </span>
                             <?php } ?>
                             <?php if (!empty($tags_output)){ ?>
                                 <span class="tags-link">
                                     <i class="icon-tags"></i>
-                                            <?php echo __('tagged with', BebelSingleton::getInstance('BebelSettings')->getPrefix())?>
+                                            <?php echo __('tagged with', 'bebel')?>
                                             <?php echo trim($tags_output, $tags_separator);?>
                                 </span>
                             <?php } ?>

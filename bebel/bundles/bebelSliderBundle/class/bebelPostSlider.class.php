@@ -42,9 +42,9 @@ class bebelPostSlider extends bebelSliderBase
             }else {
                 if($this->post_id)
                 {
-                    $this->warning = __('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the full width layout, which does not require any image..', $this->settings->getPrefix());
+                    $this->warning = __('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the full width layout, which does not require any image..', 'bebel');
                 }else {
-                    $this->warning = __('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', $this->settings->getPrefix());
+                    $this->warning = __('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', 'bebel');
                 }
                 
             }
@@ -85,16 +85,16 @@ class bebelPostSlider extends bebelSliderBase
                 <?php
                 $html .= ob_get_clean();
             } else {
-                $html .= '        <img src="'.$this->image.'" alt="'.__('Post Image ', $this->settings->getPrefix())."\">\n";
+                $html .= '        <img src="'.$this->image.'" alt="'.__('Post Image ', 'bebel')."\">\n";
             }
             
             $this->html = $html;
         }else {
             if($this->post_id)
                 {
-                    $this->warning = '<div style="padding: 100px">'.__('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the No Image layout, which does not require any image.', $this->settings->getPrefix()).'</div>';
+                    $this->warning = '<div style="padding: 100px">'.__('You have neither set up a featured image, nor uploaded any slider images. Please fix this in your post. Otherwise, use the No Image layout, which does not require any image.', 'bebel').'</div>';
                 }else {
-                    $this->warning = '<div style="padding: 100px">'.__('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', $this->settings->getPrefix()).'</div>';
+                    $this->warning = '<div style="padding: 100px">'.__('The mainpage slider is currently disabled, but you do not have defined any static image to replace it with. Please upload a static image in the theme backend or enable the slider. You can find help in the documentation.', 'bebel').'</div>';
                 }
         }
     }

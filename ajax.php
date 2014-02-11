@@ -33,7 +33,7 @@ function bebel_mailchimp_subscribe($post)
 
     if(!isset($valid_data['email']) || $valid_data['email'] == '' || !is_email($valid_data['email']))
     {
-        die(__('Please enter a valid Email Address', $settings->getPrefix()));
+        die(__('Please enter a valid Email Address', 'bebel'));
     }
 
 
@@ -50,7 +50,7 @@ function bebel_mailchimp_subscribe($post)
         
         if($mc_result === true)
         {
-            die(__('Successfully Subscribed. Thanks', $settings->getPrefix()));
+            die(__('Successfully Subscribed. Thanks', 'bebel'));
         }else {
             die($mc_result);
         }
@@ -70,10 +70,10 @@ function bebel_send_contact_form($post)
 {
     $bSettings = BebelSingleton::getInstance('BebelSettings');
     $required = array(
-        'name' => array('string', _x('Please tell us your name :)', $bSettings->getPrefix())),
-        'email' => array('email', _x('We need a valid email address to get back to you.', $bSettings->getPrefix())),
-        'message' => array('string', _x('What do you want to tell us? Enter some text, please!', $bSettings->getPrefix())),
-        'subject' => array('string', _x('Please enter message subject.', $bSettings->getPrefix())),
+        'name' => array('string', _x('Please tell us your name :)', 'bebel')),
+        'email' => array('email', _x('We need a valid email address to get back to you.', 'bebel')),
+        'message' => array('string', _x('What do you want to tell us? Enter some text, please!', 'bebel')),
+        'subject' => array('string', _x('Please enter message subject.', 'bebel')),
     );
 
     $mail = new bebelThemeMailing();

@@ -5,7 +5,7 @@
     <?php $url = site_url()."/wp-admin/admin-ajax.php"; ?>
     <div class="widget">
         <button id="generate-2x-image-for-all" data-uri="<?php echo $url; ?>" type="button" class="button-primary">
-            <?php echo __('Regenerate', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?>
+            <?php echo __('Regenerate', 'bebel'); ?>
         </button>
         <p class="help"><?php echo $widget['description']?></p>
         <p class="help"><?php echo $widget['help'] ?></p>

@@ -35,7 +35,7 @@ if ($post_tags) {
     <?php if ($website) { ?>
         <div class="website">
             <a target="_blank" href="<?php echo BebelUtils::outputUrl($website); ?>">
-                <?php echo __('See Portfolio Item', BebelSingleton::getInstance('BebelSettings')->getPrefix()) ?>
+                <?php echo __('See Portfolio Item', 'bebel') ?>
             </a>
         </div>
     <?php } ?>

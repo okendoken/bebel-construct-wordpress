@@ -400,22 +400,22 @@ class BebelUtils
 
         if(comments_open())
         {
-            comments_popup_link(__('No Comments', $bSettings->getPrefix()), __('One Comment', $bSettings->getPrefix()), __(sprintf('%d Comments', $comments_count), $bSettings->getPrefix()));
+            comments_popup_link(__('No Comments', 'bebel'), __('One Comment', 'bebel'), sprintf(__('%d Comments', 'bebel'), $comments_count));
 //           $comments_count = get_comments_number($id);
 //           switch($comments_count)
 //           {
 //               case 0:
-//                   $comments_link = __('No Comments', $bSettings->getPrefix());
+//                   $comments_link = __('No Comments', 'bebel');
 //                   break;
 //               case 1:
-//                   $comments_link = __('One Comment', $bSettings->getPrefix());
+//                   $comments_link = __('One Comment', 'bebel');
 //                   break;
 //               default:
 //                   $comments_link = __(sprintf('%d Comments', $comments_count), $bSettings->getPrefix());
 //                   break;
 //           }
         }else {
-            echo __('Comments Closed', $bSettings->getPrefix());
+            echo __('Comments Closed', 'bebel');
         }
 
 

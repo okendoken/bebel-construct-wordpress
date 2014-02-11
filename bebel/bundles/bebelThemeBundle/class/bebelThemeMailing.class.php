@@ -161,7 +161,7 @@ class bebelThemeMailing
      */
     public function buildSuccessHtml()
     {
-        $text = _x('Your message has been sent. Thank you for your time. We will respond to your request as soon as possible.', $this->settings->getPrefix());
+        $text = _x('Your message has been sent. Thank you for your time. We will respond to your request as soon as possible.', 'bebel');
         return "<div class='alert alert-default'>
                     <a class='close' data-dismiss='alert' href='#' aria-hidden='true'>&times;</a>
                     <p class='text-success'>
@@ -177,16 +177,16 @@ class bebelThemeMailing
         $subject = _x(sprintf("New Contact Request on %s", $blogname), $this->settings->getPrefix());
 
         $send_to = $this->settings->get('contact_email');
-        $author_name = _x('Admin', $this->settings->getPrefix());
+        $author_name = _x('Admin', 'bebel');
         
         $hi = _x(sprintf('Hi %s,', $author_name), $this->settings->getPrefix());
         $intro = _x(sprintf('somebody just sent you an email through your contact form on %s,', $blogname), $this->settings->getPrefix());
-        $outro = _x('your mailingbot.', $this->settings->getPrefix());
+        $outro = _x('your mailingbot.', 'bebel');
         
-        $name = _x('Name: ', $this->settings->getPrefix());
-        $email = _x('Email: ', $this->settings->getPrefix());
-        $subject = _x('Website URL: ', $this->settings->getPrefix());
-        $message = _x('Message: ', $this->settings->getPrefix());
+        $name = _x('Name: ', 'bebel');
+        $email = _x('Email: ', 'bebel');
+        $subject = _x('Website URL: ', 'bebel');
+        $message = _x('Message: ', 'bebel');
         
         
         $message =

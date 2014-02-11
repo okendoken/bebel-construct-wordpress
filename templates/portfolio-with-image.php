@@ -39,7 +39,7 @@ get_template_part( 'templates/_carousel', get_post_format() );?>
                 ?>
                 <ul id="portfolio-filters" class="portfolio-filters">
                     <li><span class="filter active label" data-filter="<?php echo $tags_string ?>">
-                            <?php echo __('All', $settings->getPrefix()) ?>
+                            <?php echo __('All', 'bebel') ?>
                     </span></li>
                     <?php foreach($tags as $tag) { ?>
                         <li><span href="#" class="filter label" data-filter="<?php echo $tag->name ?>"><?php echo $tag->name ?></span></li>

@@ -67,16 +67,16 @@ class BebelMailchimp
         switch($errorCode)
         {
             case 104:
-                $message = _x("API key is invalid", $this->settings->getPrefix());
+                $message = _x("API key is invalid", 'bebel');
                 break;
             case 200:
-                $message = _x("Admin: The List does not exist. Please send a mail to the admin.", $this->settings->getPrefix());
+                $message = _x("Admin: The List does not exist. Please send a mail to the admin.", 'bebel');
                 break;
             case 214:
-                $message = _x("Yoy already signed up for the newsletter. You will <b>not</b> get another activation mail.", $this->settings->getPrefix());
+                $message = _x("Yoy already signed up for the newsletter. You will <b>not</b> get another activation mail.", 'bebel');
                 break;
             default:
-                $message = _x("An unknown error occured. Try again later or try contacting the admin.", $this->settings->getPrefix());
+                $message = _x("An unknown error occured. Try again later or try contacting the admin.", 'bebel');
                 break;
 
         }

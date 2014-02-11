@@ -4,7 +4,7 @@
 
 ?>
 <div id="bebel_admin_panel_tabs-<?php echo $i ?>" class="grid_24"<?php echo $style ?>>
-  <input type="submit" name="submit" class="button-primary" style="float: right; margin-bottom: 15px;" value="<?php _e('Save your changes!', $this->settings->getPrefix()) ?>" />
+  <input type="submit" name="submit" class="button-primary" style="float: right; margin-bottom: 15px;" value="<?php _e('Save your changes!', 'bebel') ?>" />
   <br class="clear" />
   <?php  
   if($this->hasSubmenu($base))
@@ -27,5 +27,5 @@
 
   ?>
   
-  <input type="submit" name="submit" class="button-primary" style="float: right; margin-top: 15px;" value="<?php _e('Save your changes!', $this->settings->getPrefix()) ?>" />
+  <input type="submit" name="submit" class="button-primary" style="float: right; margin-top: 15px;" value="<?php _e('Save your changes!', 'bebel') ?>" />
 </div>

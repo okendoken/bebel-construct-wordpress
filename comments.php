@@ -34,7 +34,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
                         </time>
                     </h5>
                     <?php if($comment->comment_approved == 0): ?>
-                            <em><?php _e('Your comment is awaiting approval.', BebelSingleton::getInstance('BebelSettings')->getPrefix()) ?></em>
+                            <em><?php _e('Your comment is awaiting approval.', 'bebel') ?></em>
                     <?php else: ?>
                             <?php comment_text() ?>
                     <?php endif; ?>
@@ -63,7 +63,7 @@ class Bebel_Walker_Comment extends Walker_Comment{
 
     <?php if ( have_comments() ) : ?>
         <h5 class="comments-title">
-            <?php echo __('Comments', $settings->getPrefix()); ?>
+            <?php echo __('Comments', 'bebel'); ?>
         </h5>
         <ul class="media-list">
             <?php

@@ -31,7 +31,7 @@ class BebelAdmin
 
 
         add_menu_page("Theme Options", $this->settings->getThemename(), 'edit_theme_options', 'bebelAdminTop', '', $icon, 61);
-        add_submenu_page('bebelAdminTop', _x("Configure your theme", $this->settings->getPrefix()), _x("Theme Configuration", $this->settings->getPrefix()), 'edit_theme_options', 'bebelAdminTop', array($this,'getBebelAdminTop'));
+        add_submenu_page('bebelAdminTop', _x("Configure your theme", $this->settings->getPrefix()), _x("Theme Configuration", 'bebel'), 'edit_theme_options', 'bebelAdminTop', array($this,'getBebelAdminTop'));
 
         $bundles = $this->bundle->loadAdmin();
         $pages = $bundles['pages'];

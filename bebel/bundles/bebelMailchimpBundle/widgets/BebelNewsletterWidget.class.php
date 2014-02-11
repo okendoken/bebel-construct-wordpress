@@ -43,7 +43,7 @@ class BebelNewsletterWidget extends WP_Widget {
         <?php } else { ?>
         <form id="mailchimp-newsletter-form" class="form-inline newsletter-form" action="<?php echo $url; ?>">
             <label>
-                <input type="email" class="newsletter-input" name="email" id="email" placeholder="<?php echo __('E-Mail', BebelSingleton::getInstance('BebelSettings')->getPrefix()); ?>" required />
+                <input type="email" class="newsletter-input" name="email" id="email" placeholder="<?php echo __('E-Mail', 'bebel'); ?>" required />
             </label>
             <button type="submit" class="btn btn-danger btn-small"><i class="icon-chevron-right"></i></button>
         </form>

@@ -19,7 +19,7 @@
         global $more;
         $more = 0;
         ?>
-        <?php the_content(__('more...', BebelSingleton::getInstance('BebelSettings')->getPrefix()))?>
+        <?php the_content(__('more...', 'bebel'))?>
         <?php
         $categories = get_the_category();
         $separator = ' ';
@@ -37,7 +37,7 @@
                 <div class="col-sm-7 col-sm-offset-2 col-xs-10">
                     <span class="category-link">
                         <i class="icon-inbox"></i>
-                                <?php echo __('posted in', BebelSingleton::getInstance('BebelSettings')->getPrefix())?>
+                                <?php echo __('posted in', 'bebel')?>
                                 <?php echo trim($output, $separator);?>
                     </span>
                 </div>
@@ -46,9 +46,9 @@
                         <i class="icon-comments"></i>
                         <a href="<?php the_permalink(); ?>#comments" title="<?php the_title_attribute(); ?>">
                             <?php comments_number(
-                                __('No Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
-                                __('One Comment', BebelSingleton::getInstance('BebelSettings')->getPrefix()),
-                                __('% Comments', BebelSingleton::getInstance('BebelSettings')->getPrefix())); ?>
+                                __('No Comments', 'bebel'),
+                                __('One Comment', 'bebel'),
+                                __('% Comments', 'bebel')); ?>
                         </a>
                     </span>
                 </div>
